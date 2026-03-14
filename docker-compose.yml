@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  # 1. The Edge Sensor
+  zeek:
+    build:
+      context: ./zeek
+      dockerfile: Dockerfile.zeek
+      args:
+        http_proxy: ${HTTP_PROXY:-}
+        https_proxy: ${HTTPS_PROXY:-}
+    volumes:
+      - zeek-logs-volume:/opt/zeek/logs/current
+      - ./pcaps:/pcaps 
+    # Keeps the container alive so you can trigger Zeek manually against PCAPs
+    command: tail -f /dev/null 
+
+  # 2. The Log Shipper
+  filebeat:
+    image: docker.elastic.co/beats/filebeat:8.12.0
+    user: root 
+    volumes:
+      - ./filebeat/filebeat.yml:/usr/share/filebeat/filebeat.yml:ro
+      - zeek-logs-volume:/opt/zeek/logs/current:ro
+      # Dumps the normalized ECS JSON straight to your host machine
+      - ./dev_data:/usr/share/filebeat/dev_output 
+    depends_on:
+      - zeek
+
+  # 3. The Intelligence Engine
+  python-engine:
+    build:
+      context: ./python
+      dockerfile: Dockerfile.python
+    volumes:
+      # Syncs your local code live (Zero-rebuild dev loop)
+      - ./python:/app
+      # Allows Python to read the JSON dump created by Filebeat
+      - ./dev_data:/app/dev_data:ro
+    # Keeps the container alive so you can run main.py inside it on demand
+    command: tail -f /dev/null 
+
+volumes:
+  zeek-logs-volume:

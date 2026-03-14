@@ -1,0 +1,30 @@
+FROM python:3.10-slim
+
+# 1. OPTIMIZATION: Switch Debian sources to USTC (China Mirror) 
+RUN sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list.d/debian.sources 2>/dev/null || \
+    sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
+
+# 2. PROXY ARGUMENTS (Ensures network stability during the build)
+ARG http_proxy
+ARG https_proxy
+
+ENV HTTP_PROXY=$http_proxy
+ENV HTTPS_PROXY=$https_proxy
+ENV http_proxy=$http_proxy
+ENV https_proxy=$https_proxy
+
+# 3. SET PIP MIRROR: Use Tsinghua mirror for blazing fast Python package downloads
+RUN pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
+# 4. INSTALL DEPENDENCIES
+# Notice we removed 'redis' since Filebeat is dumping straight to a local JSON file now
+RUN pip install --no-cache-dir networkx pandas
+
+WORKDIR /app
+
+# 5. CLEANUP PROXIES
+# We unset these so your Python script doesn't accidentally route local traffic through the proxy later
+ENV HTTP_PROXY=""
+ENV HTTPS_PROXY=""
+ENV http_proxy=""
+ENV https_proxy=""
