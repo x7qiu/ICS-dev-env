@@ -1,7 +1,28 @@
 version: '3.8'
 
 services:
-  # 1. The Edge Sensor
+  # 1. The Message Broker (Replaces Filebeat/Redis)
+  redpanda:
+    image: docker.redpanda.com/redpandadata/redpanda:latest
+    command:
+      - redpanda
+      - start
+      - --smp 1
+      - --memory 1G
+      - --reserve-memory 0M
+      - --overprovisioned
+      - --node-id 0
+      - --kafka-addr PLAINTEXT://0.0.0.0:9092,OUTSIDE://0.0.0.0:19092
+      - --advertise-kafka-addr PLAINTEXT://redpanda:9092,OUTSIDE://localhost:19092
+    ports:
+      - "19092:19092"
+    healthcheck:
+      test: ["CMD", "rpk", "cluster", "info"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # 2. The Edge Sensor
   zeek:
     build:
       context: ./zeek
@@ -10,35 +31,24 @@ services:
         http_proxy: ${HTTP_PROXY:-}
         https_proxy: ${HTTPS_PROXY:-}
     volumes:
-      - zeek-logs-volume:/opt/zeek/logs/current
       - ./pcaps:/pcaps 
-    # Keeps the container alive so you can trigger Zeek manually against PCAPs
-    command: tail -f /dev/null 
-
-  # 2. The Log Shipper
-  filebeat:
-    image: docker.elastic.co/beats/filebeat:8.12.0
-    user: root 
-    volumes:
-      - ./filebeat/filebeat.yml:/usr/share/filebeat/filebeat.yml:ro
-      - zeek-logs-volume:/opt/zeek/logs/current:ro
-      # Dumps the normalized ECS JSON straight to your host machine
-      - ./dev_data:/usr/share/filebeat/dev_output 
+      - ./zeek/kafka-routing.zeek:/scripts/kafka-routing.zeek
     depends_on:
-      - zeek
+      redpanda:
+        condition: service_healthy
+    command: tail -f /dev/null 
 
   # 3. The Intelligence Engine
   python-engine:
     build:
       context: ./python
       dockerfile: Dockerfile.python
+      args:
+        http_proxy: ${HTTP_PROXY:-}
+        https_proxy: ${HTTPS_PROXY:-}
     volumes:
-      # Syncs your local code live (Zero-rebuild dev loop)
       - ./python:/app
-      # Allows Python to read the JSON dump created by Filebeat
-      - ./dev_data:/app/dev_data:ro
-    # Keeps the container alive so you can run main.py inside it on demand
-    command: tail -f /dev/null 
-
-volumes:
-  zeek-logs-volume:
+    depends_on:
+      redpanda:
+        condition: service_healthy
+    command: tail -f /dev/null

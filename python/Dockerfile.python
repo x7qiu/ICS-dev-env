@@ -18,7 +18,7 @@ RUN pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 # 4. INSTALL DEPENDENCIES
 # Notice we removed 'redis' since Filebeat is dumping straight to a local JSON file now
-RUN pip install --no-cache-dir networkx pandas
+RUN pip install --no-cache-dir networkx pandas kafka-python mac-vendor-lookup
 
 WORKDIR /app
 
