@@ -12,6 +12,12 @@ up:
 status:
 	docker-compose ps
 
+list-topics:
+	docker-compose exec redpanda rpk topic list
+
+read-one:
+	docker-compose exec redpanda rpk topic consume modbus_detailed -n 1
+
 down:
 	docker-compose down
 

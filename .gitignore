@@ -1,6 +1,14 @@
-# Completely ignore the dev_data folder and all its contents
-dev_data/
-
 # Keep the pcap folder, but ignore all files inside it
 pcaps/*
 !pcaps/.gitkeep
+
+# --- Python Bytecode & Cache ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
