@@ -1,23 +1,20 @@
 FROM zeek/zeek:lts
 
+ARG HTTP_PROXY
+ARG HTTPS_PROXY
+
 # Switch Debian sources to USTC
 RUN sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list.d/debian.sources 2>/dev/null || \
     sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
 
-# INSTALL DEPENDENCIES
 RUN apt-get update && apt-get install -y \
     cmake make gcc g++ libpcap-dev libssl-dev git python3-dev \
     curl libsasl2-dev zlib1g-dev \
     && rm -rf /var/lib/apt/lists/*
 
-# Ensure proxy settings apply to all RUN commands (crucial for git/zkg)
-ENV HTTP_PROXY="http://host.docker.internal:7890"
-ENV HTTPS_PROXY="http://host.docker.internal:7890"
-ENV http_proxy="http://host.docker.internal:7890"
-ENV https_proxy="http://host.docker.internal:7890"
 
-RUN git config --global http.proxy $http_proxy && \
-    git config --global https.proxy $https_proxy && \
+RUN git config --global http.proxy $HTTP_PROXY && \
+    git config --global https.proxy $HTTPS_PROXY && \
     git config --global http.sslVerify false
 
 # BUILD LIBRDKAFKA v1.4.4 FROM SOURCE
@@ -44,5 +41,3 @@ RUN zkg install --force \
 # Unset proxies so they don't affect runtime traffic capture
 ENV HTTP_PROXY=""
 ENV HTTPS_PROXY=""
-ENV http_proxy=""
-ENV https_proxy=""

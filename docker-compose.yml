@@ -28,8 +28,8 @@ services:
       context: ./zeek
       dockerfile: Dockerfile.zeek
       args:
-        http_proxy: ${HTTP_PROXY:-}
-        https_proxy: ${HTTPS_PROXY:-}
+        - HTTP_PROXY=${HTTP_PROXY}
+        - HTTPS_PROXY=${HTTPS_PROXY}
     volumes:
       - ./pcaps:/pcaps 
       - ./zeek/kafka-routing.zeek:/scripts/kafka-routing.zeek
@@ -44,8 +44,8 @@ services:
       context: ./python
       dockerfile: Dockerfile.python
       args:
-        http_proxy: ${HTTP_PROXY:-}
-        https_proxy: ${HTTPS_PROXY:-}
+        - HTTP_PROXY=${HTTP_PROXY}
+        - HTTPS_PROXY=${HTTPS_PROXY}
     volumes:
       - ./python:/app
     depends_on:

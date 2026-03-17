@@ -3,18 +3,6 @@ PCAP ?= 4SICS-GeekLounge-151022.pcap
 
 .PHONY: help up build down zeek python shell-python shell-zeek
 
-# Default target when you just run 'make'
-help:
-	@echo "ICS Dev Environment Commands:"
-	@echo "  make build      - Build the images and start the containers in the background"
-	@echo "  make up         - Start the containers (no build)"
-	@echo "  make down       - Stop and remove the containers"
-	@echo "  make zeek       - Run Zeek against the default PCAP (or pass PCAP=name.pcap)"
-	@echo "  make run        - Execute main.py inside the running Python container"
-	@echo "  make clean      - Delete the generated JSON logs to start fresh"
-	@echo "  make shell-py   - Open a bash shell inside the Python container"
-	@echo "  make shell-zeek - Open a bash shell inside the Zeek container"
-
 build:
 	docker-compose up -d --build
 
@@ -26,6 +14,11 @@ status:
 
 down:
 	docker-compose down
+
+update-oui:
+	@echo "Downloading latest IEEE OUI database..."
+	curl -o ./python/oui.txt https://standards-oui.ieee.org/oui/oui.txt
+	@echo "Download complete. Saved to ./python/oui.txt"
 
 # Runs Zeek against the PCAP. 
 # Usage: 'make zeek' OR 'make zeek PCAP=my_custom_capture.pcap'
@@ -42,10 +35,6 @@ zeek:
 # 
 topic:
 	docker-compose exec redpanda rpk topic describe s7comm modbus modbus_detailed modbus_read_device_identification
-
-replay:
-	@echo "Rewinding Kafka offsets to the beginning..."
-	docker-compose exec redpanda rpk group seek my_dev_grapher --to start --to-group
 
 # Instantly runs your locally modified Python script inside the container
 python:
