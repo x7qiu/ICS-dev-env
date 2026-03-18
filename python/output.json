@@ -14,22 +14,22 @@
     "Firmware_version": "Unknown",
     "Device_Type": "SCADA / HMI / EWS",
     "Seen_Speaking_To": [
-      "192.168.88.80",
-      "192.168.88.100",
-      "192.168.88.49",
-      "192.168.88.95",
-      "192.168.88.61",
-      "192.168.88.75",
-      "192.168.88.51",
-      "192.168.88.60",
-      "192.168.88.115",
-      "192.168.88.130",
-      "192.168.88.2",
-      "192.168.88.20",
       "192.168.88.85",
+      "192.168.88.51",
+      "192.168.88.130",
+      "192.168.88.95",
+      "192.168.88.2",
       "192.168.88.50",
+      "192.168.88.115",
+      "192.168.88.20",
+      "192.168.88.100",
+      "192.168.88.75",
+      "192.168.88.15",
+      "192.168.88.80",
+      "192.168.88.49",
+      "192.168.88.61",
       "192.168.88.105",
-      "192.168.88.15"
+      "192.168.88.60"
     ],
     "Protocols": {
       "Modbus": {
@@ -66,22 +66,14 @@
       "Red Lion Controls Inc."
     ],
     "Open_ports": [
-      44096,
-      31074,
-      34327,
-      34442,
-      36979,
-      38964,
-      789,
-      502,
-      37045,
-      43353,
-      44702
+      "789/tcp",
+      "502/tcp",
+      "790/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "PLC / RTU",
+    "Device_Type": "Modbus PLC / Gateway",
     "Seen_Speaking_To": [],
     "Protocols": {
       "Modbus": {
@@ -123,18 +115,19 @@
       "Phoenix Contact GmbH & Co. KG"
     ],
     "Open_ports": [
-      80,
-      41913,
-      30796,
-      502
+      "502/tcp",
+      "80/tcp",
+      "22/tcp",
+      "1962/tcp",
+      "1/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "PLC / RTU",
+    "Device_Type": "Modbus PLC / Gateway",
     "Seen_Speaking_To": [
-      "192.168.2.166",
-      "192.168.2.133"
+      "192.168.2.133",
+      "192.168.2.166"
     ],
     "Protocols": {
       "Modbus": {
@@ -170,29 +163,26 @@
       "MOXA TECHNOLOGIES CORP., LTD."
     ],
     "Open_ports": [
-      4000,
-      4001,
-      36963,
-      34344,
-      42634,
-      37039,
-      80,
-      43093,
-      22,
-      23,
-      502,
-      31606,
-      443
+      "502/tcp",
+      "80/tcp",
+      "443/tcp",
+      "4001/tcp",
+      "22/tcp",
+      "4000/tcp",
+      "44818/tcp",
+      "102/tcp",
+      "23/tcp",
+      "1/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "PLC / RTU",
+    "Device_Type": "Linux/Unix Host (SSH)",
     "Seen_Speaking_To": [
-      "192.168.2.166",
-      "192.168.2.199",
       "192.168.2.22",
-      "192.168.2.133"
+      "192.168.2.133",
+      "192.168.2.199",
+      "192.168.2.166"
     ],
     "Protocols": {
       "Modbus": {
@@ -344,13 +334,13 @@
       "HOST ENGINEERING"
     ],
     "Open_ports": [
-      80,
-      502
+      "502/tcp",
+      "80/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "PLC / RTU",
+    "Device_Type": "Modbus PLC / Gateway",
     "Seen_Speaking_To": [],
     "Protocols": {
       "Modbus": {
@@ -386,30 +376,26 @@
       "MOXA TECHNOLOGIES CORP., LTD."
     ],
     "Open_ports": [
-      4000,
-      4001,
-      43014,
-      39500,
-      36238,
-      80,
-      40564,
-      22,
-      23,
-      502,
-      43999,
-      443,
-      30943
+      "502/tcp",
+      "80/tcp",
+      "443/tcp",
+      "4001/tcp",
+      "22/tcp",
+      "4000/tcp",
+      "102/tcp",
+      "23/tcp",
+      "1/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "PLC / RTU",
+    "Device_Type": "Linux/Unix Host (SSH)",
     "Seen_Speaking_To": [
-      "192.168.2.22",
+      "192.168.2.133",
       "192.168.2.166",
+      "192.168.2.22",
       "192.168.88.1",
       "192.168.2.199",
-      "192.168.2.133",
       "192.168.2.137"
     ],
     "Protocols": {
@@ -567,24 +553,24 @@
     "Firmware_version": "Unknown",
     "Device_Type": "SCADA / HMI / EWS",
     "Seen_Speaking_To": [
-      "192.168.88.80",
-      "192.168.88.100",
-      "192.168.88.49",
-      "192.168.88.25",
-      "192.168.88.95",
-      "192.168.88.61",
-      "192.168.88.75",
-      "192.168.88.130",
-      "192.168.88.51",
-      "192.168.88.60",
-      "192.168.88.115",
-      "192.168.88.2",
-      "192.168.88.20",
-      "192.168.88.30",
       "192.168.88.85",
+      "192.168.88.51",
+      "192.168.88.130",
+      "192.168.88.95",
+      "192.168.88.2",
       "192.168.88.50",
+      "192.168.88.100",
+      "192.168.88.20",
+      "192.168.88.115",
+      "192.168.88.25",
+      "192.168.88.75",
+      "192.168.88.30",
+      "192.168.88.80",
+      "192.168.88.15",
+      "192.168.88.49",
+      "192.168.88.61",
       "192.168.88.105",
-      "192.168.88.15"
+      "192.168.88.60"
     ],
     "Protocols": {
       "Modbus": {
@@ -621,29 +607,25 @@
       "RuggedCom Inc."
     ],
     "Open_ports": [
-      20000,
-      514,
-      43202,
-      32680,
-      42541,
-      80,
-      41139,
-      23,
-      42676,
-      502,
-      22,
-      443,
-      42654
+      "20000/tcp",
+      "502/tcp",
+      "80/tcp",
+      "514/tcp",
+      "443/tcp",
+      "22/tcp",
+      "102/tcp",
+      "23/tcp",
+      "1/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "PLC / RTU",
+    "Device_Type": "Linux/Unix Host (SSH)",
     "Seen_Speaking_To": [
-      "192.168.2.166",
-      "192.168.2.199",
       "192.168.2.22",
-      "192.168.2.133"
+      "192.168.2.133",
+      "192.168.2.199",
+      "192.168.2.166"
     ],
     "Protocols": {
       "Modbus": {
@@ -700,24 +682,24 @@
     "Firmware_version": "Unknown",
     "Device_Type": "SCADA / HMI / EWS",
     "Seen_Speaking_To": [
-      "192.168.88.80",
-      "192.168.88.100",
-      "192.168.88.49",
-      "192.168.88.25",
-      "192.168.88.95",
-      "192.168.88.61",
-      "192.168.88.75",
-      "192.168.88.130",
-      "192.168.88.51",
-      "192.168.88.60",
-      "192.168.88.115",
-      "192.168.88.2",
-      "192.168.88.20",
-      "192.168.88.30",
       "192.168.88.85",
+      "192.168.88.51",
+      "192.168.88.130",
+      "192.168.88.95",
+      "192.168.88.2",
       "192.168.88.50",
+      "192.168.88.115",
+      "192.168.88.20",
+      "192.168.88.100",
+      "192.168.88.25",
+      "192.168.88.75",
+      "192.168.88.30",
+      "192.168.88.80",
+      "192.168.88.15",
+      "192.168.88.49",
+      "192.168.88.61",
       "192.168.88.105",
-      "192.168.88.15"
+      "192.168.88.60"
     ],
     "Protocols": {
       "Modbus": {
@@ -748,6 +730,40 @@
       }
     }
   },
+  "10.10.10.10": {
+    "IP": "10.10.10.10",
+    "Hostname": "Unknown",
+    "MAC": [
+      "28:63:36:89:59:82"
+    ],
+    "Vendor": [
+      "Siemens AG"
+    ],
+    "Open_ports": [
+      "102/tcp"
+    ],
+    "Model": "Unknown",
+    "OS_version": "Unknown",
+    "Firmware_version": "Unknown",
+    "Device_Type": "Siemens S7 PLC",
+    "Seen_Speaking_To": [],
+    "Protocols": {
+      "Modbus": {
+        "Roles": [],
+        "Unit_IDs_Served": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Successful_Responses": 0,
+          "Exceptions_Triggered": {}
+        },
+        "Memory_Fingerprint": {
+          "Registers_Read": [],
+          "Registers_Written": []
+        }
+      }
+    }
+  },
   "192.168.89.2": {
     "IP": "192.168.89.2",
     "Hostname": "Unknown",
@@ -763,12 +779,12 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [
-      "10.218.104.244",
       "192.168.0.3",
-      "192.168.1.79",
+      "8.8.8.8",
       "192.168.1.71",
       "17.253.34.253",
-      "8.8.8.8"
+      "192.168.1.79",
+      "10.218.104.244"
     ],
     "Protocols": {
       "Modbus": {
@@ -795,40 +811,6 @@
     ],
     "Vendor": [
       "RuggedCom Inc."
-    ],
-    "Open_ports": [
-      53
-    ],
-    "Model": "Unknown",
-    "OS_version": "Unknown",
-    "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "Protocols": {
-      "Modbus": {
-        "Roles": [],
-        "Unit_IDs_Served": [],
-        "Activity": {
-          "Reads_Sent_To": {},
-          "Writes_Sent_To": {},
-          "Successful_Responses": 0,
-          "Exceptions_Triggered": {}
-        },
-        "Memory_Fingerprint": {
-          "Registers_Read": [],
-          "Registers_Written": []
-        }
-      }
-    }
-  },
-  "10.10.10.10": {
-    "IP": "10.10.10.10",
-    "Hostname": "Unknown",
-    "MAC": [
-      "28:63:36:89:59:82"
-    ],
-    "Vendor": [
-      "Siemens AG"
     ],
     "Open_ports": [],
     "Model": "Unknown",
@@ -869,14 +851,14 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [
-      "192.168.1.2",
       "192.168.0.3",
-      "192.195.142.13",
-      "192.168.88.1",
+      "192.168.1.68",
       "192.195.142.14",
       "192.168.1.71",
       "17.253.34.253",
-      "192.168.1.68"
+      "192.168.88.1",
+      "192.195.142.13",
+      "192.168.1.2"
     ],
     "Protocols": {
       "Modbus": {
@@ -905,13 +887,16 @@
       "Westermo Network Technologies AB"
     ],
     "Open_ports": [
-      192,
-      53
+      "80/tcp",
+      "443/tcp",
+      "53/udp",
+      "22/tcp",
+      "53/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
+    "Device_Type": "Linux/Unix Host (SSH)",
     "Seen_Speaking_To": [],
     "Protocols": {
       "Modbus": {
@@ -934,8 +919,8 @@
     "IP": "192.168.0.3",
     "Hostname": "Unknown",
     "MAC": [
-      "00:0a:dc:64:85:c2",
-      "00:07:7c:1a:61:83"
+      "00:07:7c:1a:61:83",
+      "00:0a:dc:64:85:c2"
     ],
     "Vendor": [
       "Westermo Network Technologies AB",
@@ -968,8 +953,8 @@
     "IP": "192.168.1.71",
     "Hostname": "Unknown",
     "MAC": [
-      "00:0a:dc:64:85:c2",
-      "00:07:7c:1a:61:83"
+      "00:07:7c:1a:61:83",
+      "00:0a:dc:64:85:c2"
     ],
     "Vendor": [
       "Westermo Network Technologies AB",
@@ -1002,16 +987,14 @@
     "IP": "17.253.34.253",
     "Hostname": "Unknown",
     "MAC": [
-      "00:0a:dc:64:85:c2",
-      "00:07:7c:1a:61:83"
+      "00:07:7c:1a:61:83",
+      "00:0a:dc:64:85:c2"
     ],
     "Vendor": [
       "Westermo Network Technologies AB",
       "RuggedCom Inc."
     ],
-    "Open_ports": [
-      123
-    ],
+    "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
@@ -1043,9 +1026,7 @@
     "Vendor": [
       "Westermo Network Technologies AB"
     ],
-    "Open_ports": [
-      1194
-    ],
+    "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
@@ -1147,13 +1128,13 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [
+      "192.168.88.51",
       "192.168.88.55",
-      "192.168.88.53",
+      "192.168.88.95",
       "192.168.88.52",
       "192.168.88.49",
-      "192.168.88.95",
+      "192.168.88.53",
       "192.168.88.61",
-      "192.168.88.51",
       "192.168.88.60"
     ],
     "Protocols": {
@@ -1177,8 +1158,8 @@
     "IP": "192.168.2.137",
     "Hostname": "Unknown",
     "MAC": [
-      "00:07:7c:1a:61:85",
-      "00:07:7c:1a:61:83"
+      "00:07:7c:1a:61:83",
+      "00:07:7c:1a:61:85"
     ],
     "Vendor": [
       "Westermo Network Technologies AB"
@@ -1189,26 +1170,26 @@
     "Firmware_version": "Unknown",
     "Device_Type": "SCADA / HMI / EWS",
     "Seen_Speaking_To": [
-      "192.168.88.95",
-      "192.168.88.130",
-      "192.168.88.20",
-      "192.168.88.105",
-      "192.168.88.52",
-      "192.168.88.61",
-      "192.168.88.75",
       "192.168.88.51",
-      "192.168.88.50",
+      "192.168.88.20",
+      "192.168.88.75",
       "192.168.88.15",
-      "192.168.88.100",
-      "192.168.88.60",
       "192.168.88.80",
-      "192.168.88.49",
+      "192.168.88.105",
+      "192.168.88.95",
       "192.168.88.254",
       "192.168.88.115",
-      "192.168.88.2",
+      "192.168.88.50",
       "192.168.88.30",
+      "192.168.88.49",
       "10.10.10.10",
-      "192.168.88.85"
+      "192.168.88.130",
+      "192.168.88.52",
+      "192.168.88.60",
+      "192.168.88.85",
+      "192.168.88.2",
+      "192.168.88.100",
+      "192.168.88.61"
     ],
     "Protocols": {
       "Modbus": {
@@ -1307,34 +1288,27 @@
       "DigiBoard"
     ],
     "Open_ports": [
-      30244,
-      42054,
-      34632,
-      39977,
-      7019,
-      41035,
-      37773,
-      41292,
-      80,
-      7025,
-      22,
-      23,
-      7000,
-      7001,
-      7002,
-      443,
-      7004,
-      7007
+      "7004/tcp",
+      "80/tcp",
+      "443/tcp",
+      "7000/tcp",
+      "22/tcp",
+      "7002/tcp",
+      "7001/tcp",
+      "23/tcp",
+      "7007/tcp",
+      "7019/tcp",
+      "7025/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
+    "Device_Type": "Linux/Unix Host (SSH)",
     "Seen_Speaking_To": [
-      "192.168.2.53",
-      "192.168.2.137",
+      "192.168.2.22",
       "192.168.2.199",
-      "192.168.2.22"
+      "192.168.2.137",
+      "192.168.2.53"
     ],
     "Protocols": {
       "Modbus": {
@@ -1362,14 +1336,7 @@
     "Vendor": [
       "HOST ENGINEERING"
     ],
-    "Open_ports": [
-      38116,
-      34410,
-      35984,
-      41747,
-      37175,
-      33019
-    ],
+    "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
@@ -1434,8 +1401,7 @@
       "MOXA TECHNOLOGIES CORP., LTD."
     ],
     "Open_ports": [
-      36800,
-      40548
+      "80/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
@@ -1469,32 +1435,26 @@
       "ADVANTECH CO., LTD."
     ],
     "Open_ports": [
-      5120,
-      41952,
-      43748,
-      39108,
-      135,
-      137,
-      34252,
-      80,
-      1234,
-      31892,
-      23,
-      443,
-      39709,
-      37694
+      "135/tcp",
+      "80/tcp",
+      "443/tcp",
+      "1234/tcp",
+      "5120/tcp",
+      "23/tcp",
+      "1/tcp",
+      "137/udp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [
-      "10.218.104.244",
-      "192.168.2.22",
+      "192.168.2.133",
       "192.168.2.166",
+      "192.168.2.22",
       "192.168.88.1",
       "192.168.2.199",
-      "192.168.2.133"
+      "10.218.104.244"
     ],
     "Protocols": {
       "Modbus": {
@@ -1523,25 +1483,19 @@
       "Axis Communications AB"
     ],
     "Open_ports": [
-      49152,
-      42532,
-      32837,
-      42635,
-      40015,
-      80,
-      42192,
-      41553,
-      21
+      "21/tcp",
+      "80/tcp",
+      "49152/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [
-      "192.168.2.166",
-      "192.168.2.199",
       "192.168.2.22",
-      "192.168.2.133"
+      "192.168.2.133",
+      "192.168.2.199",
+      "192.168.2.166"
     ],
     "Protocols": {
       "Modbus": {
@@ -1570,93 +1524,18 @@
       "Siemens Numerical Control Ltd., Nanjing"
     ],
     "Open_ports": [
-      37402,
-      30772,
-      102,
-      36465,
-      161,
-      37137,
-      41753,
-      30007,
-      35145,
-      43872,
-      36205,
-      5001,
-      44444,
-      44445,
-      44446,
-      44447,
-      44448,
-      44449,
-      44450,
-      44451,
-      44452,
-      44453,
-      44454,
-      44455,
-      44456,
-      44457,
-      44458,
-      44459,
-      44460,
-      44461,
-      44462,
-      44463,
-      44464,
-      44465,
-      44466,
-      44467,
-      44468,
-      44469,
-      44470,
-      44471,
-      44472,
-      44473,
-      44474,
-      44475,
-      44476,
-      44477,
-      44478,
-      44479,
-      44480,
-      44481,
-      44482,
-      44483,
-      44484,
-      44485,
-      44486,
-      44487,
-      44488,
-      44489,
-      44490,
-      44491,
-      44492,
-      44493,
-      44494,
-      44495,
-      44496,
-      44497,
-      44498,
-      44499,
-      44500,
-      44501,
-      44502,
-      44503,
-      44504,
-      44505,
-      44506,
-      44507,
-      44516,
-      41978
+      "102/tcp",
+      "161/udp",
+      "5001/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "PLC / RTU",
+    "Device_Type": "Siemens S7 PLC",
     "Seen_Speaking_To": [
+      "192.168.2.22",
       "192.168.2.166",
-      "192.168.2.53",
-      "192.168.2.22"
+      "192.168.2.53"
     ],
     "Protocols": {
       "Modbus": {
@@ -1685,24 +1564,20 @@
       "Hirschmann Automation and Control GmbH"
     ],
     "Open_ports": [
-      38116,
-      39881,
-      35372,
-      31981,
-      40301,
-      36049,
-      22,
-      443
+      "1/tcp",
+      "80/tcp",
+      "22/tcp",
+      "443/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
+    "Device_Type": "Linux/Unix Host (SSH)",
     "Seen_Speaking_To": [
-      "192.168.2.166",
-      "192.168.2.199",
       "192.168.2.22",
-      "192.168.2.133"
+      "192.168.2.133",
+      "192.168.2.199",
+      "192.168.2.166"
     ],
     "Protocols": {
       "Modbus": {
@@ -1730,7 +1605,9 @@
     "Vendor": [
       "CIMSYS Inc"
     ],
-    "Open_ports": [],
+    "Open_ports": [
+      "80/tcp"
+    ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
@@ -1766,25 +1643,25 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
+    "Device_Type": "SCADA / HMI / EWS",
     "Seen_Speaking_To": [
-      "192.168.88.80",
-      "192.168.88.25",
-      "192.168.88.49",
-      "192.168.88.95",
-      "192.168.88.61",
-      "192.168.88.75",
-      "192.168.88.130",
-      "192.168.88.60",
-      "192.168.88.51",
-      "192.168.88.115",
-      "192.168.88.2",
-      "192.168.88.20",
-      "192.168.88.30",
       "192.168.88.85",
+      "192.168.88.51",
+      "192.168.88.130",
+      "192.168.88.95",
+      "192.168.88.2",
       "192.168.88.50",
+      "192.168.88.115",
+      "192.168.88.20",
+      "192.168.88.25",
+      "192.168.88.30",
+      "192.168.88.75",
+      "192.168.88.15",
+      "192.168.88.49",
+      "192.168.88.80",
+      "192.168.88.61",
       "192.168.88.105",
-      "192.168.88.15"
+      "192.168.88.60"
     ],
     "Protocols": {
       "Modbus": {
@@ -1813,20 +1690,9 @@
       "ADVANTECH CO., LTD."
     ],
     "Open_ports": [
-      32323,
-      44452,
-      42566,
-      34824,
-      37645,
-      80,
-      36880,
-      41872,
-      81,
-      21,
-      33272,
-      31034,
-      31131,
-      41342
+      "21/tcp",
+      "81/tcp",
+      "80/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
@@ -1929,10 +1795,10 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
+    "Device_Type": "SCADA / HMI / EWS",
     "Seen_Speaking_To": [
-      "10.10.10.10",
-      "172.16.184.40"
+      "172.16.184.40",
+      "10.10.10.10"
     ],
     "Protocols": {
       "Modbus": {
@@ -1987,16 +1853,14 @@
     "IP": "10.218.104.244",
     "Hostname": "Unknown",
     "MAC": [
-      "00:0a:dc:64:85:c2",
-      "00:07:7c:1a:61:83"
+      "00:07:7c:1a:61:83",
+      "00:0a:dc:64:85:c2"
     ],
     "Vendor": [
       "Westermo Network Technologies AB",
       "RuggedCom Inc."
     ],
-    "Open_ports": [
-      137
-    ],
+    "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
@@ -2032,7 +1896,7 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
+    "Device_Type": "SCADA / HMI / EWS",
     "Seen_Speaking_To": [
       "10.10.10.10"
     ],
@@ -2068,8 +1932,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [
-      "192.168.88.60",
-      "192.168.88.50"
+      "192.168.88.50",
+      "192.168.88.60"
     ],
     "Protocols": {
       "Modbus": {
@@ -2101,24 +1965,24 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
+    "Device_Type": "SCADA / HMI / EWS",
     "Seen_Speaking_To": [
-      "192.168.88.80",
-      "192.168.88.49",
-      "192.168.88.95",
-      "192.168.88.61",
-      "192.168.88.75",
-      "192.168.88.51",
-      "192.168.88.60",
-      "192.168.88.130",
-      "192.168.88.115",
-      "192.168.88.2",
-      "192.168.88.30",
       "192.168.88.85",
+      "192.168.88.51",
+      "192.168.88.95",
+      "192.168.88.130",
+      "192.168.88.2",
       "192.168.88.50",
-      "192.168.88.105",
+      "192.168.88.115",
+      "192.168.88.25",
+      "192.168.88.30",
+      "192.168.88.75",
       "192.168.88.15",
-      "192.168.88.25"
+      "192.168.88.49",
+      "192.168.88.80",
+      "192.168.88.61",
+      "192.168.88.105",
+      "192.168.88.60"
     ],
     "Protocols": {
       "Modbus": {
@@ -2182,27 +2046,27 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
+    "Device_Type": "SCADA / HMI / EWS",
     "Seen_Speaking_To": [
-      "192.168.88.95",
-      "192.168.88.130",
-      "192.168.88.20",
-      "192.168.88.105",
-      "192.168.88.52",
-      "192.168.88.61",
-      "192.168.88.75",
       "192.168.88.51",
-      "192.168.88.50",
-      "192.168.88.25",
+      "192.168.88.20",
+      "192.168.88.75",
       "192.168.88.15",
-      "192.168.88.60",
       "192.168.88.80",
-      "192.168.88.49",
+      "192.168.88.105",
+      "192.168.88.95",
       "192.168.88.254",
+      "192.168.88.50",
       "192.168.88.115",
-      "192.168.88.2",
       "192.168.88.30",
-      "192.168.88.85"
+      "192.168.88.49",
+      "192.168.88.130",
+      "192.168.88.52",
+      "192.168.88.25",
+      "192.168.88.60",
+      "192.168.88.85",
+      "192.168.88.2",
+      "192.168.88.61"
     ],
     "Protocols": {
       "Modbus": {
@@ -2230,7 +2094,9 @@
     "Vendor": [
       "Innominate Security Technologies AG"
     ],
-    "Open_ports": [],
+    "Open_ports": [
+      "443/tcp"
+    ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
@@ -2304,11 +2170,11 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [
-      "192.168.88.61",
-      "192.168.88.60",
       "192.168.88.85",
       "192.168.88.50",
-      "192.168.88.105"
+      "192.168.88.61",
+      "192.168.88.105",
+      "192.168.88.60"
     ],
     "Protocols": {
       "Modbus": {
@@ -2370,9 +2236,7 @@
     "Vendor": [
       "Westermo Network Technologies AB"
     ],
-    "Open_ports": [
-      123
-    ],
+    "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
@@ -2445,8 +2309,8 @@
     "Device_Type": "IT",
     "Seen_Speaking_To": [
       "17.253.54.251",
-      "192.168.88.1",
-      "93.158.94.210"
+      "93.158.94.210",
+      "192.168.88.1"
     ],
     "Protocols": {
       "Modbus": {
@@ -2506,9 +2370,7 @@
     "Vendor": [
       "Westermo Network Technologies AB"
     ],
-    "Open_ports": [
-      123
-    ],
+    "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
@@ -2574,9 +2436,7 @@
     "Vendor": [
       "VMware, Inc."
     ],
-    "Open_ports": [
-      53
-    ],
+    "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
@@ -2643,9 +2503,7 @@
     "Vendor": [
       "Westermo Network Technologies AB"
     ],
-    "Open_ports": [
-      67
-    ],
+    "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
@@ -2683,8 +2541,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [
-      "54.241.179.26",
       "199.16.156.70",
+      "54.241.179.26",
       "199.16.156.72"
     ],
     "Protocols": {
@@ -2841,7 +2699,7 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
+    "Device_Type": "SCADA / HMI / EWS",
     "Seen_Speaking_To": [
       "10.10.10.10"
     ],
@@ -2969,7 +2827,9 @@
       "a2:f4:01:00:01:d6"
     ],
     "Vendor": [],
-    "Open_ports": [],
+    "Open_ports": [
+      "5223/tcp"
+    ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
@@ -3099,7 +2959,7 @@
     ],
     "Vendor": [],
     "Open_ports": [
-      53
+      "53/udp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
@@ -3197,15 +3057,15 @@
       "Innominate Security Technologies AG"
     ],
     "Open_ports": [
-      4500
+      "4500/udp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [
-      "83.140.27.11",
       "77.245.33.76",
+      "83.140.27.11",
       "10.100.152.10"
     ],
     "Protocols": {
@@ -3299,7 +3159,7 @@
       "Cisco Systems, Inc"
     ],
     "Open_ports": [
-      67
+      "67/udp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
@@ -3331,7 +3191,7 @@
     ],
     "Vendor": [],
     "Open_ports": [
-      500
+      "500/udp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
@@ -3436,12 +3296,12 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [
-      "199.16.156.48",
       "17.130.137.75",
-      "199.16.156.231",
       "17.130.137.73",
+      "199.16.156.231",
       "52.5.95.205",
-      "52.4.151.114"
+      "52.4.151.114",
+      "199.16.156.48"
     ],
     "Protocols": {
       "Modbus": {
@@ -3467,7 +3327,9 @@
       "a2:f4:01:00:01:d6"
     ],
     "Vendor": [],
-    "Open_ports": [],
+    "Open_ports": [
+      "443/tcp"
+    ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
@@ -3776,7 +3638,9 @@
       "a2:f4:01:00:01:d6"
     ],
     "Vendor": [],
-    "Open_ports": [],
+    "Open_ports": [
+      "443/tcp"
+    ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
@@ -3806,7 +3670,9 @@
       "a2:f4:01:00:01:d6"
     ],
     "Vendor": [],
-    "Open_ports": [],
+    "Open_ports": [
+      "443/tcp"
+    ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
@@ -3870,7 +3736,9 @@
       "a2:f4:01:00:01:d6"
     ],
     "Vendor": [],
-    "Open_ports": [],
+    "Open_ports": [
+      "443/tcp"
+    ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
@@ -3900,7 +3768,9 @@
       "a2:f4:01:00:01:d6"
     ],
     "Vendor": [],
-    "Open_ports": [],
+    "Open_ports": [
+      "443/tcp"
+    ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
@@ -3964,7 +3834,9 @@
       "a2:f4:01:00:01:d6"
     ],
     "Vendor": [],
-    "Open_ports": [],
+    "Open_ports": [
+      "993/tcp"
+    ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
