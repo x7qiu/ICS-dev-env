@@ -1,7 +1,12 @@
+# state.py
+import time
+
 ASSETS_DB = {}
 
 def get_or_create_asset(ip):
-    """Retrieves an asset or initializes a blank profile if seen for the first time."""
+    """Retrieves an asset, initializes it if new, and updates its Last_Seen timestamp."""
+    current_time = time.time()
+    
     if ip not in ASSETS_DB:
         ASSETS_DB[ip] = {
             "IP": ip,
@@ -14,7 +19,8 @@ def get_or_create_asset(ip):
             "Firmware_version": "Unknown",
             "Device_Type": "IT", 
             "Seen_Speaking_To": set(),
-            # NEW: The Nested Protocols Block
+            "First_Seen": current_time,
+            "Last_Seen": current_time,
             "Protocols": {
                 "Modbus": {
                     "Roles": set(),
@@ -32,4 +38,21 @@ def get_or_create_asset(ip):
                 }
             }
         }
+    else:
+        ASSETS_DB[ip]["Last_Seen"] = current_time
+        
     return ASSETS_DB[ip]
+
+def prune_stale_assets(timeout_seconds=86400):
+    """
+    Sweeps the database and deletes assets that haven't been seen in `timeout_seconds`.
+    Default is 86400 seconds (24 hours).
+    """
+    current_time = time.time()
+    
+    # We must cast keys() to a list so we don't encounter a RuntimeError 
+    # for modifying the dictionary while iterating over it.
+    for ip in list(ASSETS_DB.keys()):
+        last_seen = ASSETS_DB[ip]["Last_Seen"]
+        if (current_time - last_seen) > timeout_seconds:
+            del ASSETS_DB[ip]

@@ -1,4 +1,115 @@
 {
+  "192.168.89.2": {
+    "IP": "192.168.89.2",
+    "Hostname": "Unknown",
+    "MAC": [
+      "70:71:bc:3a:0d:e8"
+    ],
+    "Vendor": [
+      "PEGATRON CORPORATION"
+    ],
+    "Open_ports": [],
+    "Model": "Unknown",
+    "OS_version": "Unknown",
+    "Firmware_version": "Unknown",
+    "Device_Type": "IT",
+    "Seen_Speaking_To": [
+      "192.168.0.3",
+      "17.253.34.253",
+      "8.8.8.8",
+      "192.168.1.71",
+      "192.168.1.79",
+      "10.218.104.244"
+    ],
+    "First_Seen": 1773899514.814204,
+    "Last_Seen": 1773899631.9654937,
+    "Protocols": {
+      "Modbus": {
+        "Roles": [],
+        "Unit_IDs_Served": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Successful_Responses": 0,
+          "Exceptions_Triggered": {}
+        },
+        "Memory_Fingerprint": {
+          "Registers_Read": [],
+          "Registers_Written": []
+        }
+      }
+    }
+  },
+  "8.8.8.8": {
+    "IP": "8.8.8.8",
+    "Hostname": "Unknown",
+    "MAC": [
+      "00:0a:dc:64:85:c2"
+    ],
+    "Vendor": [
+      "RuggedCom Inc."
+    ],
+    "Open_ports": [],
+    "Model": "Unknown",
+    "OS_version": "Unknown",
+    "Firmware_version": "Unknown",
+    "Device_Type": "IT",
+    "Seen_Speaking_To": [],
+    "First_Seen": 1773899514.814207,
+    "Last_Seen": 1773899631.9654553,
+    "Protocols": {
+      "Modbus": {
+        "Roles": [],
+        "Unit_IDs_Served": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Successful_Responses": 0,
+          "Exceptions_Triggered": {}
+        },
+        "Memory_Fingerprint": {
+          "Registers_Read": [],
+          "Registers_Written": []
+        }
+      }
+    }
+  },
+  "10.10.10.10": {
+    "IP": "10.10.10.10",
+    "Hostname": "Unknown",
+    "MAC": [
+      "28:63:36:89:59:82"
+    ],
+    "Vendor": [
+      "Siemens AG"
+    ],
+    "Open_ports": [
+      "102/tcp"
+    ],
+    "Model": "Unknown",
+    "OS_version": "Unknown",
+    "Firmware_version": "Unknown",
+    "Device_Type": "Siemens S7 PLC",
+    "Seen_Speaking_To": [],
+    "First_Seen": 1773899514.8161285,
+    "Last_Seen": 1773899630.6697145,
+    "Protocols": {
+      "Modbus": {
+        "Roles": [],
+        "Unit_IDs_Served": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Successful_Responses": 0,
+          "Exceptions_Triggered": {}
+        },
+        "Memory_Fingerprint": {
+          "Registers_Read": [],
+          "Registers_Written": []
+        }
+      }
+    }
+  },
   "192.168.2.44": {
     "IP": "192.168.2.44",
     "Hostname": "Unknown",
@@ -12,25 +123,27 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "SCADA / HMI / EWS",
+    "Device_Type": "SCADA Server",
     "Seen_Speaking_To": [
-      "192.168.88.85",
-      "192.168.88.51",
-      "192.168.88.130",
-      "192.168.88.95",
+      "192.168.88.15",
       "192.168.88.2",
+      "192.168.88.75",
       "192.168.88.50",
       "192.168.88.115",
-      "192.168.88.20",
       "192.168.88.100",
-      "192.168.88.75",
-      "192.168.88.15",
-      "192.168.88.80",
       "192.168.88.49",
+      "192.168.88.80",
+      "192.168.88.60",
+      "192.168.88.130",
+      "192.168.88.51",
+      "192.168.88.95",
+      "192.168.88.20",
       "192.168.88.61",
-      "192.168.88.105",
-      "192.168.88.60"
+      "192.168.88.85",
+      "192.168.88.105"
     ],
+    "First_Seen": 1773899514.817083,
+    "Last_Seen": 1773899530.9216824,
     "Protocols": {
       "Modbus": {
         "Roles": [
@@ -75,6 +188,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "Modbus PLC / Gateway",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899514.8170843,
+    "Last_Seen": 1773899676.8120947,
     "Protocols": {
       "Modbus": {
         "Roles": [
@@ -115,20 +230,22 @@
       "Phoenix Contact GmbH & Co. KG"
     ],
     "Open_ports": [
+      "1/tcp",
       "502/tcp",
-      "80/tcp",
-      "22/tcp",
       "1962/tcp",
-      "1/tcp"
+      "22/tcp",
+      "80/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Device_Type": "Modbus PLC / Gateway",
     "Seen_Speaking_To": [
-      "192.168.2.133",
-      "192.168.2.166"
+      "192.168.2.166",
+      "192.168.2.133"
     ],
+    "First_Seen": 1773899514.8170898,
+    "Last_Seen": 1773899631.9650412,
     "Protocols": {
       "Modbus": {
         "Roles": [
@@ -163,27 +280,29 @@
       "MOXA TECHNOLOGIES CORP., LTD."
     ],
     "Open_ports": [
-      "502/tcp",
-      "80/tcp",
-      "443/tcp",
-      "4001/tcp",
-      "22/tcp",
-      "4000/tcp",
-      "44818/tcp",
-      "102/tcp",
       "23/tcp",
-      "1/tcp"
+      "44818/tcp",
+      "1/tcp",
+      "4000/tcp",
+      "4001/tcp",
+      "443/tcp",
+      "502/tcp",
+      "102/tcp",
+      "22/tcp",
+      "80/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "Linux/Unix Host (SSH)",
+    "Device_Type": "Modbus PLC / Gateway",
     "Seen_Speaking_To": [
-      "192.168.2.22",
-      "192.168.2.133",
+      "192.168.2.166",
       "192.168.2.199",
-      "192.168.2.166"
+      "192.168.2.133",
+      "192.168.2.22"
     ],
+    "First_Seen": 1773899514.8171036,
+    "Last_Seen": 1773899631.9654758,
     "Protocols": {
       "Modbus": {
         "Roles": [
@@ -334,14 +453,16 @@
       "HOST ENGINEERING"
     ],
     "Open_ports": [
-      "502/tcp",
-      "80/tcp"
+      "80/tcp",
+      "502/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Device_Type": "Modbus PLC / Gateway",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899514.817105,
+    "Last_Seen": 1773899528.3049316,
     "Protocols": {
       "Modbus": {
         "Roles": [
@@ -376,28 +497,30 @@
       "MOXA TECHNOLOGIES CORP., LTD."
     ],
     "Open_ports": [
-      "502/tcp",
-      "80/tcp",
-      "443/tcp",
-      "4001/tcp",
-      "22/tcp",
-      "4000/tcp",
-      "102/tcp",
       "23/tcp",
-      "1/tcp"
+      "1/tcp",
+      "4000/tcp",
+      "4001/tcp",
+      "443/tcp",
+      "502/tcp",
+      "102/tcp",
+      "22/tcp",
+      "80/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "Linux/Unix Host (SSH)",
+    "Device_Type": "Modbus PLC / Gateway",
     "Seen_Speaking_To": [
-      "192.168.2.133",
-      "192.168.2.166",
+      "192.168.2.137",
       "192.168.2.22",
+      "192.168.2.133",
       "192.168.88.1",
       "192.168.2.199",
-      "192.168.2.137"
+      "192.168.2.166"
     ],
+    "First_Seen": 1773899514.817108,
+    "Last_Seen": 1773899788.6382177,
     "Protocols": {
       "Modbus": {
         "Roles": [
@@ -553,25 +676,27 @@
     "Firmware_version": "Unknown",
     "Device_Type": "SCADA / HMI / EWS",
     "Seen_Speaking_To": [
-      "192.168.88.85",
-      "192.168.88.51",
-      "192.168.88.130",
-      "192.168.88.95",
       "192.168.88.2",
       "192.168.88.50",
-      "192.168.88.100",
-      "192.168.88.20",
-      "192.168.88.115",
-      "192.168.88.25",
       "192.168.88.75",
       "192.168.88.30",
-      "192.168.88.80",
-      "192.168.88.15",
-      "192.168.88.49",
       "192.168.88.61",
-      "192.168.88.105",
-      "192.168.88.60"
+      "192.168.88.25",
+      "192.168.88.115",
+      "192.168.88.100",
+      "192.168.88.49",
+      "192.168.88.80",
+      "192.168.88.130",
+      "192.168.88.60",
+      "192.168.88.51",
+      "192.168.88.95",
+      "192.168.88.20",
+      "192.168.88.15",
+      "192.168.88.85",
+      "192.168.88.105"
     ],
+    "First_Seen": 1773899514.8172736,
+    "Last_Seen": 1773899531.1828258,
     "Protocols": {
       "Modbus": {
         "Roles": [
@@ -607,26 +732,28 @@
       "RuggedCom Inc."
     ],
     "Open_ports": [
-      "20000/tcp",
-      "502/tcp",
-      "80/tcp",
-      "514/tcp",
-      "443/tcp",
-      "22/tcp",
-      "102/tcp",
       "23/tcp",
-      "1/tcp"
+      "1/tcp",
+      "20000/tcp",
+      "443/tcp",
+      "502/tcp",
+      "514/tcp",
+      "102/tcp",
+      "22/tcp",
+      "80/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "Linux/Unix Host (SSH)",
+    "Device_Type": "DNP3 Outstation / RTU",
     "Seen_Speaking_To": [
-      "192.168.2.22",
-      "192.168.2.133",
+      "192.168.2.166",
       "192.168.2.199",
-      "192.168.2.166"
+      "192.168.2.133",
+      "192.168.2.22"
     ],
+    "First_Seen": 1773899514.8172848,
+    "Last_Seen": 1773899635.3290598,
     "Protocols": {
       "Modbus": {
         "Roles": [
@@ -680,27 +807,29 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "SCADA / HMI / EWS",
+    "Device_Type": "Engineering Workstation (EWS)",
     "Seen_Speaking_To": [
-      "192.168.88.85",
-      "192.168.88.51",
-      "192.168.88.130",
-      "192.168.88.95",
       "192.168.88.2",
       "192.168.88.50",
-      "192.168.88.115",
-      "192.168.88.20",
-      "192.168.88.100",
-      "192.168.88.25",
       "192.168.88.75",
       "192.168.88.30",
-      "192.168.88.80",
-      "192.168.88.15",
-      "192.168.88.49",
       "192.168.88.61",
-      "192.168.88.105",
-      "192.168.88.60"
+      "192.168.88.25",
+      "192.168.88.115",
+      "192.168.88.100",
+      "192.168.88.49",
+      "192.168.88.80",
+      "192.168.88.130",
+      "192.168.88.60",
+      "192.168.88.51",
+      "192.168.88.95",
+      "192.168.88.20",
+      "192.168.88.15",
+      "192.168.88.85",
+      "192.168.88.105"
     ],
+    "First_Seen": 1773899514.817353,
+    "Last_Seen": 1773899788.6382174,
     "Protocols": {
       "Modbus": {
         "Roles": [
@@ -730,111 +859,6 @@
       }
     }
   },
-  "10.10.10.10": {
-    "IP": "10.10.10.10",
-    "Hostname": "Unknown",
-    "MAC": [
-      "28:63:36:89:59:82"
-    ],
-    "Vendor": [
-      "Siemens AG"
-    ],
-    "Open_ports": [
-      "102/tcp"
-    ],
-    "Model": "Unknown",
-    "OS_version": "Unknown",
-    "Firmware_version": "Unknown",
-    "Device_Type": "Siemens S7 PLC",
-    "Seen_Speaking_To": [],
-    "Protocols": {
-      "Modbus": {
-        "Roles": [],
-        "Unit_IDs_Served": [],
-        "Activity": {
-          "Reads_Sent_To": {},
-          "Writes_Sent_To": {},
-          "Successful_Responses": 0,
-          "Exceptions_Triggered": {}
-        },
-        "Memory_Fingerprint": {
-          "Registers_Read": [],
-          "Registers_Written": []
-        }
-      }
-    }
-  },
-  "192.168.89.2": {
-    "IP": "192.168.89.2",
-    "Hostname": "Unknown",
-    "MAC": [
-      "70:71:bc:3a:0d:e8"
-    ],
-    "Vendor": [
-      "PEGATRON CORPORATION"
-    ],
-    "Open_ports": [],
-    "Model": "Unknown",
-    "OS_version": "Unknown",
-    "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [
-      "192.168.0.3",
-      "8.8.8.8",
-      "192.168.1.71",
-      "17.253.34.253",
-      "192.168.1.79",
-      "10.218.104.244"
-    ],
-    "Protocols": {
-      "Modbus": {
-        "Roles": [],
-        "Unit_IDs_Served": [],
-        "Activity": {
-          "Reads_Sent_To": {},
-          "Writes_Sent_To": {},
-          "Successful_Responses": 0,
-          "Exceptions_Triggered": {}
-        },
-        "Memory_Fingerprint": {
-          "Registers_Read": [],
-          "Registers_Written": []
-        }
-      }
-    }
-  },
-  "8.8.8.8": {
-    "IP": "8.8.8.8",
-    "Hostname": "Unknown",
-    "MAC": [
-      "00:0a:dc:64:85:c2"
-    ],
-    "Vendor": [
-      "RuggedCom Inc."
-    ],
-    "Open_ports": [],
-    "Model": "Unknown",
-    "OS_version": "Unknown",
-    "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "Protocols": {
-      "Modbus": {
-        "Roles": [],
-        "Unit_IDs_Served": [],
-        "Activity": {
-          "Reads_Sent_To": {},
-          "Writes_Sent_To": {},
-          "Successful_Responses": 0,
-          "Exceptions_Triggered": {}
-        },
-        "Memory_Fingerprint": {
-          "Registers_Read": [],
-          "Registers_Written": []
-        }
-      }
-    }
-  },
   "192.168.88.52": {
     "IP": "192.168.88.52",
     "Hostname": "Unknown",
@@ -851,15 +875,17 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [
-      "192.168.0.3",
-      "192.168.1.68",
       "192.195.142.14",
-      "192.168.1.71",
+      "192.168.0.3",
       "17.253.34.253",
-      "192.168.88.1",
+      "192.168.1.68",
+      "192.168.1.71",
       "192.195.142.13",
+      "192.168.88.1",
       "192.168.1.2"
     ],
+    "First_Seen": 1773899515.251087,
+    "Last_Seen": 1773899631.9653125,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -887,10 +913,10 @@
       "Westermo Network Technologies AB"
     ],
     "Open_ports": [
-      "80/tcp",
-      "443/tcp",
       "53/udp",
+      "443/tcp",
       "22/tcp",
+      "80/tcp",
       "53/tcp"
     ],
     "Model": "Unknown",
@@ -898,6 +924,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "Linux/Unix Host (SSH)",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899515.2510903,
+    "Last_Seen": 1773899631.965453,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -919,12 +947,12 @@
     "IP": "192.168.0.3",
     "Hostname": "Unknown",
     "MAC": [
-      "00:07:7c:1a:61:83",
-      "00:0a:dc:64:85:c2"
+      "00:0a:dc:64:85:c2",
+      "00:07:7c:1a:61:83"
     ],
     "Vendor": [
-      "Westermo Network Technologies AB",
-      "RuggedCom Inc."
+      "RuggedCom Inc.",
+      "Westermo Network Technologies AB"
     ],
     "Open_ports": [],
     "Model": "Unknown",
@@ -932,6 +960,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899515.251112,
+    "Last_Seen": 1773899515.2515986,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -953,12 +983,12 @@
     "IP": "192.168.1.71",
     "Hostname": "Unknown",
     "MAC": [
-      "00:07:7c:1a:61:83",
-      "00:0a:dc:64:85:c2"
+      "00:0a:dc:64:85:c2",
+      "00:07:7c:1a:61:83"
     ],
     "Vendor": [
-      "Westermo Network Technologies AB",
-      "RuggedCom Inc."
+      "RuggedCom Inc.",
+      "Westermo Network Technologies AB"
     ],
     "Open_ports": [],
     "Model": "Unknown",
@@ -966,6 +996,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899515.2511191,
+    "Last_Seen": 1773899606.1321344,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -987,12 +1019,12 @@
     "IP": "17.253.34.253",
     "Hostname": "Unknown",
     "MAC": [
-      "00:07:7c:1a:61:83",
-      "00:0a:dc:64:85:c2"
+      "00:0a:dc:64:85:c2",
+      "00:07:7c:1a:61:83"
     ],
     "Vendor": [
-      "Westermo Network Technologies AB",
-      "RuggedCom Inc."
+      "RuggedCom Inc.",
+      "Westermo Network Technologies AB"
     ],
     "Open_ports": [],
     "Model": "Unknown",
@@ -1000,6 +1032,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899515.251138,
+    "Last_Seen": 1773899606.4100888,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1032,6 +1066,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899515.2512717,
+    "Last_Seen": 1773899515.2516878,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1064,6 +1100,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899515.251292,
+    "Last_Seen": 1773899515.2513049,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1096,6 +1134,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899515.2514691,
+    "Last_Seen": 1773899515.251647,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1128,15 +1168,17 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [
-      "192.168.88.51",
-      "192.168.88.55",
-      "192.168.88.95",
       "192.168.88.52",
-      "192.168.88.49",
+      "192.168.88.55",
       "192.168.88.53",
-      "192.168.88.61",
-      "192.168.88.60"
+      "192.168.88.49",
+      "192.168.88.60",
+      "192.168.88.95",
+      "192.168.88.51",
+      "192.168.88.61"
     ],
+    "First_Seen": 1773899515.2516885,
+    "Last_Seen": 1773899631.9654675,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1168,29 +1210,31 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "SCADA / HMI / EWS",
+    "Device_Type": "Engineering Workstation (EWS)",
     "Seen_Speaking_To": [
-      "192.168.88.51",
-      "192.168.88.20",
-      "192.168.88.75",
-      "192.168.88.15",
+      "192.168.88.2",
+      "192.168.88.49",
       "192.168.88.80",
-      "192.168.88.105",
-      "192.168.88.95",
+      "192.168.88.51",
+      "192.168.88.15",
+      "192.168.88.85",
+      "192.168.88.75",
+      "192.168.88.50",
+      "192.168.88.20",
       "192.168.88.254",
       "192.168.88.115",
-      "192.168.88.50",
-      "192.168.88.30",
-      "192.168.88.49",
       "10.10.10.10",
       "192.168.88.130",
       "192.168.88.52",
-      "192.168.88.60",
-      "192.168.88.85",
-      "192.168.88.2",
+      "192.168.88.30",
       "192.168.88.100",
-      "192.168.88.61"
+      "192.168.88.60",
+      "192.168.88.95",
+      "192.168.88.61",
+      "192.168.88.105"
     ],
+    "First_Seen": 1773899515.2518523,
+    "Last_Seen": 1773899676.8120947,
     "Protocols": {
       "Modbus": {
         "Roles": [
@@ -1229,6 +1273,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899515.251859,
+    "Last_Seen": 1773899630.6698637,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1261,6 +1307,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899515.2518616,
+    "Last_Seen": 1773899630.669884,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1288,16 +1336,16 @@
       "DigiBoard"
     ],
     "Open_ports": [
-      "7004/tcp",
-      "80/tcp",
-      "443/tcp",
-      "7000/tcp",
-      "22/tcp",
-      "7002/tcp",
-      "7001/tcp",
       "23/tcp",
-      "7007/tcp",
+      "7001/tcp",
+      "7004/tcp",
+      "7002/tcp",
       "7019/tcp",
+      "7000/tcp",
+      "443/tcp",
+      "7007/tcp",
+      "22/tcp",
+      "80/tcp",
       "7025/tcp"
     ],
     "Model": "Unknown",
@@ -1305,11 +1353,13 @@
     "Firmware_version": "Unknown",
     "Device_Type": "Linux/Unix Host (SSH)",
     "Seen_Speaking_To": [
-      "192.168.2.22",
-      "192.168.2.199",
+      "192.168.2.53",
       "192.168.2.137",
-      "192.168.2.53"
+      "192.168.2.22",
+      "192.168.2.199"
     ],
+    "First_Seen": 1773899515.2518644,
+    "Last_Seen": 1773899631.9651744,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1342,6 +1392,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899515.2518673,
+    "Last_Seen": 1773899630.6698787,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1374,6 +1426,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899515.2518742,
+    "Last_Seen": 1773899630.6698704,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1408,6 +1462,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899515.251879,
+    "Last_Seen": 1773899630.6698768,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1436,26 +1492,28 @@
     ],
     "Open_ports": [
       "135/tcp",
-      "80/tcp",
-      "443/tcp",
-      "1234/tcp",
-      "5120/tcp",
       "23/tcp",
+      "5120/tcp",
+      "137/udp",
       "1/tcp",
-      "137/udp"
+      "443/tcp",
+      "80/tcp",
+      "1234/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [
-      "192.168.2.133",
-      "192.168.2.166",
       "192.168.2.22",
+      "10.218.104.244",
+      "192.168.2.133",
       "192.168.88.1",
       "192.168.2.199",
-      "10.218.104.244"
+      "192.168.2.166"
     ],
+    "First_Seen": 1773899515.2518806,
+    "Last_Seen": 1773899631.9653955,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1483,20 +1541,22 @@
       "Axis Communications AB"
     ],
     "Open_ports": [
-      "21/tcp",
       "80/tcp",
-      "49152/tcp"
+      "49152/tcp",
+      "21/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [
-      "192.168.2.22",
-      "192.168.2.133",
+      "192.168.2.166",
       "192.168.2.199",
-      "192.168.2.166"
+      "192.168.2.133",
+      "192.168.2.22"
     ],
+    "First_Seen": 1773899515.2518835,
+    "Last_Seen": 1773899631.9654768,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1533,10 +1593,12 @@
     "Firmware_version": "Unknown",
     "Device_Type": "Siemens S7 PLC",
     "Seen_Speaking_To": [
-      "192.168.2.22",
+      "192.168.2.53",
       "192.168.2.166",
-      "192.168.2.53"
+      "192.168.2.22"
     ],
+    "First_Seen": 1773899515.2518861,
+    "Last_Seen": 1773899631.9650931,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1564,21 +1626,23 @@
       "Hirschmann Automation and Control GmbH"
     ],
     "Open_ports": [
-      "1/tcp",
       "80/tcp",
-      "22/tcp",
-      "443/tcp"
+      "443/tcp",
+      "1/tcp",
+      "22/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Device_Type": "Linux/Unix Host (SSH)",
     "Seen_Speaking_To": [
-      "192.168.2.22",
-      "192.168.2.133",
+      "192.168.2.166",
       "192.168.2.199",
-      "192.168.2.166"
+      "192.168.2.133",
+      "192.168.2.22"
     ],
+    "First_Seen": 1773899515.251895,
+    "Last_Seen": 1773899631.9653978,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1613,6 +1677,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899515.2518983,
+    "Last_Seen": 1773899630.669874,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1645,24 +1711,26 @@
     "Firmware_version": "Unknown",
     "Device_Type": "SCADA / HMI / EWS",
     "Seen_Speaking_To": [
-      "192.168.88.85",
-      "192.168.88.51",
-      "192.168.88.130",
-      "192.168.88.95",
       "192.168.88.2",
       "192.168.88.50",
-      "192.168.88.115",
-      "192.168.88.20",
-      "192.168.88.25",
       "192.168.88.30",
       "192.168.88.75",
-      "192.168.88.15",
-      "192.168.88.49",
-      "192.168.88.80",
+      "192.168.88.25",
       "192.168.88.61",
-      "192.168.88.105",
-      "192.168.88.60"
+      "192.168.88.115",
+      "192.168.88.49",
+      "192.168.88.60",
+      "192.168.88.130",
+      "192.168.88.95",
+      "192.168.88.51",
+      "192.168.88.80",
+      "192.168.88.20",
+      "192.168.88.15",
+      "192.168.88.85",
+      "192.168.88.105"
     ],
+    "First_Seen": 1773899520.320358,
+    "Last_Seen": 1773899569.7621355,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1690,9 +1758,9 @@
       "ADVANTECH CO., LTD."
     ],
     "Open_ports": [
-      "21/tcp",
+      "80/tcp",
       "81/tcp",
-      "80/tcp"
+      "21/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
@@ -1701,6 +1769,8 @@
     "Seen_Speaking_To": [
       "192.168.88.1"
     ],
+    "First_Seen": 1773899522.3663177,
+    "Last_Seen": 1773899630.6681724,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1735,6 +1805,8 @@
     "Seen_Speaking_To": [
       "192.168.57.2"
     ],
+    "First_Seen": 1773899530.141261,
+    "Last_Seen": 1773899579.6929874,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1765,6 +1837,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899530.1412644,
+    "Last_Seen": 1773899579.6929877,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1797,9 +1871,11 @@
     "Firmware_version": "Unknown",
     "Device_Type": "SCADA / HMI / EWS",
     "Seen_Speaking_To": [
-      "172.16.184.40",
-      "10.10.10.10"
+      "10.10.10.10",
+      "172.16.184.40"
     ],
+    "First_Seen": 1773899547.1587276,
+    "Last_Seen": 1773899626.4499295,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1832,6 +1908,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899547.1587315,
+    "Last_Seen": 1773899547.1587315,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1853,12 +1931,12 @@
     "IP": "10.218.104.244",
     "Hostname": "Unknown",
     "MAC": [
-      "00:07:7c:1a:61:83",
-      "00:0a:dc:64:85:c2"
+      "00:0a:dc:64:85:c2",
+      "00:07:7c:1a:61:83"
     ],
     "Vendor": [
-      "Westermo Network Technologies AB",
-      "RuggedCom Inc."
+      "RuggedCom Inc.",
+      "Westermo Network Technologies AB"
     ],
     "Open_ports": [],
     "Model": "Unknown",
@@ -1866,6 +1944,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899569.7621582,
+    "Last_Seen": 1773899617.472734,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1900,6 +1980,8 @@
     "Seen_Speaking_To": [
       "10.10.10.10"
     ],
+    "First_Seen": 1773899578.3297203,
+    "Last_Seen": 1773899578.5991817,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1932,9 +2014,11 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [
-      "192.168.88.50",
-      "192.168.88.60"
+      "192.168.88.60",
+      "192.168.88.50"
     ],
+    "First_Seen": 1773899578.3314726,
+    "Last_Seen": 1773899590.8973668,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1967,23 +2051,25 @@
     "Firmware_version": "Unknown",
     "Device_Type": "SCADA / HMI / EWS",
     "Seen_Speaking_To": [
-      "192.168.88.85",
-      "192.168.88.51",
-      "192.168.88.95",
-      "192.168.88.130",
       "192.168.88.2",
       "192.168.88.50",
-      "192.168.88.115",
-      "192.168.88.25",
       "192.168.88.30",
       "192.168.88.75",
-      "192.168.88.15",
-      "192.168.88.49",
-      "192.168.88.80",
+      "192.168.88.25",
       "192.168.88.61",
-      "192.168.88.105",
-      "192.168.88.60"
+      "192.168.88.115",
+      "192.168.88.49",
+      "192.168.88.60",
+      "192.168.88.80",
+      "192.168.88.95",
+      "192.168.88.51",
+      "192.168.88.130",
+      "192.168.88.15",
+      "192.168.88.85",
+      "192.168.88.105"
     ],
+    "First_Seen": 1773899578.599215,
+    "Last_Seen": 1773899622.8985424,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2016,6 +2102,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899606.131677,
+    "Last_Seen": 1773899606.131677,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2048,26 +2136,28 @@
     "Firmware_version": "Unknown",
     "Device_Type": "SCADA / HMI / EWS",
     "Seen_Speaking_To": [
-      "192.168.88.51",
-      "192.168.88.20",
-      "192.168.88.75",
-      "192.168.88.15",
-      "192.168.88.80",
-      "192.168.88.105",
-      "192.168.88.95",
-      "192.168.88.254",
-      "192.168.88.50",
-      "192.168.88.115",
-      "192.168.88.30",
+      "192.168.88.2",
+      "192.168.88.25",
       "192.168.88.49",
+      "192.168.88.80",
+      "192.168.88.51",
+      "192.168.88.15",
+      "192.168.88.85",
+      "192.168.88.75",
+      "192.168.88.50",
+      "192.168.88.20",
+      "192.168.88.254",
+      "192.168.88.115",
       "192.168.88.130",
       "192.168.88.52",
-      "192.168.88.25",
+      "192.168.88.30",
       "192.168.88.60",
-      "192.168.88.85",
-      "192.168.88.2",
-      "192.168.88.61"
+      "192.168.88.95",
+      "192.168.88.61",
+      "192.168.88.105"
     ],
+    "First_Seen": 1773899613.2020156,
+    "Last_Seen": 1773899630.6696475,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2104,6 +2194,8 @@
     "Seen_Speaking_To": [
       "192.168.88.1"
     ],
+    "First_Seen": 1773899614.565914,
+    "Last_Seen": 1773899631.9654508,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2138,6 +2230,8 @@
     "Seen_Speaking_To": [
       "192.168.89.2"
     ],
+    "First_Seen": 1773899617.472648,
+    "Last_Seen": 1773899631.9654934,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2170,12 +2264,14 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [
-      "192.168.88.85",
       "192.168.88.50",
+      "192.168.88.60",
       "192.168.88.61",
-      "192.168.88.105",
-      "192.168.88.60"
+      "192.168.88.85",
+      "192.168.88.105"
     ],
+    "First_Seen": 1773899618.2893505,
+    "Last_Seen": 1773899620.7389028,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2210,6 +2306,8 @@
     "Seen_Speaking_To": [
       "192.168.88.30"
     ],
+    "First_Seen": 1773899622.8985455,
+    "Last_Seen": 1773899622.8985553,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2242,6 +2340,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899624.703737,
+    "Last_Seen": 1773899631.9652393,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2276,6 +2376,8 @@
     "Seen_Speaking_To": [
       "192.168.88.1"
     ],
+    "First_Seen": 1773899624.9730444,
+    "Last_Seen": 1773899624.9730647,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2308,10 +2410,12 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [
+      "192.168.88.1",
       "17.253.54.251",
-      "93.158.94.210",
-      "192.168.88.1"
+      "93.158.94.210"
     ],
+    "First_Seen": 1773899624.973077,
+    "Last_Seen": 1773899624.9743686,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2344,6 +2448,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899624.973119,
+    "Last_Seen": 1773899624.9734452,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2376,6 +2482,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899624.9733784,
+    "Last_Seen": 1773899624.9733784,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2410,6 +2518,8 @@
     "Seen_Speaking_To": [
       "192.168.143.1"
     ],
+    "First_Seen": 1773899624.973725,
+    "Last_Seen": 1773899624.973725,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2442,6 +2552,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899624.973726,
+    "Last_Seen": 1773899624.973726,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2474,9 +2586,11 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [
-      "192.168.143.254",
-      "192.168.88.1"
+      "192.168.88.1",
+      "192.168.143.254"
     ],
+    "First_Seen": 1773899624.9737296,
+    "Last_Seen": 1773899624.9744453,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2509,6 +2623,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899624.97444,
+    "Last_Seen": 1773899624.97444,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2541,10 +2657,12 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [
-      "199.16.156.70",
+      "199.16.156.72",
       "54.241.179.26",
-      "199.16.156.72"
+      "199.16.156.70"
     ],
+    "First_Seen": 1773899630.66969,
+    "Last_Seen": 1773899631.9653537,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2575,6 +2693,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899630.6696932,
+    "Last_Seen": 1773899630.6697104,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2605,6 +2725,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899630.6697009,
+    "Last_Seen": 1773899630.669712,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2639,6 +2761,8 @@
     "Seen_Speaking_To": [
       "173.252.90.4"
     ],
+    "First_Seen": 1773899630.6697044,
+    "Last_Seen": 1773899630.6697044,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2669,6 +2793,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899630.6697054,
+    "Last_Seen": 1773899630.6697054,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2703,6 +2829,8 @@
     "Seen_Speaking_To": [
       "10.10.10.10"
     ],
+    "First_Seen": 1773899630.6697135,
+    "Last_Seen": 1773899630.6697135,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2737,6 +2865,8 @@
     "Seen_Speaking_To": [
       "fe80::5e51:4fff:fe7b:e6c5"
     ],
+    "First_Seen": 1773899630.669734,
+    "Last_Seen": 1773899630.6697764,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2769,6 +2899,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899630.669735,
+    "Last_Seen": 1773899630.6697767,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2803,6 +2935,8 @@
     "Seen_Speaking_To": [
       "17.110.230.30"
     ],
+    "First_Seen": 1773899630.669741,
+    "Last_Seen": 1773899630.669741,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2835,6 +2969,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899630.6697416,
+    "Last_Seen": 1773899630.6697416,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2870,6 +3006,8 @@
       "17.110.224.213",
       "193.209.237.4"
     ],
+    "First_Seen": 1773899630.6697495,
+    "Last_Seen": 1773899631.9654589,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2900,6 +3038,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899630.6697502,
+    "Last_Seen": 1773899630.6697533,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2934,6 +3074,8 @@
     "Seen_Speaking_To": [
       "83.140.27.11"
     ],
+    "First_Seen": 1773899630.6697636,
+    "Last_Seen": 1773899630.6697636,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2966,6 +3108,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899630.6697643,
+    "Last_Seen": 1773899630.6697884,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3000,6 +3144,8 @@
     "Seen_Speaking_To": [
       "199.16.156.198"
     ],
+    "First_Seen": 1773899630.6697674,
+    "Last_Seen": 1773899630.6697674,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3030,6 +3176,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899630.669768,
+    "Last_Seen": 1773899630.669768,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3065,9 +3213,11 @@
     "Device_Type": "IT",
     "Seen_Speaking_To": [
       "77.245.33.76",
-      "83.140.27.11",
-      "10.100.152.10"
+      "10.100.152.10",
+      "83.140.27.11"
     ],
+    "First_Seen": 1773899630.6697876,
+    "Last_Seen": 1773899631.9654918,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3102,6 +3252,8 @@
     "Seen_Speaking_To": [
       "93.158.110.200"
     ],
+    "First_Seen": 1773899630.6697922,
+    "Last_Seen": 1773899630.6697922,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3132,6 +3284,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899630.6697931,
+    "Last_Seen": 1773899630.6697931,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3166,6 +3320,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899630.6697974,
+    "Last_Seen": 1773899630.6697974,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3200,6 +3356,8 @@
     "Seen_Speaking_To": [
       "10.100.152.128"
     ],
+    "First_Seen": 1773899630.669801,
+    "Last_Seen": 1773899631.9654913,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3234,6 +3392,8 @@
     "Seen_Speaking_To": [
       "93.158.110.218"
     ],
+    "First_Seen": 1773899631.9651396,
+    "Last_Seen": 1773899631.9651396,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3264,6 +3424,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899631.9651434,
+    "Last_Seen": 1773899631.9651434,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3296,13 +3458,15 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [
-      "17.130.137.75",
-      "17.130.137.73",
-      "199.16.156.231",
       "52.5.95.205",
+      "17.130.137.75",
+      "199.16.156.231",
       "52.4.151.114",
-      "199.16.156.48"
+      "199.16.156.48",
+      "17.130.137.73"
     ],
+    "First_Seen": 1773899631.9652052,
+    "Last_Seen": 1773899631.965429,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3335,6 +3499,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899631.9652064,
+    "Last_Seen": 1773899631.9652383,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3365,6 +3531,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899631.965243,
+    "Last_Seen": 1773899631.965243,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3395,6 +3563,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899631.9652457,
+    "Last_Seen": 1773899631.9652457,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3430,6 +3600,8 @@
       "193.182.190.178",
       "54.210.217.83"
     ],
+    "First_Seen": 1773899631.965252,
+    "Last_Seen": 1773899631.965465,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3460,6 +3632,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899631.9653075,
+    "Last_Seen": 1773899631.9653163,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3490,6 +3664,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899631.9653215,
+    "Last_Seen": 1773899631.9653215,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3520,6 +3696,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899631.9653246,
+    "Last_Seen": 1773899631.965354,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3550,6 +3728,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899631.9653516,
+    "Last_Seen": 1773899631.9653516,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3582,6 +3762,8 @@
     "Seen_Speaking_To": [
       "10.100.159.227"
     ],
+    "First_Seen": 1773899631.965374,
+    "Last_Seen": 1773899631.965374,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3614,6 +3796,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899631.9653747,
+    "Last_Seen": 1773899631.9653747,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3646,6 +3830,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899631.9654086,
+    "Last_Seen": 1773899631.965459,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3678,6 +3864,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899631.9654293,
+    "Last_Seen": 1773899631.9654293,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3712,6 +3900,8 @@
     "Seen_Speaking_To": [
       "108.160.163.110"
     ],
+    "First_Seen": 1773899631.9654613,
+    "Last_Seen": 1773899631.9654613,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3744,6 +3934,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899631.9654622,
+    "Last_Seen": 1773899631.9654622,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3776,6 +3968,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899631.9654653,
+    "Last_Seen": 1773899631.9654653,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3810,6 +4004,8 @@
     "Seen_Speaking_To": [
       "141.82.217.52"
     ],
+    "First_Seen": 1773899631.9654791,
+    "Last_Seen": 1773899631.96549,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3842,6 +4038,8 @@
     "Firmware_version": "Unknown",
     "Device_Type": "IT",
     "Seen_Speaking_To": [],
+    "First_Seen": 1773899631.9654827,
+    "Last_Seen": 1773899631.9654903,
     "Protocols": {
       "Modbus": {
         "Roles": [],

@@ -1,10 +1,11 @@
+import time
 import orjson
 import uuid
 from kafka import KafkaConsumer
 
-from state import ASSETS_DB
+from state import ASSETS_DB, prune_stale_assets
 from handlers import LOG_DISPATCHER
-# from behavior import infer_device_type
+from behavior import refine_device_identities
 
 def json_default_handler(obj):
     """Tells orjson how to handle unsupported types like sets."""
@@ -35,7 +36,7 @@ def process_live_stream():
     print("Connecting to Redpanda/Kafka...")
     
     consumer = KafkaConsumer(
-        # We can dynamically grab the exact topics to subscribe to from the dispatcher!
+        # We dynamically grab the exact topics to subscribe to from the dispatcher!
         *LOG_DISPATCHER.keys(),
         bootstrap_servers=['redpanda:9092'],
         auto_offset_reset='earliest',
@@ -46,32 +47,53 @@ def process_live_stream():
     print(f"Subscribed to topics: {list(LOG_DISPATCHER.keys())}")
     print("Building Asset Database in BATCH mode... Press Ctrl+C to view the final table.")
 
+    # --- NEW: Set the maintenance timers ---
+    LAST_MAINTENANCE = time.time()
+    MAINTENANCE_INTERVAL = 60      # Run heuristic upgrades every 60 seconds
+    STALE_TIMEOUT = 86400          # Drop assets quiet for 24 hours (86,400 seconds)
+
     try:
         total_processed = 0
         while True:
-            # Fetch up to 10,000 records at once.
+            # 1. Fetch up to 10,000 records at once (Non-blocking)
             raw_batch = consumer.poll(timeout_ms=1000, max_records=10000)
             
-            if not raw_batch:
-                continue
-                
-            batch_count = 0
-            for topic_partition, messages in raw_batch.items():
-                topic = topic_partition.topic
-                
-                if topic not in LOG_DISPATCHER:
-                    continue
+            if raw_batch:
+                batch_count = 0
+                for topic_partition, messages in raw_batch.items():
+                    topic = topic_partition.topic
                     
-                for message in messages:
-                    batch_count += 1
-                    zeek_data = message.value.get(topic, {})
-                    LOG_DISPATCHER[topic](zeek_data)
+                    if topic not in LOG_DISPATCHER:
+                        continue
+                        
+                    for message in messages:
+                        batch_count += 1
+                        zeek_data = message.value.get(topic, {})
+                        LOG_DISPATCHER[topic](zeek_data)
+                
+                # Print a heartbeat every time a batch finishes
+                total_processed += batch_count
+                print(f"Processed {total_processed} packets...", end='\r')
             
-            # Print a heartbeat every time a batch finishes
-            total_processed += batch_count
-            print(f"Processed {total_processed} packets...", end='\r')
+            # --- NEW: The Maintenance Cycle ---
+            # This check happens instantly without pausing packet ingestion
+            current_time = time.time()
+            if (current_time - LAST_MAINTENANCE) > MAINTENANCE_INTERVAL:
+                # Upgrade generic tags to EWS/SCADA based on behavior
+                refine_device_identities(ASSETS_DB)
+                
+                # Drop assets that have gone offline
+                prune_stale_assets(timeout_seconds=STALE_TIMEOUT)
+                
+                # Reset the clock
+                LAST_MAINTENANCE = current_time
                     
     except KeyboardInterrupt:
+        print("\nStopping ingestion...")
+    finally:
+        # Run one final refinement pass before saving the file
+        # This guarantees you get the most accurate labels even if you stop it manually
+        refine_device_identities(ASSETS_DB)
         print_global_state()
 
 if __name__ == "__main__":
