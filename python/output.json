@@ -1,6 +1,8 @@
 {
   "192.168.89.2": {
     "IP": "192.168.89.2",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
     "MAC": [
       "70:71:bc:3a:0d:e8"
@@ -12,17 +14,17 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [
-      "192.168.0.3",
+    "Attempted_Connections": [
       "17.253.34.253",
-      "8.8.8.8",
       "192.168.1.71",
+      "10.218.104.244",
       "192.168.1.79",
-      "10.218.104.244"
+      "192.168.0.3",
+      "8.8.8.8"
     ],
-    "First_Seen": 1773899514.814204,
-    "Last_Seen": 1773899631.9654937,
+    "Connected_To": {},
+    "First_Seen": 1774022022.981125,
+    "Last_Seen": 1774022152.0808222,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -42,57 +44,19 @@
   },
   "8.8.8.8": {
     "IP": "8.8.8.8",
+    "Is_Internal": false,
+    "Device_Type": "External Host",
     "Hostname": "Unknown",
-    "MAC": [
-      "00:0a:dc:64:85:c2"
-    ],
-    "Vendor": [
-      "RuggedCom Inc."
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899514.814207,
-    "Last_Seen": 1773899631.9654553,
-    "Protocols": {
-      "Modbus": {
-        "Roles": [],
-        "Unit_IDs_Served": [],
-        "Activity": {
-          "Reads_Sent_To": {},
-          "Writes_Sent_To": {},
-          "Successful_Responses": 0,
-          "Exceptions_Triggered": {}
-        },
-        "Memory_Fingerprint": {
-          "Registers_Read": [],
-          "Registers_Written": []
-        }
-      }
-    }
-  },
-  "10.10.10.10": {
-    "IP": "10.10.10.10",
-    "Hostname": "Unknown",
-    "MAC": [
-      "28:63:36:89:59:82"
-    ],
-    "Vendor": [
-      "Siemens AG"
-    ],
-    "Open_ports": [
-      "102/tcp"
-    ],
-    "Model": "Unknown",
-    "OS_version": "Unknown",
-    "Firmware_version": "Unknown",
-    "Device_Type": "Siemens S7 PLC",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899514.8161285,
-    "Last_Seen": 1773899630.6697145,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022022.9811544,
+    "Last_Seen": 1774022152.0806286,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -112,38 +76,71 @@
   },
   "192.168.2.44": {
     "IP": "192.168.2.44",
+    "Is_Internal": true,
+    "Device_Type": "SCADA Server",
     "Hostname": "Unknown",
-    "MAC": [
-      "00:07:7c:1a:61:83"
-    ],
-    "Vendor": [
-      "Westermo Network Technologies AB"
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "SCADA Server",
-    "Seen_Speaking_To": [
-      "192.168.88.15",
+    "Attempted_Connections": [
       "192.168.88.2",
-      "192.168.88.75",
-      "192.168.88.50",
-      "192.168.88.115",
-      "192.168.88.100",
-      "192.168.88.49",
-      "192.168.88.80",
-      "192.168.88.60",
-      "192.168.88.130",
-      "192.168.88.51",
-      "192.168.88.95",
       "192.168.88.20",
+      "192.168.88.100",
+      "192.168.88.130",
       "192.168.88.61",
       "192.168.88.85",
-      "192.168.88.105"
+      "192.168.88.105",
+      "192.168.88.49",
+      "192.168.88.51",
+      "192.168.88.75",
+      "192.168.88.50",
+      "192.168.88.60",
+      "192.168.88.95",
+      "192.168.88.115",
+      "192.168.88.80",
+      "192.168.88.15"
     ],
-    "First_Seen": 1773899514.817083,
-    "Last_Seen": 1773899530.9216824,
+    "Connected_To": {
+      "192.168.88.20": {
+        "tcp": [
+          80,
+          1962,
+          502
+        ],
+        "udp": []
+      },
+      "192.168.88.61": {
+        "tcp": [
+          502
+        ],
+        "udp": []
+      },
+      "192.168.88.50": {
+        "tcp": [
+          502
+        ],
+        "udp": []
+      },
+      "192.168.88.60": {
+        "tcp": [
+          80,
+          44818,
+          502
+        ],
+        "udp": []
+      },
+      "192.168.88.100": {
+        "tcp": [
+          502
+        ],
+        "udp": []
+      }
+    },
+    "First_Seen": 1774022022.9834418,
+    "Last_Seen": 1774022040.138693,
     "Protocols": {
       "Modbus": {
         "Roles": [
@@ -171,6 +168,8 @@
   },
   "192.168.88.50": {
     "IP": "192.168.88.50",
+    "Is_Internal": true,
+    "Device_Type": "Modbus PLC / Gateway",
     "Hostname": "Unknown",
     "MAC": [
       "00:05:e4:01:24:d3"
@@ -180,16 +179,16 @@
     ],
     "Open_ports": [
       "789/tcp",
-      "502/tcp",
-      "790/tcp"
+      "790/tcp",
+      "502/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "Modbus PLC / Gateway",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899514.8170843,
-    "Last_Seen": 1773899676.8120947,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022022.983459,
+    "Last_Seen": 1774022199.506297,
     "Protocols": {
       "Modbus": {
         "Roles": [
@@ -222,6 +221,8 @@
   },
   "192.168.88.20": {
     "IP": "192.168.88.20",
+    "Is_Internal": true,
+    "Device_Type": "Modbus PLC / Gateway",
     "Hostname": "Unknown",
     "MAC": [
       "00:a0:45:6f:4b:83"
@@ -230,22 +231,22 @@
       "Phoenix Contact GmbH & Co. KG"
     ],
     "Open_ports": [
-      "1/tcp",
-      "502/tcp",
-      "1962/tcp",
       "22/tcp",
-      "80/tcp"
+      "1/tcp",
+      "80/tcp",
+      "502/tcp",
+      "1962/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "Modbus PLC / Gateway",
-    "Seen_Speaking_To": [
-      "192.168.2.166",
-      "192.168.2.133"
+    "Attempted_Connections": [
+      "192.168.2.133",
+      "192.168.2.166"
     ],
-    "First_Seen": 1773899514.8170898,
-    "Last_Seen": 1773899631.9650412,
+    "Connected_To": {},
+    "First_Seen": 1774022022.983473,
+    "Last_Seen": 1774022152.0792828,
     "Protocols": {
       "Modbus": {
         "Roles": [
@@ -272,6 +273,8 @@
   },
   "192.168.88.60": {
     "IP": "192.168.88.60",
+    "Is_Internal": true,
+    "Device_Type": "Modbus PLC / Gateway",
     "Hostname": "Unknown",
     "MAC": [
       "00:90:e8:26:40:23"
@@ -280,29 +283,29 @@
       "MOXA TECHNOLOGIES CORP., LTD."
     ],
     "Open_ports": [
-      "23/tcp",
-      "44818/tcp",
-      "1/tcp",
-      "4000/tcp",
       "4001/tcp",
-      "443/tcp",
-      "502/tcp",
-      "102/tcp",
+      "44818/tcp",
       "22/tcp",
-      "80/tcp"
+      "4000/tcp",
+      "23/tcp",
+      "1/tcp",
+      "80/tcp",
+      "443/tcp",
+      "102/tcp",
+      "502/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "Modbus PLC / Gateway",
-    "Seen_Speaking_To": [
-      "192.168.2.166",
-      "192.168.2.199",
+    "Attempted_Connections": [
       "192.168.2.133",
-      "192.168.2.22"
+      "192.168.2.22",
+      "192.168.2.199",
+      "192.168.2.166"
     ],
-    "First_Seen": 1773899514.8171036,
-    "Last_Seen": 1773899631.9654758,
+    "Connected_To": {},
+    "First_Seen": 1774022022.9834878,
+    "Last_Seen": 1774022152.0807283,
     "Protocols": {
       "Modbus": {
         "Roles": [
@@ -445,6 +448,8 @@
   },
   "192.168.88.100": {
     "IP": "192.168.88.100",
+    "Is_Internal": true,
+    "Device_Type": "Modbus PLC / Gateway",
     "Hostname": "Unknown",
     "MAC": [
       "00:e0:62:40:57:66"
@@ -453,16 +458,16 @@
       "HOST ENGINEERING"
     ],
     "Open_ports": [
-      "80/tcp",
-      "502/tcp"
+      "502/tcp",
+      "80/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "Modbus PLC / Gateway",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899514.817105,
-    "Last_Seen": 1773899528.3049316,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022022.9834976,
+    "Last_Seen": 1774022037.2769241,
     "Protocols": {
       "Modbus": {
         "Roles": [
@@ -489,6 +494,8 @@
   },
   "192.168.88.61": {
     "IP": "192.168.88.61",
+    "Is_Internal": true,
+    "Device_Type": "Modbus PLC / Gateway",
     "Hostname": "Unknown",
     "MAC": [
       "00:90:e8:27:8c:37"
@@ -497,30 +504,37 @@
       "MOXA TECHNOLOGIES CORP., LTD."
     ],
     "Open_ports": [
+      "4001/tcp",
+      "22/tcp",
+      "4000/tcp",
       "23/tcp",
       "1/tcp",
-      "4000/tcp",
-      "4001/tcp",
+      "80/tcp",
       "443/tcp",
-      "502/tcp",
       "102/tcp",
-      "22/tcp",
-      "80/tcp"
+      "502/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "Modbus PLC / Gateway",
-    "Seen_Speaking_To": [
-      "192.168.2.137",
-      "192.168.2.22",
+    "Attempted_Connections": [
       "192.168.2.133",
       "192.168.88.1",
       "192.168.2.199",
-      "192.168.2.166"
+      "192.168.2.137",
+      "192.168.2.166",
+      "192.168.2.22"
     ],
-    "First_Seen": 1773899514.817108,
-    "Last_Seen": 1773899788.6382177,
+    "Connected_To": {
+      "192.168.88.1": {
+        "tcp": [],
+        "udp": [
+          53
+        ]
+      }
+    },
+    "First_Seen": 1774022022.983514,
+    "Last_Seen": 1774022318.69769,
     "Protocols": {
       "Modbus": {
         "Roles": [
@@ -663,40 +677,126 @@
   },
   "192.168.2.133": {
     "IP": "192.168.2.133",
+    "Is_Internal": true,
+    "Device_Type": "SCADA / HMI / EWS",
     "Hostname": "Unknown",
-    "MAC": [
-      "00:07:7c:1a:61:83"
-    ],
-    "Vendor": [
-      "Westermo Network Technologies AB"
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "SCADA / HMI / EWS",
-    "Seen_Speaking_To": [
+    "Attempted_Connections": [
       "192.168.88.2",
-      "192.168.88.50",
-      "192.168.88.75",
-      "192.168.88.30",
-      "192.168.88.61",
-      "192.168.88.25",
-      "192.168.88.115",
-      "192.168.88.100",
-      "192.168.88.49",
-      "192.168.88.80",
-      "192.168.88.130",
-      "192.168.88.60",
-      "192.168.88.51",
-      "192.168.88.95",
       "192.168.88.20",
-      "192.168.88.15",
+      "192.168.88.130",
+      "192.168.88.25",
       "192.168.88.85",
-      "192.168.88.105"
+      "192.168.88.61",
+      "192.168.88.60",
+      "192.168.88.105",
+      "192.168.88.51",
+      "192.168.88.75",
+      "192.168.88.50",
+      "192.168.88.95",
+      "192.168.88.115",
+      "192.168.88.49",
+      "192.168.88.100",
+      "192.168.88.30",
+      "192.168.88.80",
+      "192.168.88.15"
     ],
-    "First_Seen": 1773899514.8172736,
-    "Last_Seen": 1773899531.1828258,
+    "Connected_To": {
+      "192.168.88.61": {
+        "tcp": [
+          80,
+          102,
+          22,
+          502
+        ],
+        "udp": []
+      },
+      "192.168.88.60": {
+        "tcp": [
+          102,
+          80,
+          44818,
+          22,
+          502
+        ],
+        "udp": []
+      },
+      "192.168.88.75": {
+        "tcp": [
+          80,
+          22
+        ],
+        "udp": []
+      },
+      "192.168.88.95": {
+        "tcp": [
+          80,
+          102,
+          22,
+          502
+        ],
+        "udp": []
+      },
+      "192.168.88.100": {
+        "tcp": [
+          80,
+          502
+        ],
+        "udp": []
+      },
+      "192.168.88.25": {
+        "tcp": [
+          80
+        ],
+        "udp": []
+      },
+      "192.168.88.115": {
+        "tcp": [
+          80,
+          22
+        ],
+        "udp": []
+      },
+      "192.168.88.49": {
+        "tcp": [
+          80
+        ],
+        "udp": []
+      },
+      "192.168.88.51": {
+        "tcp": [
+          80
+        ],
+        "udp": []
+      },
+      "192.168.88.20": {
+        "tcp": [
+          80,
+          502,
+          22
+        ],
+        "udp": []
+      },
+      "192.168.88.50": {
+        "tcp": [
+          502
+        ],
+        "udp": []
+      },
+      "192.168.88.30": {
+        "tcp": [
+          102
+        ],
+        "udp": []
+      }
+    },
+    "First_Seen": 1774022022.9836946,
+    "Last_Seen": 1774022040.4217312,
     "Protocols": {
       "Modbus": {
         "Roles": [
@@ -724,36 +824,36 @@
   },
   "192.168.88.95": {
     "IP": "192.168.88.95",
+    "Is_Internal": true,
+    "Device_Type": "DNP3 Outstation / RTU",
     "Hostname": "Unknown",
-    "MAC": [
-      "00:0a:dc:5b:27:a0"
-    ],
+    "MAC": [],
     "Vendor": [
       "RuggedCom Inc."
     ],
     "Open_ports": [
+      "22/tcp",
       "23/tcp",
       "1/tcp",
-      "20000/tcp",
+      "80/tcp",
       "443/tcp",
-      "502/tcp",
-      "514/tcp",
       "102/tcp",
-      "22/tcp",
-      "80/tcp"
+      "20000/tcp",
+      "502/tcp",
+      "514/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "DNP3 Outstation / RTU",
-    "Seen_Speaking_To": [
-      "192.168.2.166",
-      "192.168.2.199",
+    "Attempted_Connections": [
       "192.168.2.133",
-      "192.168.2.22"
+      "192.168.2.22",
+      "192.168.2.199",
+      "192.168.2.166"
     ],
-    "First_Seen": 1773899514.8172848,
-    "Last_Seen": 1773899635.3290598,
+    "Connected_To": {},
+    "First_Seen": 1774022022.9837112,
+    "Last_Seen": 1774022154.162925,
     "Protocols": {
       "Modbus": {
         "Roles": [
@@ -796,40 +896,150 @@
   },
   "192.168.2.166": {
     "IP": "192.168.2.166",
+    "Is_Internal": true,
+    "Device_Type": "Engineering Workstation (EWS)",
     "Hostname": "Unknown",
-    "MAC": [
-      "00:07:7c:1a:61:83"
-    ],
-    "Vendor": [
-      "Westermo Network Technologies AB"
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "Engineering Workstation (EWS)",
-    "Seen_Speaking_To": [
+    "Attempted_Connections": [
       "192.168.88.2",
-      "192.168.88.50",
-      "192.168.88.75",
-      "192.168.88.30",
-      "192.168.88.61",
-      "192.168.88.25",
-      "192.168.88.115",
-      "192.168.88.100",
-      "192.168.88.49",
-      "192.168.88.80",
-      "192.168.88.130",
-      "192.168.88.60",
-      "192.168.88.51",
-      "192.168.88.95",
       "192.168.88.20",
-      "192.168.88.15",
+      "192.168.88.130",
+      "192.168.88.25",
       "192.168.88.85",
-      "192.168.88.105"
+      "192.168.88.61",
+      "192.168.88.60",
+      "192.168.88.105",
+      "192.168.88.51",
+      "192.168.88.75",
+      "192.168.88.50",
+      "192.168.88.115",
+      "192.168.88.95",
+      "192.168.88.49",
+      "192.168.88.100",
+      "192.168.88.30",
+      "192.168.88.80",
+      "192.168.88.15"
     ],
-    "First_Seen": 1773899514.817353,
-    "Last_Seen": 1773899788.6382174,
+    "Connected_To": {
+      "192.168.88.51": {
+        "tcp": [
+          5120,
+          1,
+          135,
+          80,
+          1234,
+          23,
+          443
+        ],
+        "udp": [
+          137
+        ]
+      },
+      "192.168.88.75": {
+        "tcp": [
+          1,
+          443,
+          22
+        ],
+        "udp": []
+      },
+      "192.168.88.49": {
+        "tcp": [
+          49152,
+          80,
+          21
+        ],
+        "udp": []
+      },
+      "192.168.88.20": {
+        "tcp": [
+          80,
+          1
+        ],
+        "udp": []
+      },
+      "192.168.88.95": {
+        "tcp": [
+          20000,
+          514,
+          80,
+          22,
+          23,
+          502,
+          443
+        ],
+        "udp": []
+      },
+      "192.168.88.30": {
+        "tcp": [
+          5001
+        ],
+        "udp": []
+      },
+      "192.168.88.60": {
+        "tcp": [
+          4000,
+          4001,
+          1,
+          80,
+          22,
+          23,
+          502,
+          443
+        ],
+        "udp": []
+      },
+      "192.168.88.61": {
+        "tcp": [
+          4000,
+          4001,
+          1,
+          80,
+          22,
+          23,
+          502,
+          443
+        ],
+        "udp": []
+      },
+      "192.168.88.25": {
+        "tcp": [
+          80,
+          81,
+          21
+        ],
+        "udp": []
+      },
+      "192.168.88.115": {
+        "tcp": [
+          7019,
+          80,
+          7025,
+          22,
+          23,
+          7000,
+          7001,
+          7002,
+          443,
+          7004,
+          7007
+        ],
+        "udp": []
+      },
+      "192.168.88.50": {
+        "tcp": [
+          502
+        ],
+        "udp": []
+      }
+    },
+    "First_Seen": 1774022022.983821,
+    "Last_Seen": 1774022318.6976898,
     "Protocols": {
       "Modbus": {
         "Roles": [
@@ -859,12 +1069,52 @@
       }
     }
   },
-  "192.168.88.52": {
-    "IP": "192.168.88.52",
+  "10.10.10.10": {
+    "IP": "10.10.10.10",
+    "Is_Internal": true,
+    "Device_Type": "Siemens S7 PLC",
     "Hostname": "Unknown",
     "MAC": [
-      "28:cf:e9:18:b5:ed",
-      "20:c9:d0:44:d1:e7"
+      "28:63:36:89:59:82"
+    ],
+    "Vendor": [
+      "Siemens AG"
+    ],
+    "Open_ports": [
+      "102/tcp"
+    ],
+    "Model": "Unknown",
+    "OS_version": "Unknown",
+    "Firmware_version": "Unknown",
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022022.987918,
+    "Last_Seen": 1774022150.4933722,
+    "Protocols": {
+      "Modbus": {
+        "Roles": [],
+        "Unit_IDs_Served": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Successful_Responses": 0,
+          "Exceptions_Triggered": {}
+        },
+        "Memory_Fingerprint": {
+          "Registers_Read": [],
+          "Registers_Written": []
+        }
+      }
+    }
+  },
+  "192.168.88.52": {
+    "IP": "192.168.88.52",
+    "Is_Internal": true,
+    "Device_Type": "IT",
+    "Hostname": "Unknown",
+    "MAC": [
+      "20:c9:d0:44:d1:e7",
+      "28:cf:e9:18:b5:ed"
     ],
     "Vendor": [
       "Apple, Inc."
@@ -873,19 +1123,26 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [
-      "192.195.142.14",
-      "192.168.0.3",
+    "Attempted_Connections": [
+      "192.168.88.1",
       "17.253.34.253",
-      "192.168.1.68",
       "192.168.1.71",
       "192.195.142.13",
-      "192.168.88.1",
-      "192.168.1.2"
+      "192.168.1.68",
+      "192.168.1.2",
+      "192.168.0.3",
+      "192.195.142.14"
     ],
-    "First_Seen": 1773899515.251087,
-    "Last_Seen": 1773899631.9653125,
+    "Connected_To": {
+      "192.168.88.1": {
+        "tcp": [],
+        "udp": [
+          53
+        ]
+      }
+    },
+    "First_Seen": 1774022023.3960438,
+    "Last_Seen": 1774022152.0801895,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -905,27 +1162,25 @@
   },
   "192.168.88.1": {
     "IP": "192.168.88.1",
+    "Is_Internal": true,
+    "Device_Type": "Linux/Unix Host (SSH)",
     "Hostname": "Unknown",
-    "MAC": [
-      "00:07:7c:1a:61:83"
-    ],
-    "Vendor": [
-      "Westermo Network Technologies AB"
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [
       "53/udp",
-      "443/tcp",
       "22/tcp",
+      "53/tcp",
       "80/tcp",
-      "53/tcp"
+      "443/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "Linux/Unix Host (SSH)",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899515.2510903,
-    "Last_Seen": 1773899631.965453,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022023.3960788,
+    "Last_Seen": 1774022152.0806253,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -945,23 +1200,19 @@
   },
   "192.168.0.3": {
     "IP": "192.168.0.3",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
-    "MAC": [
-      "00:0a:dc:64:85:c2",
-      "00:07:7c:1a:61:83"
-    ],
-    "Vendor": [
-      "RuggedCom Inc.",
-      "Westermo Network Technologies AB"
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899515.251112,
-    "Last_Seen": 1773899515.2515986,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022023.39611,
+    "Last_Seen": 1774022023.396847,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -981,23 +1232,19 @@
   },
   "192.168.1.71": {
     "IP": "192.168.1.71",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
-    "MAC": [
-      "00:0a:dc:64:85:c2",
-      "00:07:7c:1a:61:83"
-    ],
-    "Vendor": [
-      "RuggedCom Inc.",
-      "Westermo Network Technologies AB"
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899515.2511191,
-    "Last_Seen": 1773899606.1321344,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022023.3961244,
+    "Last_Seen": 1774022123.7845938,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1017,23 +1264,19 @@
   },
   "17.253.34.253": {
     "IP": "17.253.34.253",
+    "Is_Internal": false,
+    "Device_Type": "External Host",
     "Hostname": "Unknown",
-    "MAC": [
-      "00:0a:dc:64:85:c2",
-      "00:07:7c:1a:61:83"
-    ],
-    "Vendor": [
-      "RuggedCom Inc.",
-      "Westermo Network Technologies AB"
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899515.251138,
-    "Last_Seen": 1773899606.4100888,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022023.3961582,
+    "Last_Seen": 1774022124.0642192,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1053,21 +1296,19 @@
   },
   "192.195.142.13": {
     "IP": "192.195.142.13",
+    "Is_Internal": false,
+    "Device_Type": "External Host",
     "Hostname": "Unknown",
-    "MAC": [
-      "00:07:7c:1a:61:83"
-    ],
-    "Vendor": [
-      "Westermo Network Technologies AB"
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899515.2512717,
-    "Last_Seen": 1773899515.2516878,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022023.396369,
+    "Last_Seen": 1774022023.3969727,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1087,21 +1328,19 @@
   },
   "192.168.1.68": {
     "IP": "192.168.1.68",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
-    "MAC": [
-      "00:07:7c:1a:61:83"
-    ],
-    "Vendor": [
-      "Westermo Network Technologies AB"
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899515.251292,
-    "Last_Seen": 1773899515.2513049,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022023.3964045,
+    "Last_Seen": 1774022023.3964252,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1121,21 +1360,19 @@
   },
   "192.168.1.2": {
     "IP": "192.168.1.2",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
-    "MAC": [
-      "00:07:7c:1a:61:83"
-    ],
-    "Vendor": [
-      "Westermo Network Technologies AB"
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899515.2514691,
-    "Last_Seen": 1773899515.251647,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022023.3966596,
+    "Last_Seen": 1774022023.3969152,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1155,30 +1392,28 @@
   },
   "21.2.2.2": {
     "IP": "21.2.2.2",
+    "Is_Internal": false,
+    "Device_Type": "External Host",
     "Hostname": "Unknown",
-    "MAC": [
-      "00:07:7c:1a:61:83"
-    ],
-    "Vendor": [
-      "Westermo Network Technologies AB"
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [
-      "192.168.88.52",
+    "Attempted_Connections": [
       "192.168.88.55",
-      "192.168.88.53",
+      "192.168.88.61",
       "192.168.88.49",
-      "192.168.88.60",
-      "192.168.88.95",
       "192.168.88.51",
-      "192.168.88.61"
+      "192.168.88.53",
+      "192.168.88.52",
+      "192.168.88.60",
+      "192.168.88.95"
     ],
-    "First_Seen": 1773899515.2516885,
-    "Last_Seen": 1773899631.9654675,
+    "Connected_To": {},
+    "First_Seen": 1774022023.3969736,
+    "Last_Seen": 1774022152.0806792,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1198,43 +1433,158 @@
   },
   "192.168.2.137": {
     "IP": "192.168.2.137",
+    "Is_Internal": true,
+    "Device_Type": "Engineering Workstation (EWS)",
     "Hostname": "Unknown",
-    "MAC": [
-      "00:07:7c:1a:61:83",
-      "00:07:7c:1a:61:85"
-    ],
-    "Vendor": [
-      "Westermo Network Technologies AB"
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "Engineering Workstation (EWS)",
-    "Seen_Speaking_To": [
-      "192.168.88.2",
-      "192.168.88.49",
-      "192.168.88.80",
-      "192.168.88.51",
-      "192.168.88.15",
+    "Attempted_Connections": [
+      "192.168.88.20",
       "192.168.88.85",
       "192.168.88.75",
-      "192.168.88.50",
-      "192.168.88.20",
-      "192.168.88.254",
-      "192.168.88.115",
+      "192.168.88.60",
+      "192.168.88.80",
+      "192.168.88.15",
       "10.10.10.10",
       "192.168.88.130",
-      "192.168.88.52",
+      "192.168.88.105",
+      "192.168.88.51",
+      "192.168.88.115",
+      "192.168.88.254",
+      "192.168.88.95",
       "192.168.88.30",
       "192.168.88.100",
-      "192.168.88.60",
-      "192.168.88.95",
+      "192.168.88.2",
       "192.168.88.61",
-      "192.168.88.105"
+      "192.168.88.50",
+      "192.168.88.52",
+      "192.168.88.49"
     ],
-    "First_Seen": 1773899515.2518523,
-    "Last_Seen": 1773899676.8120947,
+    "Connected_To": {
+      "192.168.88.115": {
+        "tcp": [
+          7019,
+          80,
+          7025,
+          22,
+          23,
+          7000,
+          7001,
+          7002,
+          443,
+          7004,
+          7007
+        ],
+        "udp": []
+      },
+      "192.168.88.20": {
+        "tcp": [
+          80
+        ],
+        "udp": []
+      },
+      "192.168.88.61": {
+        "tcp": [
+          4000,
+          4001,
+          80,
+          22,
+          23,
+          443
+        ],
+        "udp": []
+      },
+      "192.168.88.51": {
+        "tcp": [
+          5120,
+          135,
+          80,
+          1234,
+          23,
+          443
+        ],
+        "udp": [
+          137
+        ]
+      },
+      "192.168.88.49": {
+        "tcp": [
+          80,
+          49152,
+          21
+        ],
+        "udp": []
+      },
+      "192.168.88.60": {
+        "tcp": [
+          4000,
+          4001,
+          80,
+          44818,
+          22,
+          23,
+          502,
+          443
+        ],
+        "udp": []
+      },
+      "192.168.88.100": {
+        "tcp": [
+          80
+        ],
+        "udp": []
+      },
+      "192.168.88.95": {
+        "tcp": [
+          20000,
+          514,
+          80,
+          22,
+          23,
+          443
+        ],
+        "udp": []
+      },
+      "192.168.88.75": {
+        "tcp": [
+          443,
+          22
+        ],
+        "udp": []
+      },
+      "192.168.88.30": {
+        "tcp": [
+          5001
+        ],
+        "udp": []
+      },
+      "192.168.88.105": {
+        "tcp": [
+          80
+        ],
+        "udp": []
+      },
+      "192.168.88.50": {
+        "tcp": [
+          789,
+          790,
+          502
+        ],
+        "udp": []
+      },
+      "192.168.88.254": {
+        "tcp": [
+          443
+        ],
+        "udp": []
+      }
+    },
+    "First_Seen": 1774022023.8115027,
+    "Last_Seen": 1774022199.506297,
     "Protocols": {
       "Modbus": {
         "Roles": [
@@ -1260,6 +1610,8 @@
   },
   "192.168.88.2": {
     "IP": "192.168.88.2",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
     "MAC": [
       "00:0a:dc:64:85:c3"
@@ -1271,10 +1623,10 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899515.251859,
-    "Last_Seen": 1773899630.6698637,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022023.8115478,
+    "Last_Seen": 1774022150.726841,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1294,6 +1646,8 @@
   },
   "192.168.88.80": {
     "IP": "192.168.88.80",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
     "MAC": [
       "00:90:e8:26:7b:17"
@@ -1305,10 +1659,10 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899515.2518616,
-    "Last_Seen": 1773899630.669884,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022023.8115766,
+    "Last_Seen": 1774022150.7269545,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1328,6 +1682,8 @@
   },
   "192.168.88.115": {
     "IP": "192.168.88.115",
+    "Is_Internal": true,
+    "Device_Type": "Linux/Unix Host (SSH)",
     "Hostname": "Unknown",
     "MAC": [
       "00:40:9d:28:ee:0d"
@@ -1336,30 +1692,30 @@
       "DigiBoard"
     ],
     "Open_ports": [
-      "23/tcp",
-      "7001/tcp",
       "7004/tcp",
-      "7002/tcp",
       "7019/tcp",
-      "7000/tcp",
-      "443/tcp",
-      "7007/tcp",
       "22/tcp",
+      "7000/tcp",
+      "23/tcp",
       "80/tcp",
-      "7025/tcp"
+      "443/tcp",
+      "7025/tcp",
+      "7007/tcp",
+      "7002/tcp",
+      "7001/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "Linux/Unix Host (SSH)",
-    "Seen_Speaking_To": [
-      "192.168.2.53",
-      "192.168.2.137",
+    "Attempted_Connections": [
+      "192.168.2.199",
       "192.168.2.22",
-      "192.168.2.199"
+      "192.168.2.137",
+      "192.168.2.53"
     ],
-    "First_Seen": 1773899515.2518644,
-    "Last_Seen": 1773899631.9651744,
+    "Connected_To": {},
+    "First_Seen": 1774022023.8115873,
+    "Last_Seen": 1774022152.0799146,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1379,6 +1735,8 @@
   },
   "192.168.88.15": {
     "IP": "192.168.88.15",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
     "MAC": [
       "00:e0:62:00:17:0a"
@@ -1390,10 +1748,10 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899515.2518673,
-    "Last_Seen": 1773899630.6698787,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022023.8116007,
+    "Last_Seen": 1774022150.7269282,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1413,6 +1771,8 @@
   },
   "192.168.88.85": {
     "IP": "192.168.88.85",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
     "MAC": [
       "ac:cf:23:02:23:6e"
@@ -1424,10 +1784,10 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899515.2518742,
-    "Last_Seen": 1773899630.6698704,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022023.811619,
+    "Last_Seen": 1774022150.7268875,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1447,6 +1807,8 @@
   },
   "192.168.88.130": {
     "IP": "192.168.88.130",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
     "MAC": [
       "00:90:e8:10:af:c8"
@@ -1460,10 +1822,10 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899515.251879,
-    "Last_Seen": 1773899630.6698768,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022023.811633,
+    "Last_Seen": 1774022150.7269177,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1483,6 +1845,8 @@
   },
   "192.168.88.51": {
     "IP": "192.168.88.51",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
     "MAC": [
       "00:d0:c9:bd:2e:57"
@@ -1491,29 +1855,36 @@
       "ADVANTECH CO., LTD."
     ],
     "Open_ports": [
-      "135/tcp",
-      "23/tcp",
       "5120/tcp",
       "137/udp",
+      "23/tcp",
       "1/tcp",
-      "443/tcp",
       "80/tcp",
+      "443/tcp",
+      "135/tcp",
       "1234/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [
-      "192.168.2.22",
-      "10.218.104.244",
+    "Attempted_Connections": [
       "192.168.2.133",
       "192.168.88.1",
       "192.168.2.199",
-      "192.168.2.166"
+      "192.168.2.166",
+      "10.218.104.244",
+      "192.168.2.22"
     ],
-    "First_Seen": 1773899515.2518806,
-    "Last_Seen": 1773899631.9653955,
+    "Connected_To": {
+      "192.168.88.1": {
+        "tcp": [],
+        "udp": [
+          53
+        ]
+      }
+    },
+    "First_Seen": 1774022023.8116422,
+    "Last_Seen": 1774022152.0805097,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1533,6 +1904,8 @@
   },
   "192.168.88.49": {
     "IP": "192.168.88.49",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
     "MAC": [
       "00:40:8c:7f:0b:bc"
@@ -1541,22 +1914,22 @@
       "Axis Communications AB"
     ],
     "Open_ports": [
-      "80/tcp",
+      "21/tcp",
       "49152/tcp",
-      "21/tcp"
+      "80/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [
-      "192.168.2.166",
-      "192.168.2.199",
+    "Attempted_Connections": [
       "192.168.2.133",
-      "192.168.2.22"
+      "192.168.2.22",
+      "192.168.2.199",
+      "192.168.2.166"
     ],
-    "First_Seen": 1773899515.2518835,
-    "Last_Seen": 1773899631.9654768,
+    "Connected_To": {},
+    "First_Seen": 1774022023.8116534,
+    "Last_Seen": 1774022152.0807364,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1576,6 +1949,8 @@
   },
   "192.168.88.30": {
     "IP": "192.168.88.30",
+    "Is_Internal": true,
+    "Device_Type": "Siemens S7 PLC",
     "Hostname": "Unknown",
     "MAC": [
       "00:1c:06:01:d4:23"
@@ -1584,21 +1959,21 @@
       "Siemens Numerical Control Ltd., Nanjing"
     ],
     "Open_ports": [
-      "102/tcp",
+      "5001/tcp",
       "161/udp",
-      "5001/tcp"
+      "102/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "Siemens S7 PLC",
-    "Seen_Speaking_To": [
+    "Attempted_Connections": [
+      "192.168.2.22",
       "192.168.2.53",
-      "192.168.2.166",
-      "192.168.2.22"
+      "192.168.2.166"
     ],
-    "First_Seen": 1773899515.2518861,
-    "Last_Seen": 1773899631.9650931,
+    "Connected_To": {},
+    "First_Seen": 1774022023.8116643,
+    "Last_Seen": 1774022152.0795324,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1618,6 +1993,8 @@
   },
   "192.168.88.75": {
     "IP": "192.168.88.75",
+    "Is_Internal": true,
+    "Device_Type": "Linux/Unix Host (SSH)",
     "Hostname": "Unknown",
     "MAC": [
       "00:80:63:b5:b6:bb"
@@ -1626,23 +2003,23 @@
       "Hirschmann Automation and Control GmbH"
     ],
     "Open_ports": [
-      "80/tcp",
       "443/tcp",
+      "22/tcp",
       "1/tcp",
-      "22/tcp"
+      "80/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "Linux/Unix Host (SSH)",
-    "Seen_Speaking_To": [
-      "192.168.2.166",
-      "192.168.2.199",
+    "Attempted_Connections": [
       "192.168.2.133",
-      "192.168.2.22"
+      "192.168.2.22",
+      "192.168.2.199",
+      "192.168.2.166"
     ],
-    "First_Seen": 1773899515.251895,
-    "Last_Seen": 1773899631.9653978,
+    "Connected_To": {},
+    "First_Seen": 1774022023.8117042,
+    "Last_Seen": 1774022152.080522,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1662,6 +2039,8 @@
   },
   "192.168.88.105": {
     "IP": "192.168.88.105",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
     "MAC": [
       "00:11:22:7b:c5:50"
@@ -1675,10 +2054,10 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899515.2518983,
-    "Last_Seen": 1773899630.669874,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022023.8117201,
+    "Last_Seen": 1774022150.7269025,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1698,39 +2077,144 @@
   },
   "192.168.2.199": {
     "IP": "192.168.2.199",
+    "Is_Internal": true,
+    "Device_Type": "SCADA / HMI / EWS",
     "Hostname": "Unknown",
-    "MAC": [
-      "00:07:7c:1a:61:83"
-    ],
-    "Vendor": [
-      "Westermo Network Technologies AB"
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "SCADA / HMI / EWS",
-    "Seen_Speaking_To": [
+    "Attempted_Connections": [
       "192.168.88.2",
-      "192.168.88.50",
-      "192.168.88.30",
-      "192.168.88.75",
-      "192.168.88.25",
-      "192.168.88.61",
-      "192.168.88.115",
-      "192.168.88.49",
-      "192.168.88.60",
-      "192.168.88.130",
-      "192.168.88.95",
-      "192.168.88.51",
-      "192.168.88.80",
       "192.168.88.20",
-      "192.168.88.15",
+      "192.168.88.130",
+      "192.168.88.25",
       "192.168.88.85",
-      "192.168.88.105"
+      "192.168.88.61",
+      "192.168.88.105",
+      "192.168.88.49",
+      "192.168.88.51",
+      "192.168.88.75",
+      "192.168.88.50",
+      "192.168.88.115",
+      "192.168.88.60",
+      "192.168.88.95",
+      "192.168.88.30",
+      "192.168.88.80",
+      "192.168.88.15"
     ],
-    "First_Seen": 1773899520.320358,
-    "Last_Seen": 1773899569.7621355,
+    "Connected_To": {
+      "192.168.88.60": {
+        "tcp": [
+          4000,
+          4001,
+          80,
+          22,
+          23,
+          502,
+          443
+        ],
+        "udp": []
+      },
+      "192.168.88.50": {
+        "tcp": [
+          789,
+          502
+        ],
+        "udp": []
+      },
+      "192.168.88.51": {
+        "tcp": [
+          5120,
+          135,
+          80,
+          1234,
+          23,
+          443
+        ],
+        "udp": [
+          137
+        ]
+      },
+      "192.168.88.61": {
+        "tcp": [
+          4000,
+          4001,
+          80,
+          22,
+          23,
+          443
+        ],
+        "udp": []
+      },
+      "192.168.88.20": {
+        "tcp": [
+          80
+        ],
+        "udp": []
+      },
+      "192.168.88.25": {
+        "tcp": [
+          80,
+          81,
+          21
+        ],
+        "udp": []
+      },
+      "192.168.88.49": {
+        "tcp": [
+          80,
+          49152,
+          21
+        ],
+        "udp": []
+      },
+      "192.168.88.115": {
+        "tcp": [
+          7019,
+          80,
+          7025,
+          22,
+          23,
+          7000,
+          7001,
+          7002,
+          443,
+          7004,
+          7007
+        ],
+        "udp": []
+      },
+      "192.168.88.95": {
+        "tcp": [
+          20000,
+          1,
+          514,
+          80,
+          22,
+          23,
+          443
+        ],
+        "udp": []
+      },
+      "192.168.88.75": {
+        "tcp": [
+          443,
+          22
+        ],
+        "udp": []
+      },
+      "192.168.88.30": {
+        "tcp": [
+          5001
+        ],
+        "udp": []
+      }
+    },
+    "First_Seen": 1774022028.18231,
+    "Last_Seen": 1774022083.5267658,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1750,6 +2234,8 @@
   },
   "192.168.88.25": {
     "IP": "192.168.88.25",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
     "MAC": [
       "00:d0:c9:a5:c9:2d"
@@ -1758,19 +2244,26 @@
       "ADVANTECH CO., LTD."
     ],
     "Open_ports": [
-      "80/tcp",
+      "21/tcp",
       "81/tcp",
-      "21/tcp"
+      "80/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [
+    "Attempted_Connections": [
       "192.168.88.1"
     ],
-    "First_Seen": 1773899522.3663177,
-    "Last_Seen": 1773899630.6681724,
+    "Connected_To": {
+      "192.168.88.1": {
+        "tcp": [],
+        "udp": [
+          53
+        ]
+      }
+    },
+    "First_Seen": 1774022030.729572,
+    "Last_Seen": 1774022150.4873376,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1790,6 +2283,8 @@
   },
   "192.168.57.3": {
     "IP": "192.168.57.3",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
     "MAC": [
       "00:1e:ec:26:d2:ac"
@@ -1801,12 +2296,12 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [
+    "Attempted_Connections": [
       "192.168.57.2"
     ],
-    "First_Seen": 1773899530.141261,
-    "Last_Seen": 1773899579.6929874,
+    "Connected_To": {},
+    "First_Seen": 1774022039.5948002,
+    "Last_Seen": 1774022094.892481,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1826,19 +2321,19 @@
   },
   "192.168.57.2": {
     "IP": "192.168.57.2",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
-    "MAC": [
-      "00:71:00:ff:11:a2"
-    ],
+    "MAC": [],
     "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899530.1412644,
-    "Last_Seen": 1773899579.6929877,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022039.5948355,
+    "Last_Seen": 1774022094.8924816,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1858,6 +2353,8 @@
   },
   "10.10.10.30": {
     "IP": "10.10.10.30",
+    "Is_Internal": true,
+    "Device_Type": "SCADA / HMI / EWS",
     "Hostname": "Unknown",
     "MAC": [
       "54:ee:75:3f:4a:db"
@@ -1869,13 +2366,20 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "SCADA / HMI / EWS",
-    "Seen_Speaking_To": [
+    "Attempted_Connections": [
       "10.10.10.10",
       "172.16.184.40"
     ],
-    "First_Seen": 1773899547.1587276,
-    "Last_Seen": 1773899626.4499295,
+    "Connected_To": {
+      "10.10.10.10": {
+        "tcp": [
+          102
+        ],
+        "udp": []
+      }
+    },
+    "First_Seen": 1774022058.653687,
+    "Last_Seen": 1774022145.955884,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1895,21 +2399,19 @@
   },
   "172.16.184.40": {
     "IP": "172.16.184.40",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
-    "MAC": [
-      "04:18:d6:83:db:16"
-    ],
-    "Vendor": [
-      "Ubiquiti Inc"
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899547.1587315,
-    "Last_Seen": 1773899547.1587315,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022058.6537213,
+    "Last_Seen": 1774022058.6537213,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1929,23 +2431,19 @@
   },
   "10.218.104.244": {
     "IP": "10.218.104.244",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
-    "MAC": [
-      "00:0a:dc:64:85:c2",
-      "00:07:7c:1a:61:83"
-    ],
-    "Vendor": [
-      "RuggedCom Inc.",
-      "Westermo Network Technologies AB"
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899569.7621582,
-    "Last_Seen": 1773899617.472734,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022083.5268073,
+    "Last_Seen": 1774022136.1562366,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1965,23 +2463,28 @@
   },
   "192.168.1.10": {
     "IP": "192.168.1.10",
+    "Is_Internal": true,
+    "Device_Type": "SCADA / HMI / EWS",
     "Hostname": "Unknown",
-    "MAC": [
-      "04:18:d6:83:db:16"
-    ],
-    "Vendor": [
-      "Ubiquiti Inc"
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "SCADA / HMI / EWS",
-    "Seen_Speaking_To": [
+    "Attempted_Connections": [
       "10.10.10.10"
     ],
-    "First_Seen": 1773899578.3297203,
-    "Last_Seen": 1773899578.5991817,
+    "Connected_To": {
+      "10.10.10.10": {
+        "tcp": [
+          102
+        ],
+        "udp": []
+      }
+    },
+    "First_Seen": 1774022093.1128983,
+    "Last_Seen": 1774022093.4005187,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2001,24 +2504,34 @@
   },
   "192.168.2.21": {
     "IP": "192.168.2.21",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
-    "MAC": [
-      "00:07:7c:1a:61:83"
-    ],
-    "Vendor": [
-      "Westermo Network Technologies AB"
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [
+    "Attempted_Connections": [
       "192.168.88.60",
       "192.168.88.50"
     ],
-    "First_Seen": 1773899578.3314726,
-    "Last_Seen": 1773899590.8973668,
+    "Connected_To": {
+      "192.168.88.60": {
+        "tcp": [
+          4000,
+          4001,
+          80,
+          22,
+          23,
+          443
+        ],
+        "udp": []
+      }
+    },
+    "First_Seen": 1774022093.396185,
+    "Last_Seen": 1774022107.2077913,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2038,38 +2551,125 @@
   },
   "192.168.2.22": {
     "IP": "192.168.2.22",
+    "Is_Internal": true,
+    "Device_Type": "SCADA / HMI / EWS",
     "Hostname": "Unknown",
-    "MAC": [
-      "00:07:7c:1a:61:83"
-    ],
-    "Vendor": [
-      "Westermo Network Technologies AB"
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "SCADA / HMI / EWS",
-    "Seen_Speaking_To": [
+    "Attempted_Connections": [
       "192.168.88.2",
-      "192.168.88.50",
-      "192.168.88.30",
-      "192.168.88.75",
+      "192.168.88.130",
       "192.168.88.25",
       "192.168.88.61",
+      "192.168.88.60",
+      "192.168.88.85",
+      "192.168.88.105",
+      "192.168.88.51",
+      "192.168.88.75",
+      "192.168.88.50",
       "192.168.88.115",
       "192.168.88.49",
-      "192.168.88.60",
-      "192.168.88.80",
       "192.168.88.95",
-      "192.168.88.51",
-      "192.168.88.130",
-      "192.168.88.15",
-      "192.168.88.85",
-      "192.168.88.105"
+      "192.168.88.30",
+      "192.168.88.80",
+      "192.168.88.15"
     ],
-    "First_Seen": 1773899578.599215,
-    "Last_Seen": 1773899622.8985424,
+    "Connected_To": {
+      "192.168.88.49": {
+        "tcp": [
+          80,
+          49152,
+          21
+        ],
+        "udp": []
+      },
+      "192.168.88.60": {
+        "tcp": [
+          4000,
+          4001,
+          80,
+          44818,
+          22,
+          23,
+          443
+        ],
+        "udp": []
+      },
+      "192.168.88.61": {
+        "tcp": [
+          4000,
+          4001,
+          80,
+          22,
+          23,
+          443
+        ],
+        "udp": []
+      },
+      "192.168.88.51": {
+        "tcp": [
+          5120,
+          135,
+          80,
+          1234,
+          23,
+          443
+        ],
+        "udp": [
+          137
+        ]
+      },
+      "192.168.88.75": {
+        "tcp": [
+          443,
+          22
+        ],
+        "udp": []
+      },
+      "192.168.88.95": {
+        "tcp": [
+          20000,
+          1,
+          514,
+          80,
+          22,
+          23,
+          443
+        ],
+        "udp": []
+      },
+      "192.168.88.115": {
+        "tcp": [
+          7019,
+          80,
+          7025,
+          22,
+          23,
+          7000,
+          7001,
+          7002,
+          443,
+          7004,
+          7007
+        ],
+        "udp": []
+      },
+      "192.168.88.30": {
+        "tcp": [
+          5001,
+          102
+        ],
+        "udp": [
+          161
+        ]
+      }
+    },
+    "First_Seen": 1774022093.4006205,
+    "Last_Seen": 1774022142.218283,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2089,21 +2689,19 @@
   },
   "192.168.1.79": {
     "IP": "192.168.1.79",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
-    "MAC": [
-      "00:0a:dc:64:85:c2"
-    ],
-    "Vendor": [
-      "RuggedCom Inc."
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899606.131677,
-    "Last_Seen": 1773899606.131677,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022123.782868,
+    "Last_Seen": 1774022123.782868,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2123,41 +2721,143 @@
   },
   "192.168.2.53": {
     "IP": "192.168.2.53",
+    "Is_Internal": true,
+    "Device_Type": "SCADA / HMI / EWS",
     "Hostname": "Unknown",
-    "MAC": [
-      "00:07:7c:1a:61:83"
-    ],
-    "Vendor": [
-      "Westermo Network Technologies AB"
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "SCADA / HMI / EWS",
-    "Seen_Speaking_To": [
-      "192.168.88.2",
-      "192.168.88.25",
-      "192.168.88.49",
-      "192.168.88.80",
-      "192.168.88.51",
-      "192.168.88.15",
+    "Attempted_Connections": [
+      "192.168.88.20",
       "192.168.88.85",
       "192.168.88.75",
-      "192.168.88.50",
-      "192.168.88.20",
-      "192.168.88.254",
-      "192.168.88.115",
-      "192.168.88.130",
-      "192.168.88.52",
-      "192.168.88.30",
       "192.168.88.60",
+      "192.168.88.80",
+      "192.168.88.15",
+      "192.168.88.130",
+      "192.168.88.105",
+      "192.168.88.51",
+      "192.168.88.115",
+      "192.168.88.254",
       "192.168.88.95",
+      "192.168.88.30",
+      "192.168.88.2",
+      "192.168.88.25",
       "192.168.88.61",
-      "192.168.88.105"
+      "192.168.88.50",
+      "192.168.88.52",
+      "192.168.88.49"
     ],
-    "First_Seen": 1773899613.2020156,
-    "Last_Seen": 1773899630.6696475,
+    "Connected_To": {
+      "192.168.88.30": {
+        "tcp": [
+          5001
+        ],
+        "udp": []
+      },
+      "192.168.88.51": {
+        "tcp": [
+          5120,
+          135,
+          80,
+          1234,
+          23,
+          443
+        ],
+        "udp": [
+          137
+        ]
+      },
+      "192.168.88.60": {
+        "tcp": [
+          4000,
+          4001,
+          80,
+          22,
+          23,
+          443
+        ],
+        "udp": []
+      },
+      "192.168.88.61": {
+        "tcp": [
+          4000,
+          4001,
+          80,
+          22,
+          23,
+          443
+        ],
+        "udp": []
+      },
+      "192.168.88.95": {
+        "tcp": [
+          20000,
+          514,
+          80,
+          22,
+          23,
+          443
+        ],
+        "udp": []
+      },
+      "192.168.88.115": {
+        "tcp": [
+          7019,
+          80,
+          7025,
+          22,
+          23,
+          7000,
+          7001,
+          7002,
+          443,
+          7004,
+          7007
+        ],
+        "udp": []
+      },
+      "192.168.88.49": {
+        "tcp": [
+          80,
+          49152,
+          21
+        ],
+        "udp": []
+      },
+      "192.168.88.75": {
+        "tcp": [
+          443,
+          22
+        ],
+        "udp": []
+      },
+      "192.168.88.25": {
+        "tcp": [
+          80,
+          81,
+          21
+        ],
+        "udp": []
+      },
+      "192.168.88.20": {
+        "tcp": [
+          80
+        ],
+        "udp": []
+      },
+      "192.168.88.130": {
+        "tcp": [
+          80
+        ],
+        "udp": []
+      }
+    },
+    "First_Seen": 1774022131.645805,
+    "Last_Seen": 1774022150.4931912,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2177,6 +2877,8 @@
   },
   "192.168.88.254": {
     "IP": "192.168.88.254",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
     "MAC": [
       "00:0c:be:04:f3:0b"
@@ -2190,12 +2892,22 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [
+    "Attempted_Connections": [
       "192.168.88.1"
     ],
-    "First_Seen": 1773899614.565914,
-    "Last_Seen": 1773899631.9654508,
+    "Connected_To": {
+      "192.168.88.1": {
+        "tcp": [
+          80,
+          443,
+          53,
+          22
+        ],
+        "udp": []
+      }
+    },
+    "First_Seen": 1774022133.059976,
+    "Last_Seen": 1774022152.080623,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2215,6 +2927,8 @@
   },
   "192.168.89.1": {
     "IP": "192.168.89.1",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
     "MAC": [
       "00:0a:dc:64:85:c2"
@@ -2226,12 +2940,12 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [
+    "Attempted_Connections": [
       "192.168.89.2"
     ],
-    "First_Seen": 1773899617.472648,
-    "Last_Seen": 1773899631.9654934,
+    "Connected_To": {},
+    "First_Seen": 1774022136.1560678,
+    "Last_Seen": 1774022152.0808218,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2251,27 +2965,25 @@
   },
   "192.168.2.64": {
     "IP": "192.168.2.64",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
-    "MAC": [
-      "00:07:7c:1a:61:83"
-    ],
-    "Vendor": [
-      "Westermo Network Technologies AB"
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [
-      "192.168.88.50",
-      "192.168.88.60",
-      "192.168.88.61",
+    "Attempted_Connections": [
       "192.168.88.85",
-      "192.168.88.105"
+      "192.168.88.61",
+      "192.168.88.105",
+      "192.168.88.50",
+      "192.168.88.60"
     ],
-    "First_Seen": 1773899618.2893505,
-    "Last_Seen": 1773899620.7389028,
+    "Connected_To": {},
+    "First_Seen": 1774022137.0149097,
+    "Last_Seen": 1774022139.6108055,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2291,23 +3003,21 @@
   },
   "192.168.2.110": {
     "IP": "192.168.2.110",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
-    "MAC": [
-      "00:07:7c:1a:61:83"
-    ],
-    "Vendor": [
-      "Westermo Network Technologies AB"
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [
+    "Attempted_Connections": [
       "192.168.88.30"
     ],
-    "First_Seen": 1773899622.8985455,
-    "Last_Seen": 1773899622.8985553,
+    "Connected_To": {},
+    "First_Seen": 1774022142.2182894,
+    "Last_Seen": 1774022142.2183313,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2327,21 +3037,19 @@
   },
   "192.195.142.14": {
     "IP": "192.195.142.14",
+    "Is_Internal": false,
+    "Device_Type": "External Host",
     "Hostname": "Unknown",
-    "MAC": [
-      "00:07:7c:1a:61:83"
-    ],
-    "Vendor": [
-      "Westermo Network Technologies AB"
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899624.703737,
-    "Last_Seen": 1773899631.9652393,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022144.2652605,
+    "Last_Seen": 1774022152.08011,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2361,6 +3069,8 @@
   },
   "192.168.88.54": {
     "IP": "192.168.88.54",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
     "MAC": [
       "a0:99:9b:1c:d8:65"
@@ -2372,12 +3082,19 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [
+    "Attempted_Connections": [
       "192.168.88.1"
     ],
-    "First_Seen": 1773899624.9730444,
-    "Last_Seen": 1773899624.9730647,
+    "Connected_To": {
+      "192.168.88.1": {
+        "tcp": [],
+        "udp": [
+          53
+        ]
+      }
+    },
+    "First_Seen": 1774022144.2675686,
+    "Last_Seen": 1774022144.2676399,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2397,6 +3114,8 @@
   },
   "192.168.88.53": {
     "IP": "192.168.88.53",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
     "MAC": [
       "a0:99:9b:1c:d8:65"
@@ -2408,14 +3127,21 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [
-      "192.168.88.1",
+    "Attempted_Connections": [
       "17.253.54.251",
+      "192.168.88.1",
       "93.158.94.210"
     ],
-    "First_Seen": 1773899624.973077,
-    "Last_Seen": 1773899624.9743686,
+    "Connected_To": {
+      "192.168.88.1": {
+        "tcp": [],
+        "udp": [
+          53
+        ]
+      }
+    },
+    "First_Seen": 1774022144.2676811,
+    "Last_Seen": 1774022144.2707744,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2435,21 +3161,19 @@
   },
   "93.158.94.210": {
     "IP": "93.158.94.210",
+    "Is_Internal": false,
+    "Device_Type": "External Host",
     "Hostname": "Unknown",
-    "MAC": [
-      "00:07:7c:1a:61:83"
-    ],
-    "Vendor": [
-      "Westermo Network Technologies AB"
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899624.973119,
-    "Last_Seen": 1773899624.9734452,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022144.267774,
+    "Last_Seen": 1774022144.2684655,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2469,21 +3193,19 @@
   },
   "17.253.54.251": {
     "IP": "17.253.54.251",
+    "Is_Internal": false,
+    "Device_Type": "External Host",
     "Hostname": "Unknown",
-    "MAC": [
-      "00:07:7c:1a:61:83"
-    ],
-    "Vendor": [
-      "Westermo Network Technologies AB"
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899624.9733784,
-    "Last_Seen": 1773899624.9733784,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022144.2682567,
+    "Last_Seen": 1774022144.2682567,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2503,6 +3225,8 @@
   },
   "192.168.143.155": {
     "IP": "192.168.143.155",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
     "MAC": [
       "a0:99:9b:1c:d8:65"
@@ -2514,12 +3238,12 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [
+    "Attempted_Connections": [
       "192.168.143.1"
     ],
-    "First_Seen": 1773899624.973725,
-    "Last_Seen": 1773899624.973725,
+    "Connected_To": {},
+    "First_Seen": 1774022144.2691765,
+    "Last_Seen": 1774022144.2691765,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2539,21 +3263,19 @@
   },
   "192.168.143.1": {
     "IP": "192.168.143.1",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
-    "MAC": [
-      "00:50:56:c0:00:01"
-    ],
-    "Vendor": [
-      "VMware, Inc."
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899624.973726,
-    "Last_Seen": 1773899624.973726,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022144.2691844,
+    "Last_Seen": 1774022144.2691844,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2573,6 +3295,8 @@
   },
   "192.168.88.55": {
     "IP": "192.168.88.55",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
     "MAC": [
       "a0:99:9b:1c:d8:65"
@@ -2584,13 +3308,20 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [
+    "Attempted_Connections": [
       "192.168.88.1",
       "192.168.143.254"
     ],
-    "First_Seen": 1773899624.9737296,
-    "Last_Seen": 1773899624.9744453,
+    "Connected_To": {
+      "192.168.88.1": {
+        "tcp": [],
+        "udp": [
+          53
+        ]
+      }
+    },
+    "First_Seen": 1774022144.269192,
+    "Last_Seen": 1774022144.2710166,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2610,21 +3341,19 @@
   },
   "192.168.143.254": {
     "IP": "192.168.143.254",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
-    "MAC": [
-      "00:07:7c:1a:61:83"
-    ],
-    "Vendor": [
-      "Westermo Network Technologies AB"
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899624.97444,
-    "Last_Seen": 1773899624.97444,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022144.2710068,
+    "Last_Seen": 1774022144.2710068,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2644,25 +3373,23 @@
   },
   "10.100.159.207": {
     "IP": "10.100.159.207",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
-    "MAC": [
-      "f0:25:b7:76:4b:12"
-    ],
-    "Vendor": [
-      "SAMSUNG ELECTRO-MECHANICS(THAILAND)"
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [
-      "199.16.156.72",
+    "Attempted_Connections": [
       "54.241.179.26",
-      "199.16.156.70"
+      "199.16.156.70",
+      "199.16.156.72"
     ],
-    "First_Seen": 1773899630.66969,
-    "Last_Seen": 1773899631.9653537,
+    "Connected_To": {},
+    "First_Seen": 1774022150.4932466,
+    "Last_Seen": 1774022152.0803447,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2682,19 +3409,19 @@
   },
   "199.16.156.70": {
     "IP": "199.16.156.70",
+    "Is_Internal": false,
+    "Device_Type": "External Host",
     "Hostname": "Unknown",
-    "MAC": [
-      "a2:f4:01:00:01:d6"
-    ],
+    "MAC": [],
     "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899630.6696932,
-    "Last_Seen": 1773899630.6697104,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022150.4932823,
+    "Last_Seen": 1774022150.493354,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2714,19 +3441,19 @@
   },
   "199.16.156.72": {
     "IP": "199.16.156.72",
+    "Is_Internal": false,
+    "Device_Type": "External Host",
     "Hostname": "Unknown",
-    "MAC": [
-      "a2:f4:01:00:01:d6"
-    ],
+    "MAC": [],
     "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899630.6697009,
-    "Last_Seen": 1773899630.669712,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022150.4933095,
+    "Last_Seen": 1774022150.4933624,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2746,23 +3473,21 @@
   },
   "10.100.159.253": {
     "IP": "10.100.159.253",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
-    "MAC": [
-      "ec:1f:72:41:95:72"
-    ],
-    "Vendor": [
-      "SAMSUNG ELECTRO-MECHANICS(THAILAND)"
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [
+    "Attempted_Connections": [
       "173.252.90.4"
     ],
-    "First_Seen": 1773899630.6697044,
-    "Last_Seen": 1773899630.6697044,
+    "Connected_To": {},
+    "First_Seen": 1774022150.4933336,
+    "Last_Seen": 1774022150.4933336,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2782,19 +3507,19 @@
   },
   "173.252.90.4": {
     "IP": "173.252.90.4",
+    "Is_Internal": false,
+    "Device_Type": "External Host",
     "Hostname": "Unknown",
-    "MAC": [
-      "a2:f4:01:00:01:d6"
-    ],
+    "MAC": [],
     "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899630.6697054,
-    "Last_Seen": 1773899630.6697054,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022150.4933388,
+    "Last_Seen": 1774022150.4933388,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2814,6 +3539,8 @@
   },
   "10.10.10.20": {
     "IP": "10.10.10.20",
+    "Is_Internal": true,
+    "Device_Type": "SCADA / HMI / EWS",
     "Hostname": "Unknown",
     "MAC": [
       "00:1c:06:27:64:11"
@@ -2825,12 +3552,19 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "SCADA / HMI / EWS",
-    "Seen_Speaking_To": [
+    "Attempted_Connections": [
       "10.10.10.10"
     ],
-    "First_Seen": 1773899630.6697135,
-    "Last_Seen": 1773899630.6697135,
+    "Connected_To": {
+      "10.10.10.10": {
+        "tcp": [
+          102
+        ],
+        "udp": []
+      }
+    },
+    "First_Seen": 1774022150.493367,
+    "Last_Seen": 1774022150.493367,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2850,6 +3584,8 @@
   },
   "fe80::baae:edff:fe75:7041": {
     "IP": "fe80::baae:edff:fe75:7041",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
     "MAC": [
       "b8:ae:ed:75:70:41"
@@ -2861,12 +3597,12 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [
+    "Attempted_Connections": [
       "fe80::5e51:4fff:fe7b:e6c5"
     ],
-    "First_Seen": 1773899630.669734,
-    "Last_Seen": 1773899630.6697764,
+    "Connected_To": {},
+    "First_Seen": 1774022150.493435,
+    "Last_Seen": 1774022150.7265618,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2886,21 +3622,19 @@
   },
   "fe80::5e51:4fff:fe7b:e6c5": {
     "IP": "fe80::5e51:4fff:fe7b:e6c5",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
-    "MAC": [
-      "b8:ae:ed:75:70:41"
-    ],
-    "Vendor": [
-      "Elitegroup Computer Systems Co.,Ltd."
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899630.669735,
-    "Last_Seen": 1773899630.6697767,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022150.4934886,
+    "Last_Seen": 1774022150.7265632,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2920,23 +3654,28 @@
   },
   "10.100.158.185": {
     "IP": "10.100.158.185",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
-    "MAC": [
-      "20:c9:d0:78:96:ef"
-    ],
-    "Vendor": [
-      "Apple, Inc."
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [
+    "Attempted_Connections": [
       "17.110.230.30"
     ],
-    "First_Seen": 1773899630.669741,
-    "Last_Seen": 1773899630.669741,
+    "Connected_To": {
+      "17.110.230.30": {
+        "tcp": [
+          5223
+        ],
+        "udp": []
+      }
+    },
+    "First_Seen": 1774022150.4935477,
+    "Last_Seen": 1774022150.4935477,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2956,10 +3695,10 @@
   },
   "17.110.230.30": {
     "IP": "17.110.230.30",
+    "Is_Internal": false,
+    "Device_Type": "External Host",
     "Hostname": "Unknown",
-    "MAC": [
-      "a2:f4:01:00:01:d6"
-    ],
+    "MAC": [],
     "Vendor": [],
     "Open_ports": [
       "5223/tcp"
@@ -2967,10 +3706,10 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899630.6697416,
-    "Last_Seen": 1773899630.6697416,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022150.4935558,
+    "Last_Seen": 1774022150.4935558,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2990,24 +3729,29 @@
   },
   "10.100.159.228": {
     "IP": "10.100.159.228",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
-    "MAC": [
-      "90:b9:31:05:b8:80"
-    ],
-    "Vendor": [
-      "Apple, Inc."
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [
-      "17.110.224.213",
-      "193.209.237.4"
+    "Attempted_Connections": [
+      "193.209.237.4",
+      "17.110.224.213"
     ],
-    "First_Seen": 1773899630.6697495,
-    "Last_Seen": 1773899631.9654589,
+    "Connected_To": {
+      "17.110.224.213": {
+        "tcp": [
+          443
+        ],
+        "udp": []
+      }
+    },
+    "First_Seen": 1774022150.4935799,
+    "Last_Seen": 1774022152.08063,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3027,19 +3771,19 @@
   },
   "193.209.237.4": {
     "IP": "193.209.237.4",
+    "Is_Internal": false,
+    "Device_Type": "External Host",
     "Hostname": "Unknown",
-    "MAC": [
-      "a2:f4:01:00:01:d6"
-    ],
+    "MAC": [],
     "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899630.6697502,
-    "Last_Seen": 1773899630.6697533,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022150.493587,
+    "Last_Seen": 1774022150.4935994,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3059,23 +3803,21 @@
   },
   "10.100.159.218": {
     "IP": "10.100.159.218",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
-    "MAC": [
-      "30:a8:db:bc:ed:46"
-    ],
-    "Vendor": [
-      "Sony Corporation"
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [
+    "Attempted_Connections": [
       "83.140.27.11"
     ],
-    "First_Seen": 1773899630.6697636,
-    "Last_Seen": 1773899630.6697636,
+    "Connected_To": {},
+    "First_Seen": 1774022150.4936159,
+    "Last_Seen": 1774022150.4936159,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3095,10 +3837,10 @@
   },
   "83.140.27.11": {
     "IP": "83.140.27.11",
+    "Is_Internal": false,
+    "Device_Type": "External Host",
     "Hostname": "Unknown",
-    "MAC": [
-      "a2:f4:01:00:01:d6"
-    ],
+    "MAC": [],
     "Vendor": [],
     "Open_ports": [
       "53/udp"
@@ -3106,10 +3848,10 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899630.6697643,
-    "Last_Seen": 1773899630.6697884,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022150.4936204,
+    "Last_Seen": 1774022150.726607,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3129,23 +3871,21 @@
   },
   "10.100.159.125": {
     "IP": "10.100.159.125",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
-    "MAC": [
-      "c0:ee:fb:42:90:27"
-    ],
-    "Vendor": [
-      "OnePlus Tech (Shenzhen) Ltd"
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [
+    "Attempted_Connections": [
       "199.16.156.198"
     ],
-    "First_Seen": 1773899630.6697674,
-    "Last_Seen": 1773899630.6697674,
+    "Connected_To": {},
+    "First_Seen": 1774022150.4936337,
+    "Last_Seen": 1774022150.4936337,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3165,19 +3905,19 @@
   },
   "199.16.156.198": {
     "IP": "199.16.156.198",
+    "Is_Internal": false,
+    "Device_Type": "External Host",
     "Hostname": "Unknown",
-    "MAC": [
-      "a2:f4:01:00:01:d6"
-    ],
+    "MAC": [],
     "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899630.669768,
-    "Last_Seen": 1773899630.669768,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022150.4936385,
+    "Last_Seen": 1774022150.4936385,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3197,6 +3937,8 @@
   },
   "10.100.152.128": {
     "IP": "10.100.152.128",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
     "MAC": [
       "00:0c:be:04:f3:0a"
@@ -3210,14 +3952,33 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [
+    "Attempted_Connections": [
       "77.245.33.76",
       "10.100.152.10",
       "83.140.27.11"
     ],
-    "First_Seen": 1773899630.6697876,
-    "Last_Seen": 1773899631.9654918,
+    "Connected_To": {
+      "83.140.27.11": {
+        "tcp": [],
+        "udp": [
+          53
+        ]
+      },
+      "10.100.152.10": {
+        "tcp": [],
+        "udp": [
+          67
+        ]
+      },
+      "77.245.33.76": {
+        "tcp": [],
+        "udp": [
+          500
+        ]
+      }
+    },
+    "First_Seen": 1774022150.7265763,
+    "Last_Seen": 1774022152.0808105,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3237,23 +3998,21 @@
   },
   "10.100.159.27": {
     "IP": "10.100.159.27",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
-    "MAC": [
-      "9c:f3:87:d9:d7:e0"
-    ],
-    "Vendor": [
-      "Apple, Inc."
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [
+    "Attempted_Connections": [
       "93.158.110.200"
     ],
-    "First_Seen": 1773899630.6697922,
-    "Last_Seen": 1773899630.6697922,
+    "Connected_To": {},
+    "First_Seen": 1774022150.7266192,
+    "Last_Seen": 1774022150.7266192,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3273,19 +4032,19 @@
   },
   "93.158.110.200": {
     "IP": "93.158.110.200",
+    "Is_Internal": false,
+    "Device_Type": "External Host",
     "Hostname": "Unknown",
-    "MAC": [
-      "a2:f4:01:00:01:d6"
-    ],
+    "MAC": [],
     "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899630.6697931,
-    "Last_Seen": 1773899630.6697931,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022150.7266247,
+    "Last_Seen": 1774022150.7266247,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3305,23 +4064,21 @@
   },
   "10.100.152.10": {
     "IP": "10.100.152.10",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
-    "MAC": [
-      "1c:e8:5d:69:c5:c2"
-    ],
-    "Vendor": [
-      "Cisco Systems, Inc"
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [
       "67/udp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899630.6697974,
-    "Last_Seen": 1773899630.6697974,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022150.7266622,
+    "Last_Seen": 1774022150.7266622,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3341,10 +4098,10 @@
   },
   "77.245.33.76": {
     "IP": "77.245.33.76",
+    "Is_Internal": false,
+    "Device_Type": "External Host",
     "Hostname": "Unknown",
-    "MAC": [
-      "a2:f4:01:00:01:d6"
-    ],
+    "MAC": [],
     "Vendor": [],
     "Open_ports": [
       "500/udp"
@@ -3352,12 +4109,19 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [
+    "Attempted_Connections": [
       "10.100.152.128"
     ],
-    "First_Seen": 1773899630.669801,
-    "Last_Seen": 1773899631.9654913,
+    "Connected_To": {
+      "10.100.152.128": {
+        "tcp": [],
+        "udp": [
+          4500
+        ]
+      }
+    },
+    "First_Seen": 1774022150.7266717,
+    "Last_Seen": 1774022152.0808103,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3377,23 +4141,21 @@
   },
   "10.100.158.168": {
     "IP": "10.100.158.168",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
-    "MAC": [
-      "20:62:74:23:0a:60"
-    ],
-    "Vendor": [
-      "Microsoft Corporation"
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [
+    "Attempted_Connections": [
       "93.158.110.218"
     ],
-    "First_Seen": 1773899631.9651396,
-    "Last_Seen": 1773899631.9651396,
+    "Connected_To": {},
+    "First_Seen": 1774022152.0797641,
+    "Last_Seen": 1774022152.0797641,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3413,19 +4175,19 @@
   },
   "93.158.110.218": {
     "IP": "93.158.110.218",
+    "Is_Internal": false,
+    "Device_Type": "External Host",
     "Hostname": "Unknown",
-    "MAC": [
-      "a2:f4:01:00:01:d6"
-    ],
+    "MAC": [],
     "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899631.9651434,
-    "Last_Seen": 1773899631.9651434,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022152.0797963,
+    "Last_Seen": 1774022152.0797963,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3445,28 +4207,39 @@
   },
   "10.100.159.151": {
     "IP": "10.100.159.151",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
-    "MAC": [
-      "9c:f3:87:c1:4c:d6"
-    ],
-    "Vendor": [
-      "Apple, Inc."
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [
+    "Attempted_Connections": [
       "52.5.95.205",
       "17.130.137.75",
-      "199.16.156.231",
       "52.4.151.114",
       "199.16.156.48",
+      "199.16.156.231",
       "17.130.137.73"
     ],
-    "First_Seen": 1773899631.9652052,
-    "Last_Seen": 1773899631.965429,
+    "Connected_To": {
+      "199.16.156.231": {
+        "tcp": [
+          443
+        ],
+        "udp": []
+      },
+      "52.4.151.114": {
+        "tcp": [
+          443
+        ],
+        "udp": []
+      }
+    },
+    "First_Seen": 1774022152.0800295,
+    "Last_Seen": 1774022152.0805833,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3486,10 +4259,10 @@
   },
   "199.16.156.231": {
     "IP": "199.16.156.231",
+    "Is_Internal": false,
+    "Device_Type": "External Host",
     "Hostname": "Unknown",
-    "MAC": [
-      "a2:f4:01:00:01:d6"
-    ],
+    "MAC": [],
     "Vendor": [],
     "Open_ports": [
       "443/tcp"
@@ -3497,10 +4270,10 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899631.9652064,
-    "Last_Seen": 1773899631.9652383,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022152.0800352,
+    "Last_Seen": 1774022152.0801044,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3520,19 +4293,19 @@
   },
   "17.130.137.73": {
     "IP": "17.130.137.73",
+    "Is_Internal": false,
+    "Device_Type": "External Host",
     "Hostname": "Unknown",
-    "MAC": [
-      "a2:f4:01:00:01:d6"
-    ],
+    "MAC": [],
     "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899631.965243,
-    "Last_Seen": 1773899631.965243,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022152.0801191,
+    "Last_Seen": 1774022152.0801191,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3552,19 +4325,19 @@
   },
   "17.130.137.75": {
     "IP": "17.130.137.75",
+    "Is_Internal": false,
+    "Device_Type": "External Host",
     "Hostname": "Unknown",
-    "MAC": [
-      "a2:f4:01:00:01:d6"
-    ],
+    "MAC": [],
     "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899631.9652457,
-    "Last_Seen": 1773899631.9652457,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022152.0801358,
+    "Last_Seen": 1774022152.0801358,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3584,24 +4357,29 @@
   },
   "10.100.152.15": {
     "IP": "10.100.152.15",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
-    "MAC": [
-      "78:31:c1:ca:8d:82"
-    ],
-    "Vendor": [
-      "Apple, Inc."
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [
+    "Attempted_Connections": [
       "193.182.190.178",
       "54.210.217.83"
     ],
-    "First_Seen": 1773899631.965252,
-    "Last_Seen": 1773899631.965465,
+    "Connected_To": {
+      "54.210.217.83": {
+        "tcp": [
+          443
+        ],
+        "udp": []
+      }
+    },
+    "First_Seen": 1774022152.0801606,
+    "Last_Seen": 1774022152.0806646,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3621,19 +4399,19 @@
   },
   "193.182.190.178": {
     "IP": "193.182.190.178",
+    "Is_Internal": false,
+    "Device_Type": "External Host",
     "Hostname": "Unknown",
-    "MAC": [
-      "a2:f4:01:00:01:d6"
-    ],
+    "MAC": [],
     "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899631.9653075,
-    "Last_Seen": 1773899631.9653163,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022152.0801744,
+    "Last_Seen": 1774022152.0801952,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3653,19 +4431,19 @@
   },
   "199.16.156.48": {
     "IP": "199.16.156.48",
+    "Is_Internal": false,
+    "Device_Type": "External Host",
     "Hostname": "Unknown",
-    "MAC": [
-      "a2:f4:01:00:01:d6"
-    ],
+    "MAC": [],
     "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899631.9653215,
-    "Last_Seen": 1773899631.9653215,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022152.0802147,
+    "Last_Seen": 1774022152.0802147,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3685,19 +4463,19 @@
   },
   "54.241.179.26": {
     "IP": "54.241.179.26",
+    "Is_Internal": false,
+    "Device_Type": "External Host",
     "Hostname": "Unknown",
-    "MAC": [
-      "a2:f4:01:00:01:d6"
-    ],
+    "MAC": [],
     "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899631.9653246,
-    "Last_Seen": 1773899631.965354,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022152.0802507,
+    "Last_Seen": 1774022152.080345,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3717,19 +4495,19 @@
   },
   "52.5.95.205": {
     "IP": "52.5.95.205",
+    "Is_Internal": false,
+    "Device_Type": "External Host",
     "Hostname": "Unknown",
-    "MAC": [
-      "a2:f4:01:00:01:d6"
-    ],
+    "MAC": [],
     "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899631.9653516,
-    "Last_Seen": 1773899631.9653516,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022152.0803294,
+    "Last_Seen": 1774022152.0803294,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3749,21 +4527,21 @@
   },
   "74.125.205.188": {
     "IP": "74.125.205.188",
+    "Is_Internal": false,
+    "Device_Type": "External Host",
     "Hostname": "Unknown",
-    "MAC": [
-      "a2:f4:01:00:01:d6"
-    ],
+    "MAC": [],
     "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [
+    "Attempted_Connections": [
       "10.100.159.227"
     ],
-    "First_Seen": 1773899631.965374,
-    "Last_Seen": 1773899631.965374,
+    "Connected_To": {},
+    "First_Seen": 1774022152.0804036,
+    "Last_Seen": 1774022152.0804036,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3783,6 +4561,8 @@
   },
   "10.100.159.227": {
     "IP": "10.100.159.227",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
     "MAC": [
       "38:b1:db:e1:e9:cf"
@@ -3794,10 +4574,10 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899631.9653747,
-    "Last_Seen": 1773899631.9653747,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022152.0804105,
+    "Last_Seen": 1774022152.0804105,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3817,10 +4597,10 @@
   },
   "17.110.224.213": {
     "IP": "17.110.224.213",
+    "Is_Internal": false,
+    "Device_Type": "External Host",
     "Hostname": "Unknown",
-    "MAC": [
-      "a2:f4:01:00:01:d6"
-    ],
+    "MAC": [],
     "Vendor": [],
     "Open_ports": [
       "443/tcp"
@@ -3828,10 +4608,10 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899631.9654086,
-    "Last_Seen": 1773899631.965459,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022152.0805395,
+    "Last_Seen": 1774022152.08063,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3851,10 +4631,10 @@
   },
   "52.4.151.114": {
     "IP": "52.4.151.114",
+    "Is_Internal": false,
+    "Device_Type": "External Host",
     "Hostname": "Unknown",
-    "MAC": [
-      "a2:f4:01:00:01:d6"
-    ],
+    "MAC": [],
     "Vendor": [],
     "Open_ports": [
       "443/tcp"
@@ -3862,10 +4642,10 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899631.9654293,
-    "Last_Seen": 1773899631.9654293,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022152.0805833,
+    "Last_Seen": 1774022152.0805833,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3885,23 +4665,28 @@
   },
   "10.100.159.247": {
     "IP": "10.100.159.247",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
-    "MAC": [
-      "a4:5e:60:d9:2e:1b"
-    ],
-    "Vendor": [
-      "Apple, Inc."
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [
+    "Attempted_Connections": [
       "108.160.163.110"
     ],
-    "First_Seen": 1773899631.9654613,
-    "Last_Seen": 1773899631.9654613,
+    "Connected_To": {
+      "108.160.163.110": {
+        "tcp": [
+          443
+        ],
+        "udp": []
+      }
+    },
+    "First_Seen": 1774022152.0806456,
+    "Last_Seen": 1774022152.0806456,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3921,10 +4706,10 @@
   },
   "108.160.163.110": {
     "IP": "108.160.163.110",
+    "Is_Internal": false,
+    "Device_Type": "External Host",
     "Hostname": "Unknown",
-    "MAC": [
-      "a2:f4:01:00:01:d6"
-    ],
+    "MAC": [],
     "Vendor": [],
     "Open_ports": [
       "443/tcp"
@@ -3932,10 +4717,10 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899631.9654622,
-    "Last_Seen": 1773899631.9654622,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022152.0806503,
+    "Last_Seen": 1774022152.0806503,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3955,10 +4740,10 @@
   },
   "54.210.217.83": {
     "IP": "54.210.217.83",
+    "Is_Internal": false,
+    "Device_Type": "External Host",
     "Hostname": "Unknown",
-    "MAC": [
-      "a2:f4:01:00:01:d6"
-    ],
+    "MAC": [],
     "Vendor": [],
     "Open_ports": [
       "443/tcp"
@@ -3966,10 +4751,10 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899631.9654653,
-    "Last_Seen": 1773899631.9654653,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022152.0806649,
+    "Last_Seen": 1774022152.0806649,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3989,23 +4774,28 @@
   },
   "10.100.152.119": {
     "IP": "10.100.152.119",
+    "Is_Internal": true,
+    "Device_Type": "IT",
     "Hostname": "Unknown",
-    "MAC": [
-      "6c:40:08:95:a0:66"
-    ],
-    "Vendor": [
-      "Apple, Inc."
-    ],
+    "MAC": [],
+    "Vendor": [],
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [
+    "Attempted_Connections": [
       "141.82.217.52"
     ],
-    "First_Seen": 1773899631.9654791,
-    "Last_Seen": 1773899631.96549,
+    "Connected_To": {
+      "141.82.217.52": {
+        "tcp": [
+          993
+        ],
+        "udp": []
+      }
+    },
+    "First_Seen": 1774022152.0807524,
+    "Last_Seen": 1774022152.0808036,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -4025,10 +4815,10 @@
   },
   "141.82.217.52": {
     "IP": "141.82.217.52",
+    "Is_Internal": false,
+    "Device_Type": "External Host",
     "Hostname": "Unknown",
-    "MAC": [
-      "a2:f4:01:00:01:d6"
-    ],
+    "MAC": [],
     "Vendor": [],
     "Open_ports": [
       "993/tcp"
@@ -4036,10 +4826,10 @@
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Device_Type": "IT",
-    "Seen_Speaking_To": [],
-    "First_Seen": 1773899631.9654827,
-    "Last_Seen": 1773899631.9654903,
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774022152.080757,
+    "Last_Seen": 1774022152.0808039,
     "Protocols": {
       "Modbus": {
         "Roles": [],

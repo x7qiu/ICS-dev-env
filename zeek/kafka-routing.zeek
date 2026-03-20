@@ -2,15 +2,39 @@
 @load tuning/json-logs
 @load protocols/conn/mac-logging
 
-# 1. Disable the default single-topic firehose
+# ==============================================================================
+# 1. CUSTOM LOGGING FIELDS (Injecting Originator TTL into conn.log)
+# ==============================================================================
+redef record Conn::Info += {
+    orig_ttl: count &optional &log;
+};
+
+# Fires only ONCE per connection, making it extremely lightweight for production.
+event new_connection(c: connection) {
+    local p: raw_pkt_hdr = get_current_packet_header();
+    
+    if ( p?$ip ) {
+        c$conn$orig_ttl = p$ip$ttl;
+    } else if ( p?$ip6 ) {
+        c$conn$orig_ttl = p$ip6$hlim;
+    }
+}
+
+# ==============================================================================
+# 2. KAFKA BROKER CONFIGURATION
+# ==============================================================================
+# Disable the default single-topic firehose
 redef Kafka::topic_name = "";
 
-# 2. Tag the JSON (Wraps the data in {"s7comm": {...}} so Python knows the exact schema)
+# Tag the JSON (Wraps the data in {"s7comm": {...}} so Python knows the exact schema)
 redef Kafka::tag_json = T;
 
-# 3. GLOBAL BROKER CONFIG
+# GLOBAL BROKER CONFIG
 redef Kafka::kafka_conf = table(["metadata.broker.list"] = "redpanda:9092");
 
+# ==============================================================================
+# 3. KAFKA ROUTING FILTERS
+# ==============================================================================
 event zeek_init() &priority=-10 {
 
     # Route 1: Connection Logs
@@ -37,7 +61,7 @@ event zeek_init() &priority=-10 {
         $config = table(["metadata.broker.list"] = "redpanda:9092")
     ]);
 
-    # Route 4: Modbus Device Identification (The Asset Goldmine)
+    # Route 4: Modbus Device Identification
     Log::add_filter(Modbus_Extended::LOG_READ_DEVICE_IDENTIFICATION, [
         $name = "kafka-modbus-id",
         $writer = Log::WRITER_KAFKAWRITER,

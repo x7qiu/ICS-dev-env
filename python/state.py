@@ -1,15 +1,27 @@
 # state.py
 import time
+import ipaddress
 
 ASSETS_DB = {}
+
+# Global set to track discovered L3 Router MAC addresses
+ROUTER_MACS = set()
 
 def get_or_create_asset(ip):
     """Retrieves an asset, initializes it if new, and updates its Last_Seen timestamp."""
     current_time = time.time()
     
     if ip not in ASSETS_DB:
+        # Determine if this is a private/internal IP (RFC 1918)
+        try:
+            is_internal = ipaddress.ip_address(ip).is_private
+        except ValueError:
+            is_internal = False
+            
         ASSETS_DB[ip] = {
             "IP": ip,
+            "Is_Internal": is_internal,
+            "Device_Type": "IT" if is_internal else "External Host", 
             "Hostname": "Unknown",
             "MAC": set(),
             "Vendor": set(),
@@ -17,8 +29,8 @@ def get_or_create_asset(ip):
             "Model": "Unknown",
             "OS_version": "Unknown",
             "Firmware_version": "Unknown",
-            "Device_Type": "IT", 
-            "Seen_Speaking_To": set(),
+            "Attempted_Connections": set(),
+            "Connected_To": {},
             "First_Seen": current_time,
             "Last_Seen": current_time,
             "Protocols": {
