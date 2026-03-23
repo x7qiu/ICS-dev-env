@@ -76,4 +76,36 @@ event zeek_init() &priority=-10 {
         $path = "s7comm",
         $config = table(["metadata.broker.list"] = "redpanda:9092")
     ]);
+
+    # Route 6: COTP Logs
+    Log::add_filter(S7COMM::LOG_COTP, [
+        $name = "kafka-cotp",
+        $writer = Log::WRITER_KAFKAWRITER,
+        $path = "cotp",
+        $config = table(["metadata.broker.list"] = "redpanda:9092")
+    ]);
+
+    # Route 7: S7comm Read-SZL Logs
+    Log::add_filter(S7COMM::LOG_S7COMM_READ_SZL, [
+        $name = "kafka-s7comm-read-szl",
+        $writer = Log::WRITER_KAFKAWRITER,
+        $path = "s7comm_read_szl",
+        $config = table(["metadata.broker.list"] = "redpanda:9092")
+    ]);
+
+    # Route 8: S7comm Upload/Download Logs
+    Log::add_filter(S7COMM::LOG_S7COMM_UPLOAD_DOWNLOAD, [
+        $name = "kafka-s7comm-upload-download",
+        $writer = Log::WRITER_KAFKAWRITER,
+        $path = "s7comm_upload_download",
+        $config = table(["metadata.broker.list"] = "redpanda:9092")
+    ]);
+
+    # Route 9: S7comm-Plus Logs
+    Log::add_filter(S7COMM::LOG_S7COMM_PLUS, [
+        $name = "kafka-s7comm-plus",
+        $writer = Log::WRITER_KAFKAWRITER,
+        $path = "s7comm_plus",
+        $config = table(["metadata.broker.list"] = "redpanda:9092")
+    ]);
 }
