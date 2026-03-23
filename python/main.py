@@ -13,11 +13,27 @@ def json_default_handler(obj):
         return list(obj)
     raise TypeError(f"Type {type(obj)} not serializable")
 
+# Fields to include in the concise summary output
+SUMMARY_FIELDS = [
+    "IP", "Is_Internal", "Device_Type", "Device_Type_Reason",
+    "Hostname", "MAC", "Vendor", "Vendor_Class",
+    "Model", "OS_version", "Firmware_version", "Open_ports",
+    "First_Seen", "Last_Seen"
+]
+
+def generate_summary(assets_db):
+    """Generates a concise summary with only core identity fields, no behavioral debug data."""
+    summary = {}
+    for ip, asset in assets_db.items():
+        summary[ip] = {k: asset[k] for k in SUMMARY_FIELDS if k in asset}
+    return summary
+
 def print_global_state():
     print("\n" + "="*50)
     print("GLOBAL ASSET INVENTORY".center(50))
     print("="*50)
     
+    # Full debug output
     json_output = orjson.dumps(
         ASSETS_DB, 
         option=orjson.OPT_INDENT_2,
@@ -31,6 +47,22 @@ def print_global_state():
         print(f"\n[+] Successfully saved complete inventory to {output_path}")
     except Exception as e:
         print(f"\n[!] Failed to save output.json: {e}")
+
+    # Concise summary output
+    summary = generate_summary(ASSETS_DB)
+    summary_output = orjson.dumps(
+        summary,
+        option=orjson.OPT_INDENT_2,
+        default=json_default_handler
+    ).decode('utf-8')
+
+    summary_path = '/app/summary.json'
+    try:
+        with open(summary_path, 'w', encoding='utf-8') as f:
+            f.write(summary_output)
+        print(f"[+] Successfully saved concise summary to {summary_path}")
+    except Exception as e:
+        print(f"\n[!] Failed to save summary.json: {e}")
 
 def process_live_stream():
     print("Connecting to Redpanda/Kafka...")

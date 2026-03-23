@@ -1,107 +1,34 @@
 {
-  "192.168.89.2": {
-    "IP": "192.168.89.2",
-    "Is_Internal": true,
-    "Device_Type": "IT",
-    "Hostname": "Unknown",
-    "MAC": [
-      "70:71:bc:3a:0d:e8"
-    ],
-    "Vendor": [
-      "PEGATRON CORPORATION"
-    ],
-    "Open_ports": [],
-    "Model": "Unknown",
-    "OS_version": "Unknown",
-    "Firmware_version": "Unknown",
-    "Attempted_Connections": [
-      "17.253.34.253",
-      "192.168.1.71",
-      "10.218.104.244",
-      "192.168.1.79",
-      "192.168.0.3",
-      "8.8.8.8"
-    ],
-    "Connected_To": {},
-    "First_Seen": 1774022022.981125,
-    "Last_Seen": 1774022152.0808222,
-    "Protocols": {
-      "Modbus": {
-        "Roles": [],
-        "Unit_IDs_Served": [],
-        "Activity": {
-          "Reads_Sent_To": {},
-          "Writes_Sent_To": {},
-          "Successful_Responses": 0,
-          "Exceptions_Triggered": {}
-        },
-        "Memory_Fingerprint": {
-          "Registers_Read": [],
-          "Registers_Written": []
-        }
-      }
-    }
-  },
-  "8.8.8.8": {
-    "IP": "8.8.8.8",
-    "Is_Internal": false,
-    "Device_Type": "External Host",
-    "Hostname": "Unknown",
-    "MAC": [],
-    "Vendor": [],
-    "Open_ports": [],
-    "Model": "Unknown",
-    "OS_version": "Unknown",
-    "Firmware_version": "Unknown",
-    "Attempted_Connections": [],
-    "Connected_To": {},
-    "First_Seen": 1774022022.9811544,
-    "Last_Seen": 1774022152.0806286,
-    "Protocols": {
-      "Modbus": {
-        "Roles": [],
-        "Unit_IDs_Served": [],
-        "Activity": {
-          "Reads_Sent_To": {},
-          "Writes_Sent_To": {},
-          "Successful_Responses": 0,
-          "Exceptions_Triggered": {}
-        },
-        "Memory_Fingerprint": {
-          "Registers_Read": [],
-          "Registers_Written": []
-        }
-      }
-    }
-  },
   "192.168.2.44": {
     "IP": "192.168.2.44",
     "Is_Internal": true,
     "Device_Type": "SCADA Server",
+    "Device_Type_Reason": "Modbus high-volume polling (173 reads)",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [
-      "192.168.88.2",
-      "192.168.88.20",
-      "192.168.88.100",
-      "192.168.88.130",
-      "192.168.88.61",
       "192.168.88.85",
       "192.168.88.105",
-      "192.168.88.49",
-      "192.168.88.51",
-      "192.168.88.75",
-      "192.168.88.50",
       "192.168.88.60",
-      "192.168.88.95",
       "192.168.88.115",
+      "192.168.88.2",
+      "192.168.88.50",
       "192.168.88.80",
-      "192.168.88.15"
+      "192.168.88.130",
+      "192.168.88.49",
+      "192.168.88.100",
+      "192.168.88.15",
+      "192.168.88.95",
+      "192.168.88.20",
+      "192.168.88.61",
+      "192.168.88.51",
+      "192.168.88.75"
     ],
     "Connected_To": {
       "192.168.88.20": {
@@ -139,8 +66,8 @@
         "udp": []
       }
     },
-    "First_Seen": 1774022022.9834418,
-    "Last_Seen": 1774022040.138693,
+    "First_Seen": 1774175142.386501,
+    "Last_Seen": 1774175162.9422941,
     "Protocols": {
       "Modbus": {
         "Roles": [
@@ -163,6 +90,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -170,6 +109,7 @@
     "IP": "192.168.88.50",
     "Is_Internal": true,
     "Device_Type": "Modbus PLC / Gateway",
+    "Device_Type_Reason": "Listening on OT port 502/tcp",
     "Hostname": "Unknown",
     "MAC": [
       "00:05:e4:01:24:d3"
@@ -177,18 +117,19 @@
     "Vendor": [
       "Red Lion Controls Inc."
     ],
+    "Vendor_Class": "Unknown",
     "Open_ports": [
-      "789/tcp",
       "790/tcp",
-      "502/tcp"
+      "502/tcp",
+      "789/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022022.983459,
-    "Last_Seen": 1774022199.506297,
+    "First_Seen": 1774175142.386538,
+    "Last_Seen": 1774175321.147432,
     "Protocols": {
       "Modbus": {
         "Roles": [
@@ -216,6 +157,18 @@
           ],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -223,6 +176,7 @@
     "IP": "192.168.88.20",
     "Is_Internal": true,
     "Device_Type": "Modbus PLC / Gateway",
+    "Device_Type_Reason": "Listening on OT port 502/tcp",
     "Hostname": "Unknown",
     "MAC": [
       "00:a0:45:6f:4b:83"
@@ -230,23 +184,24 @@
     "Vendor": [
       "Phoenix Contact GmbH & Co. KG"
     ],
+    "Vendor_Class": "OT",
     "Open_ports": [
-      "22/tcp",
-      "1/tcp",
-      "80/tcp",
       "502/tcp",
+      "22/tcp",
+      "80/tcp",
+      "1/tcp",
       "1962/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [
-      "192.168.2.133",
-      "192.168.2.166"
+      "192.168.2.166",
+      "192.168.2.133"
     ],
     "Connected_To": {},
-    "First_Seen": 1774022022.983473,
-    "Last_Seen": 1774022152.0792828,
+    "First_Seen": 1774175142.386565,
+    "Last_Seen": 1774175275.4343581,
     "Protocols": {
       "Modbus": {
         "Roles": [
@@ -268,6 +223,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -275,6 +242,7 @@
     "IP": "192.168.88.60",
     "Is_Internal": true,
     "Device_Type": "Modbus PLC / Gateway",
+    "Device_Type_Reason": "Listening on OT port 502/tcp",
     "Hostname": "Unknown",
     "MAC": [
       "00:90:e8:26:40:23"
@@ -282,30 +250,31 @@
     "Vendor": [
       "MOXA TECHNOLOGIES CORP., LTD."
     ],
+    "Vendor_Class": "OT",
     "Open_ports": [
-      "4001/tcp",
-      "44818/tcp",
-      "22/tcp",
-      "4000/tcp",
+      "502/tcp",
       "23/tcp",
-      "1/tcp",
-      "80/tcp",
-      "443/tcp",
+      "22/tcp",
+      "44818/tcp",
       "102/tcp",
-      "502/tcp"
+      "80/tcp",
+      "1/tcp",
+      "443/tcp",
+      "4000/tcp",
+      "4001/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [
-      "192.168.2.133",
-      "192.168.2.22",
       "192.168.2.199",
-      "192.168.2.166"
+      "192.168.2.166",
+      "192.168.2.133",
+      "192.168.2.22"
     ],
     "Connected_To": {},
-    "First_Seen": 1774022022.9834878,
-    "Last_Seen": 1774022152.0807283,
+    "First_Seen": 1774175142.3865893,
+    "Last_Seen": 1774175275.4359891,
     "Protocols": {
       "Modbus": {
         "Roles": [
@@ -443,6 +412,18 @@
             65535
           ]
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -450,6 +431,7 @@
     "IP": "192.168.88.100",
     "Is_Internal": true,
     "Device_Type": "Modbus PLC / Gateway",
+    "Device_Type_Reason": "Listening on OT port 502/tcp",
     "Hostname": "Unknown",
     "MAC": [
       "00:e0:62:40:57:66"
@@ -457,6 +439,7 @@
     "Vendor": [
       "HOST ENGINEERING"
     ],
+    "Vendor_Class": "Unknown",
     "Open_ports": [
       "502/tcp",
       "80/tcp"
@@ -466,8 +449,8 @@
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022022.9834976,
-    "Last_Seen": 1774022037.2769241,
+    "First_Seen": 1774175142.3866093,
+    "Last_Seen": 1774175160.160893,
     "Protocols": {
       "Modbus": {
         "Roles": [
@@ -489,6 +472,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -496,6 +491,7 @@
     "IP": "192.168.88.61",
     "Is_Internal": true,
     "Device_Type": "Modbus PLC / Gateway",
+    "Device_Type_Reason": "Listening on OT port 502/tcp",
     "Hostname": "Unknown",
     "MAC": [
       "00:90:e8:27:8c:37"
@@ -503,16 +499,17 @@
     "Vendor": [
       "MOXA TECHNOLOGIES CORP., LTD."
     ],
+    "Vendor_Class": "OT",
     "Open_ports": [
-      "4001/tcp",
-      "22/tcp",
-      "4000/tcp",
+      "502/tcp",
       "23/tcp",
-      "1/tcp",
-      "80/tcp",
-      "443/tcp",
+      "22/tcp",
       "102/tcp",
-      "502/tcp"
+      "80/tcp",
+      "1/tcp",
+      "443/tcp",
+      "4000/tcp",
+      "4001/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
@@ -521,9 +518,9 @@
       "192.168.2.133",
       "192.168.88.1",
       "192.168.2.199",
+      "192.168.2.22",
       "192.168.2.137",
-      "192.168.2.166",
-      "192.168.2.22"
+      "192.168.2.166"
     ],
     "Connected_To": {
       "192.168.88.1": {
@@ -533,8 +530,8 @@
         ]
       }
     },
-    "First_Seen": 1774022022.983514,
-    "Last_Seen": 1774022318.69769,
+    "First_Seen": 1774175142.3866172,
+    "Last_Seen": 1774175439.8259819,
     "Protocols": {
       "Modbus": {
         "Roles": [
@@ -672,6 +669,18 @@
             65535
           ]
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -679,32 +688,34 @@
     "IP": "192.168.2.133",
     "Is_Internal": true,
     "Device_Type": "SCADA / HMI / EWS",
+    "Device_Type_Reason": "Modbus polling activity",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [
-      "192.168.88.2",
-      "192.168.88.20",
-      "192.168.88.130",
-      "192.168.88.25",
       "192.168.88.85",
-      "192.168.88.61",
-      "192.168.88.60",
+      "192.168.88.20",
       "192.168.88.105",
-      "192.168.88.51",
-      "192.168.88.75",
-      "192.168.88.50",
-      "192.168.88.95",
+      "192.168.88.60",
       "192.168.88.115",
+      "192.168.88.2",
+      "192.168.88.25",
+      "192.168.88.80",
       "192.168.88.49",
       "192.168.88.100",
+      "192.168.88.15",
       "192.168.88.30",
-      "192.168.88.80",
-      "192.168.88.15"
+      "192.168.88.95",
+      "192.168.88.130",
+      "192.168.88.75",
+      "192.168.88.61",
+      "192.168.88.51",
+      "192.168.88.50"
     ],
     "Connected_To": {
       "192.168.88.61": {
@@ -795,8 +806,8 @@
         "udp": []
       }
     },
-    "First_Seen": 1774022022.9836946,
-    "Last_Seen": 1774022040.4217312,
+    "First_Seen": 1774175142.3868327,
+    "Last_Seen": 1774175163.2695818,
     "Protocols": {
       "Modbus": {
         "Roles": [
@@ -819,6 +830,20 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [
+          "SCADA / HMI / EWS"
+        ],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -826,34 +851,36 @@
     "IP": "192.168.88.95",
     "Is_Internal": true,
     "Device_Type": "DNP3 Outstation / RTU",
+    "Device_Type_Reason": "Listening on OT port 20000/tcp",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [
       "RuggedCom Inc."
     ],
+    "Vendor_Class": "Unknown",
     "Open_ports": [
-      "22/tcp",
-      "23/tcp",
-      "1/tcp",
-      "80/tcp",
-      "443/tcp",
-      "102/tcp",
-      "20000/tcp",
       "502/tcp",
-      "514/tcp"
+      "23/tcp",
+      "22/tcp",
+      "514/tcp",
+      "102/tcp",
+      "80/tcp",
+      "1/tcp",
+      "20000/tcp",
+      "443/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [
-      "192.168.2.133",
-      "192.168.2.22",
       "192.168.2.199",
-      "192.168.2.166"
+      "192.168.2.166",
+      "192.168.2.133",
+      "192.168.2.22"
     ],
     "Connected_To": {},
-    "First_Seen": 1774022022.9837112,
-    "Last_Seen": 1774022154.162925,
+    "First_Seen": 1774175142.3868666,
+    "Last_Seen": 1774175276.8824487,
     "Protocols": {
       "Modbus": {
         "Roles": [
@@ -891,6 +918,18 @@
             65535
           ]
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -898,32 +937,34 @@
     "IP": "192.168.2.166",
     "Is_Internal": true,
     "Device_Type": "Engineering Workstation (EWS)",
+    "Device_Type_Reason": "Modbus write activity",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [
-      "192.168.88.2",
-      "192.168.88.20",
-      "192.168.88.130",
-      "192.168.88.25",
       "192.168.88.85",
-      "192.168.88.61",
-      "192.168.88.60",
+      "192.168.88.20",
       "192.168.88.105",
-      "192.168.88.51",
-      "192.168.88.75",
-      "192.168.88.50",
+      "192.168.88.60",
       "192.168.88.115",
-      "192.168.88.95",
+      "192.168.88.2",
+      "192.168.88.25",
+      "192.168.88.80",
       "192.168.88.49",
       "192.168.88.100",
+      "192.168.88.15",
       "192.168.88.30",
-      "192.168.88.80",
-      "192.168.88.15"
+      "192.168.88.95",
+      "192.168.88.130",
+      "192.168.88.75",
+      "192.168.88.61",
+      "192.168.88.51",
+      "192.168.88.50"
     ],
     "Connected_To": {
       "192.168.88.51": {
@@ -1038,8 +1079,8 @@
         "udp": []
       }
     },
-    "First_Seen": 1774022022.983821,
-    "Last_Seen": 1774022318.6976898,
+    "First_Seen": 1774175142.3869593,
+    "Last_Seen": 1774175439.8259816,
     "Protocols": {
       "Modbus": {
         "Roles": [
@@ -1066,30 +1107,49 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
-  "10.10.10.10": {
-    "IP": "10.10.10.10",
+  "192.168.89.2": {
+    "IP": "192.168.89.2",
     "Is_Internal": true,
-    "Device_Type": "Siemens S7 PLC",
+    "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [
-      "28:63:36:89:59:82"
+      "70:71:bc:3a:0d:e8"
     ],
     "Vendor": [
-      "Siemens AG"
+      "PEGATRON CORPORATION"
     ],
-    "Open_ports": [
-      "102/tcp"
-    ],
+    "Vendor_Class": "Unknown",
+    "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
-    "Attempted_Connections": [],
+    "Attempted_Connections": [
+      "192.168.1.79",
+      "192.168.0.3",
+      "17.253.34.253",
+      "10.218.104.244",
+      "192.168.1.71",
+      "8.8.8.8"
+    ],
     "Connected_To": {},
-    "First_Seen": 1774022022.987918,
-    "Last_Seen": 1774022150.4933722,
+    "First_Seen": 1774175142.390849,
+    "Last_Seen": 1774175275.4360788,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1104,6 +1164,187 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
+      }
+    }
+  },
+  "8.8.8.8": {
+    "IP": "8.8.8.8",
+    "Is_Internal": false,
+    "Device_Type": "External Host",
+    "Device_Type_Reason": "Public IP",
+    "Hostname": "Unknown",
+    "MAC": [],
+    "Vendor": [],
+    "Vendor_Class": "Unknown",
+    "Open_ports": [],
+    "Model": "Unknown",
+    "OS_version": "Unknown",
+    "Firmware_version": "Unknown",
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774175142.390896,
+    "Last_Seen": 1774175275.4358773,
+    "Protocols": {
+      "Modbus": {
+        "Roles": [],
+        "Unit_IDs_Served": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Successful_Responses": 0,
+          "Exceptions_Triggered": {}
+        },
+        "Memory_Fingerprint": {
+          "Registers_Read": [],
+          "Registers_Written": []
+        }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
+      }
+    }
+  },
+  "10.10.10.20": {
+    "IP": "10.10.10.20",
+    "Is_Internal": true,
+    "Device_Type": "SCADA Server",
+    "Device_Type_Reason": "S7comm high-volume polling (34126 reads)",
+    "Hostname": "Unknown",
+    "MAC": [
+      "00:1c:06:27:64:11"
+    ],
+    "Vendor": [
+      "Siemens Numerical Control Ltd., Nanjing"
+    ],
+    "Vendor_Class": "OT",
+    "Open_ports": [],
+    "Model": "Unknown",
+    "OS_version": "Unknown",
+    "Firmware_version": "Unknown",
+    "Attempted_Connections": [
+      "10.10.10.10"
+    ],
+    "Connected_To": {
+      "10.10.10.10": {
+        "tcp": [
+          102
+        ],
+        "udp": []
+      }
+    },
+    "First_Seen": 1774175142.3934762,
+    "Last_Seen": 1774175273.7843366,
+    "Protocols": {
+      "Modbus": {
+        "Roles": [],
+        "Unit_IDs_Served": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Successful_Responses": 0,
+          "Exceptions_Triggered": {}
+        },
+        "Memory_Fingerprint": {
+          "Registers_Read": [],
+          "Registers_Written": []
+        }
+      },
+      "S7comm": {
+        "Roles": [
+          "SCADA / HMI / EWS"
+        ],
+        "Functions_Seen": [
+          "Read Variable"
+        ],
+        "Activity": {
+          "Reads_Sent_To": {
+            "10.10.10.10": 34126
+          },
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
+      }
+    }
+  },
+  "10.10.10.10": {
+    "IP": "10.10.10.10",
+    "Is_Internal": true,
+    "Device_Type": "Siemens S7 PLC",
+    "Device_Type_Reason": "Listening on OT port 102/tcp",
+    "Hostname": "Unknown",
+    "MAC": [
+      "28:63:36:89:59:82"
+    ],
+    "Vendor": [
+      "Siemens AG"
+    ],
+    "Vendor_Class": "OT",
+    "Open_ports": [
+      "102/tcp"
+    ],
+    "Model": "Unknown",
+    "OS_version": "Unknown",
+    "Firmware_version": "Unknown",
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774175142.3934877,
+    "Last_Seen": 1774175273.784337,
+    "Protocols": {
+      "Modbus": {
+        "Roles": [],
+        "Unit_IDs_Served": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Successful_Responses": 0,
+          "Exceptions_Triggered": {}
+        },
+        "Memory_Fingerprint": {
+          "Registers_Read": [],
+          "Registers_Written": []
+        }
+      },
+      "S7comm": {
+        "Roles": [
+          "Controller"
+        ],
+        "Functions_Seen": [
+          "Read Variable",
+          "Write Variable",
+          "Setup Communication"
+        ],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -1111,6 +1352,7 @@
     "IP": "192.168.88.52",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [
       "20:c9:d0:44:d1:e7",
@@ -1119,19 +1361,20 @@
     "Vendor": [
       "Apple, Inc."
     ],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [
+      "192.168.0.3",
+      "192.195.142.13",
+      "192.168.1.68",
       "192.168.88.1",
       "17.253.34.253",
       "192.168.1.71",
-      "192.195.142.13",
-      "192.168.1.68",
-      "192.168.1.2",
-      "192.168.0.3",
-      "192.195.142.14"
+      "192.195.142.14",
+      "192.168.1.2"
     ],
     "Connected_To": {
       "192.168.88.1": {
@@ -1141,8 +1384,8 @@
         ]
       }
     },
-    "First_Seen": 1774022023.3960438,
-    "Last_Seen": 1774022152.0801895,
+    "First_Seen": 1774175143.0209918,
+    "Last_Seen": 1774175275.4354231,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1157,6 +1400,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -1164,12 +1419,14 @@
     "IP": "192.168.88.1",
     "Is_Internal": true,
     "Device_Type": "Linux/Unix Host (SSH)",
+    "Device_Type_Reason": "Listening on IT port 22/tcp",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [
-      "53/udp",
       "22/tcp",
+      "53/udp",
       "53/tcp",
       "80/tcp",
       "443/tcp"
@@ -1179,8 +1436,8 @@
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022023.3960788,
-    "Last_Seen": 1774022152.0806253,
+    "First_Seen": 1774175143.0210295,
+    "Last_Seen": 1774175275.4358737,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1195,6 +1452,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -1202,17 +1471,19 @@
     "IP": "192.168.0.3",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022023.39611,
-    "Last_Seen": 1774022023.396847,
+    "First_Seen": 1774175143.0210772,
+    "Last_Seen": 1774175143.0218358,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1227,6 +1498,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -1234,17 +1517,19 @@
     "IP": "192.168.1.71",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022023.3961244,
-    "Last_Seen": 1774022123.7845938,
+    "First_Seen": 1774175143.0210931,
+    "Last_Seen": 1774175246.9082754,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1259,6 +1544,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -1266,17 +1563,19 @@
     "IP": "17.253.34.253",
     "Is_Internal": false,
     "Device_Type": "External Host",
+    "Device_Type_Reason": "Public IP",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022023.3961582,
-    "Last_Seen": 1774022124.0642192,
+    "First_Seen": 1774175143.0211449,
+    "Last_Seen": 1774175247.1878927,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1291,6 +1590,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -1298,17 +1609,19 @@
     "IP": "192.195.142.13",
     "Is_Internal": false,
     "Device_Type": "External Host",
+    "Device_Type_Reason": "Public IP",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022023.396369,
-    "Last_Seen": 1774022023.3969727,
+    "First_Seen": 1774175143.0213423,
+    "Last_Seen": 1774175143.0219676,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1323,6 +1636,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -1330,17 +1655,19 @@
     "IP": "192.168.1.68",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022023.3964045,
-    "Last_Seen": 1774022023.3964252,
+    "First_Seen": 1774175143.021377,
+    "Last_Seen": 1774175143.0213976,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1355,6 +1682,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -1362,17 +1701,19 @@
     "IP": "192.168.1.2",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022023.3966596,
-    "Last_Seen": 1774022023.3969152,
+    "First_Seen": 1774175143.0216417,
+    "Last_Seen": 1774175143.021907,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1387,6 +1728,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -1394,26 +1747,28 @@
     "IP": "21.2.2.2",
     "Is_Internal": false,
     "Device_Type": "External Host",
+    "Device_Type_Reason": "Public IP",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [
-      "192.168.88.55",
-      "192.168.88.61",
-      "192.168.88.49",
-      "192.168.88.51",
       "192.168.88.53",
-      "192.168.88.52",
       "192.168.88.60",
-      "192.168.88.95"
+      "192.168.88.55",
+      "192.168.88.49",
+      "192.168.88.52",
+      "192.168.88.95",
+      "192.168.88.61",
+      "192.168.88.51"
     ],
     "Connected_To": {},
-    "First_Seen": 1774022023.3969736,
-    "Last_Seen": 1774022152.0806792,
+    "First_Seen": 1774175143.0219686,
+    "Last_Seen": 1774175275.435933,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1428,6 +1783,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -1435,34 +1802,36 @@
     "IP": "192.168.2.137",
     "Is_Internal": true,
     "Device_Type": "Engineering Workstation (EWS)",
+    "Device_Type_Reason": "Modbus write activity",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [
+      "192.168.88.105",
+      "192.168.88.60",
+      "192.168.88.100",
       "192.168.88.20",
       "192.168.88.85",
-      "192.168.88.75",
-      "192.168.88.60",
       "192.168.88.80",
-      "192.168.88.15",
+      "192.168.88.49",
       "10.10.10.10",
-      "192.168.88.130",
-      "192.168.88.105",
-      "192.168.88.51",
-      "192.168.88.115",
-      "192.168.88.254",
-      "192.168.88.95",
-      "192.168.88.30",
-      "192.168.88.100",
-      "192.168.88.2",
-      "192.168.88.61",
-      "192.168.88.50",
       "192.168.88.52",
-      "192.168.88.49"
+      "192.168.88.95",
+      "192.168.88.50",
+      "192.168.88.30",
+      "192.168.88.254",
+      "192.168.88.61",
+      "192.168.88.115",
+      "192.168.88.51",
+      "192.168.88.75",
+      "192.168.88.2",
+      "192.168.88.15",
+      "192.168.88.130"
     ],
     "Connected_To": {
       "192.168.88.115": {
@@ -1583,8 +1952,8 @@
         "udp": []
       }
     },
-    "First_Seen": 1774022023.8115027,
-    "Last_Seen": 1774022199.506297,
+    "First_Seen": 1774175143.022212,
+    "Last_Seen": 1774175321.1474319,
     "Protocols": {
       "Modbus": {
         "Roles": [
@@ -1605,6 +1974,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -1612,6 +1993,7 @@
     "IP": "192.168.88.2",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [
       "00:0a:dc:64:85:c3"
@@ -1619,14 +2001,15 @@
     "Vendor": [
       "RuggedCom Inc."
     ],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022023.8115478,
-    "Last_Seen": 1774022150.726841,
+    "First_Seen": 1774175143.0222192,
+    "Last_Seen": 1774175273.784987,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1641,6 +2024,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -1648,6 +2043,7 @@
     "IP": "192.168.88.80",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [
       "00:90:e8:26:7b:17"
@@ -1655,14 +2051,15 @@
     "Vendor": [
       "MOXA TECHNOLOGIES CORP., LTD."
     ],
+    "Vendor_Class": "OT",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022023.8115766,
-    "Last_Seen": 1774022150.7269545,
+    "First_Seen": 1774175143.0222342,
+    "Last_Seen": 1774175273.7851098,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1677,6 +2074,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -1684,6 +2093,7 @@
     "IP": "192.168.88.115",
     "Is_Internal": true,
     "Device_Type": "Linux/Unix Host (SSH)",
+    "Device_Type_Reason": "Listening on IT port 22/tcp",
     "Hostname": "Unknown",
     "MAC": [
       "00:40:9d:28:ee:0d"
@@ -1691,31 +2101,32 @@
     "Vendor": [
       "DigiBoard"
     ],
+    "Vendor_Class": "Unknown",
     "Open_ports": [
-      "7004/tcp",
       "7019/tcp",
+      "7007/tcp",
+      "7025/tcp",
+      "7002/tcp",
+      "23/tcp",
       "22/tcp",
       "7000/tcp",
-      "23/tcp",
+      "7004/tcp",
       "80/tcp",
       "443/tcp",
-      "7025/tcp",
-      "7007/tcp",
-      "7002/tcp",
       "7001/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [
-      "192.168.2.199",
-      "192.168.2.22",
+      "192.168.2.53",
       "192.168.2.137",
-      "192.168.2.53"
+      "192.168.2.22",
+      "192.168.2.199"
     ],
     "Connected_To": {},
-    "First_Seen": 1774022023.8115873,
-    "Last_Seen": 1774022152.0799146,
+    "First_Seen": 1774175143.0222442,
+    "Last_Seen": 1774175275.4350014,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1730,6 +2141,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -1737,6 +2160,7 @@
     "IP": "192.168.88.15",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [
       "00:e0:62:00:17:0a"
@@ -1744,14 +2168,15 @@
     "Vendor": [
       "HOST ENGINEERING"
     ],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022023.8116007,
-    "Last_Seen": 1774022150.7269282,
+    "First_Seen": 1774175143.0222628,
+    "Last_Seen": 1774175273.7850776,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1766,6 +2191,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -1773,6 +2210,7 @@
     "IP": "192.168.88.85",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [
       "ac:cf:23:02:23:6e"
@@ -1780,14 +2218,15 @@
     "Vendor": [
       "Hi-flying electronics technology Co.,Ltd"
     ],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022023.811619,
-    "Last_Seen": 1774022150.7268875,
+    "First_Seen": 1774175143.0222886,
+    "Last_Seen": 1774175273.7850273,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1802,6 +2241,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -1809,6 +2260,7 @@
     "IP": "192.168.88.130",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [
       "00:90:e8:10:af:c8"
@@ -1816,6 +2268,7 @@
     "Vendor": [
       "MOXA TECHNOLOGIES CORP., LTD."
     ],
+    "Vendor_Class": "OT",
     "Open_ports": [
       "80/tcp"
     ],
@@ -1824,8 +2277,8 @@
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022023.811633,
-    "Last_Seen": 1774022150.7269177,
+    "First_Seen": 1774175143.0223026,
+    "Last_Seen": 1774175273.7850635,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1840,6 +2293,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -1847,6 +2312,7 @@
     "IP": "192.168.88.51",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [
       "00:d0:c9:bd:2e:57"
@@ -1854,14 +2320,15 @@
     "Vendor": [
       "ADVANTECH CO., LTD."
     ],
+    "Vendor_Class": "OT",
     "Open_ports": [
-      "5120/tcp",
       "137/udp",
       "23/tcp",
-      "1/tcp",
-      "80/tcp",
-      "443/tcp",
       "135/tcp",
+      "80/tcp",
+      "1/tcp",
+      "5120/tcp",
+      "443/tcp",
       "1234/tcp"
     ],
     "Model": "Unknown",
@@ -1871,9 +2338,9 @@
       "192.168.2.133",
       "192.168.88.1",
       "192.168.2.199",
-      "192.168.2.166",
       "10.218.104.244",
-      "192.168.2.22"
+      "192.168.2.22",
+      "192.168.2.166"
     ],
     "Connected_To": {
       "192.168.88.1": {
@@ -1883,8 +2350,8 @@
         ]
       }
     },
-    "First_Seen": 1774022023.8116422,
-    "Last_Seen": 1774022152.0805097,
+    "First_Seen": 1774175143.022312,
+    "Last_Seen": 1774175275.4357579,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1899,6 +2366,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -1906,6 +2385,7 @@
     "IP": "192.168.88.49",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [
       "00:40:8c:7f:0b:bc"
@@ -1913,23 +2393,24 @@
     "Vendor": [
       "Axis Communications AB"
     ],
+    "Vendor_Class": "Unknown",
     "Open_ports": [
-      "21/tcp",
       "49152/tcp",
-      "80/tcp"
+      "80/tcp",
+      "21/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [
-      "192.168.2.133",
-      "192.168.2.22",
       "192.168.2.199",
-      "192.168.2.166"
+      "192.168.2.166",
+      "192.168.2.133",
+      "192.168.2.22"
     ],
     "Connected_To": {},
-    "First_Seen": 1774022023.8116534,
-    "Last_Seen": 1774022152.0807364,
+    "First_Seen": 1774175143.0223246,
+    "Last_Seen": 1774175275.4359968,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1944,6 +2425,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -1951,6 +2444,7 @@
     "IP": "192.168.88.30",
     "Is_Internal": true,
     "Device_Type": "Siemens S7 PLC",
+    "Device_Type_Reason": "Listening on OT port 102/tcp",
     "Hostname": "Unknown",
     "MAC": [
       "00:1c:06:01:d4:23"
@@ -1958,22 +2452,23 @@
     "Vendor": [
       "Siemens Numerical Control Ltd., Nanjing"
     ],
+    "Vendor_Class": "OT",
     "Open_ports": [
-      "5001/tcp",
+      "102/tcp",
       "161/udp",
-      "102/tcp"
+      "5001/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [
-      "192.168.2.22",
       "192.168.2.53",
-      "192.168.2.166"
+      "192.168.2.166",
+      "192.168.2.22"
     ],
     "Connected_To": {},
-    "First_Seen": 1774022023.8116643,
-    "Last_Seen": 1774022152.0795324,
+    "First_Seen": 1774175143.022336,
+    "Last_Seen": 1774175275.4346013,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -1988,6 +2483,20 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [
+          "Controller"
+        ],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -1995,6 +2504,7 @@
     "IP": "192.168.88.75",
     "Is_Internal": true,
     "Device_Type": "Linux/Unix Host (SSH)",
+    "Device_Type_Reason": "Listening on IT port 22/tcp",
     "Hostname": "Unknown",
     "MAC": [
       "00:80:63:b5:b6:bb"
@@ -2002,24 +2512,25 @@
     "Vendor": [
       "Hirschmann Automation and Control GmbH"
     ],
+    "Vendor_Class": "OT",
     "Open_ports": [
-      "443/tcp",
       "22/tcp",
-      "1/tcp",
-      "80/tcp"
+      "443/tcp",
+      "80/tcp",
+      "1/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [
-      "192.168.2.133",
-      "192.168.2.22",
       "192.168.2.199",
-      "192.168.2.166"
+      "192.168.2.166",
+      "192.168.2.133",
+      "192.168.2.22"
     ],
     "Connected_To": {},
-    "First_Seen": 1774022023.8117042,
-    "Last_Seen": 1774022152.080522,
+    "First_Seen": 1774175143.022364,
+    "Last_Seen": 1774175275.4357674,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2034,6 +2545,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -2041,6 +2564,7 @@
     "IP": "192.168.88.105",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [
       "00:11:22:7b:c5:50"
@@ -2048,6 +2572,7 @@
     "Vendor": [
       "CIMSYS Inc"
     ],
+    "Vendor_Class": "Unknown",
     "Open_ports": [
       "80/tcp"
     ],
@@ -2056,8 +2581,8 @@
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022023.8117201,
-    "Last_Seen": 1774022150.7269025,
+    "First_Seen": 1774175143.0223758,
+    "Last_Seen": 1774175273.7850468,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2072,6 +2597,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -2079,31 +2616,33 @@
     "IP": "192.168.2.199",
     "Is_Internal": true,
     "Device_Type": "SCADA / HMI / EWS",
+    "Device_Type_Reason": "Talks to OT port 502/tcp",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [
-      "192.168.88.2",
-      "192.168.88.20",
-      "192.168.88.130",
-      "192.168.88.25",
       "192.168.88.85",
-      "192.168.88.61",
+      "192.168.88.20",
       "192.168.88.105",
-      "192.168.88.49",
-      "192.168.88.51",
-      "192.168.88.75",
-      "192.168.88.50",
-      "192.168.88.115",
       "192.168.88.60",
-      "192.168.88.95",
-      "192.168.88.30",
+      "192.168.88.115",
+      "192.168.88.2",
+      "192.168.88.25",
+      "192.168.88.49",
       "192.168.88.80",
-      "192.168.88.15"
+      "192.168.88.15",
+      "192.168.88.30",
+      "192.168.88.95",
+      "192.168.88.130",
+      "192.168.88.75",
+      "192.168.88.61",
+      "192.168.88.51",
+      "192.168.88.50"
     ],
     "Connected_To": {
       "192.168.88.60": {
@@ -2213,8 +2752,8 @@
         "udp": []
       }
     },
-    "First_Seen": 1774022028.18231,
-    "Last_Seen": 1774022083.5267658,
+    "First_Seen": 1774175150.512317,
+    "Last_Seen": 1774175206.3385415,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2229,6 +2768,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -2236,6 +2787,7 @@
     "IP": "192.168.88.25",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [
       "00:d0:c9:a5:c9:2d"
@@ -2243,10 +2795,11 @@
     "Vendor": [
       "ADVANTECH CO., LTD."
     ],
+    "Vendor_Class": "OT",
     "Open_ports": [
-      "21/tcp",
       "81/tcp",
-      "80/tcp"
+      "80/tcp",
+      "21/tcp"
     ],
     "Model": "Unknown",
     "OS_version": "Unknown",
@@ -2262,8 +2815,8 @@
         ]
       }
     },
-    "First_Seen": 1774022030.729572,
-    "Last_Seen": 1774022150.4873376,
+    "First_Seen": 1774175154.0212052,
+    "Last_Seen": 1774175273.7778604,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2278,83 +2831,26 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
-      }
-    }
-  },
-  "192.168.57.3": {
-    "IP": "192.168.57.3",
-    "Is_Internal": true,
-    "Device_Type": "IT",
-    "Hostname": "Unknown",
-    "MAC": [
-      "00:1e:ec:26:d2:ac"
-    ],
-    "Vendor": [
-      "COMPAL INFORMATION (KUNSHAN) CO., LTD."
-    ],
-    "Open_ports": [],
-    "Model": "Unknown",
-    "OS_version": "Unknown",
-    "Firmware_version": "Unknown",
-    "Attempted_Connections": [
-      "192.168.57.2"
-    ],
-    "Connected_To": {},
-    "First_Seen": 1774022039.5948002,
-    "Last_Seen": 1774022094.892481,
-    "Protocols": {
-      "Modbus": {
+      },
+      "S7comm": {
         "Roles": [],
-        "Unit_IDs_Served": [],
+        "Functions_Seen": [],
         "Activity": {
           "Reads_Sent_To": {},
           "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
           "Successful_Responses": 0,
-          "Exceptions_Triggered": {}
+          "Errors": {}
         },
-        "Memory_Fingerprint": {
-          "Registers_Read": [],
-          "Registers_Written": []
-        }
-      }
-    }
-  },
-  "192.168.57.2": {
-    "IP": "192.168.57.2",
-    "Is_Internal": true,
-    "Device_Type": "IT",
-    "Hostname": "Unknown",
-    "MAC": [],
-    "Vendor": [],
-    "Open_ports": [],
-    "Model": "Unknown",
-    "OS_version": "Unknown",
-    "Firmware_version": "Unknown",
-    "Attempted_Connections": [],
-    "Connected_To": {},
-    "First_Seen": 1774022039.5948355,
-    "Last_Seen": 1774022094.8924816,
-    "Protocols": {
-      "Modbus": {
-        "Roles": [],
-        "Unit_IDs_Served": [],
-        "Activity": {
-          "Reads_Sent_To": {},
-          "Writes_Sent_To": {},
-          "Successful_Responses": 0,
-          "Exceptions_Triggered": {}
-        },
-        "Memory_Fingerprint": {
-          "Registers_Read": [],
-          "Registers_Written": []
-        }
+        "SZL_Info": {}
       }
     }
   },
   "10.10.10.30": {
     "IP": "10.10.10.30",
     "Is_Internal": true,
-    "Device_Type": "SCADA / HMI / EWS",
+    "Device_Type": "Engineering Workstation (EWS)",
+    "Device_Type_Reason": "S7comm write activity",
     "Hostname": "Unknown",
     "MAC": [
       "54:ee:75:3f:4a:db"
@@ -2362,6 +2858,7 @@
     "Vendor": [
       "Wistron InfoComm(Kunshan)Co.,Ltd."
     ],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
@@ -2378,8 +2875,8 @@
         "udp": []
       }
     },
-    "First_Seen": 1774022058.653687,
-    "Last_Seen": 1774022145.955884,
+    "First_Seen": 1774175154.0284102,
+    "Last_Seen": 1774175269.3706796,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2394,70 +2891,25 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
-      }
-    }
-  },
-  "172.16.184.40": {
-    "IP": "172.16.184.40",
-    "Is_Internal": true,
-    "Device_Type": "IT",
-    "Hostname": "Unknown",
-    "MAC": [],
-    "Vendor": [],
-    "Open_ports": [],
-    "Model": "Unknown",
-    "OS_version": "Unknown",
-    "Firmware_version": "Unknown",
-    "Attempted_Connections": [],
-    "Connected_To": {},
-    "First_Seen": 1774022058.6537213,
-    "Last_Seen": 1774022058.6537213,
-    "Protocols": {
-      "Modbus": {
-        "Roles": [],
-        "Unit_IDs_Served": [],
+      },
+      "S7comm": {
+        "Roles": [
+          "SCADA / HMI / EWS"
+        ],
+        "Functions_Seen": [
+          "Write Variable",
+          "Setup Communication"
+        ],
         "Activity": {
           "Reads_Sent_To": {},
-          "Writes_Sent_To": {},
+          "Writes_Sent_To": {
+            "10.10.10.10": 8
+          },
+          "Uploads_Downloads": [],
           "Successful_Responses": 0,
-          "Exceptions_Triggered": {}
+          "Errors": {}
         },
-        "Memory_Fingerprint": {
-          "Registers_Read": [],
-          "Registers_Written": []
-        }
-      }
-    }
-  },
-  "10.218.104.244": {
-    "IP": "10.218.104.244",
-    "Is_Internal": true,
-    "Device_Type": "IT",
-    "Hostname": "Unknown",
-    "MAC": [],
-    "Vendor": [],
-    "Open_ports": [],
-    "Model": "Unknown",
-    "OS_version": "Unknown",
-    "Firmware_version": "Unknown",
-    "Attempted_Connections": [],
-    "Connected_To": {},
-    "First_Seen": 1774022083.5268073,
-    "Last_Seen": 1774022136.1562366,
-    "Protocols": {
-      "Modbus": {
-        "Roles": [],
-        "Unit_IDs_Served": [],
-        "Activity": {
-          "Reads_Sent_To": {},
-          "Writes_Sent_To": {},
-          "Successful_Responses": 0,
-          "Exceptions_Triggered": {}
-        },
-        "Memory_Fingerprint": {
-          "Registers_Read": [],
-          "Registers_Written": []
-        }
+        "SZL_Info": {}
       }
     }
   },
@@ -2465,9 +2917,11 @@
     "IP": "192.168.1.10",
     "Is_Internal": true,
     "Device_Type": "SCADA / HMI / EWS",
+    "Device_Type_Reason": "Talks to OT port 102/tcp",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
@@ -2483,8 +2937,8 @@
         "udp": []
       }
     },
-    "First_Seen": 1774022093.1128983,
-    "Last_Seen": 1774022093.4005187,
+    "First_Seen": 1774175154.0284376,
+    "Last_Seen": 1774175216.4390554,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2499,6 +2953,210 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [
+          "SCADA / HMI / EWS"
+        ],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
+      }
+    }
+  },
+  "192.168.57.3": {
+    "IP": "192.168.57.3",
+    "Is_Internal": true,
+    "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
+    "Hostname": "Unknown",
+    "MAC": [
+      "00:1e:ec:26:d2:ac"
+    ],
+    "Vendor": [
+      "COMPAL INFORMATION (KUNSHAN) CO., LTD."
+    ],
+    "Vendor_Class": "Unknown",
+    "Open_ports": [],
+    "Model": "Unknown",
+    "OS_version": "Unknown",
+    "Firmware_version": "Unknown",
+    "Attempted_Connections": [
+      "192.168.57.2"
+    ],
+    "Connected_To": {},
+    "First_Seen": 1774175162.3846564,
+    "Last_Seen": 1774175217.5575318,
+    "Protocols": {
+      "Modbus": {
+        "Roles": [],
+        "Unit_IDs_Served": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Successful_Responses": 0,
+          "Exceptions_Triggered": {}
+        },
+        "Memory_Fingerprint": {
+          "Registers_Read": [],
+          "Registers_Written": []
+        }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
+      }
+    }
+  },
+  "192.168.57.2": {
+    "IP": "192.168.57.2",
+    "Is_Internal": true,
+    "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
+    "Hostname": "Unknown",
+    "MAC": [],
+    "Vendor": [],
+    "Vendor_Class": "Unknown",
+    "Open_ports": [],
+    "Model": "Unknown",
+    "OS_version": "Unknown",
+    "Firmware_version": "Unknown",
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774175162.3847034,
+    "Last_Seen": 1774175217.5575323,
+    "Protocols": {
+      "Modbus": {
+        "Roles": [],
+        "Unit_IDs_Served": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Successful_Responses": 0,
+          "Exceptions_Triggered": {}
+        },
+        "Memory_Fingerprint": {
+          "Registers_Read": [],
+          "Registers_Written": []
+        }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
+      }
+    }
+  },
+  "172.16.184.40": {
+    "IP": "172.16.184.40",
+    "Is_Internal": true,
+    "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
+    "Hostname": "Unknown",
+    "MAC": [],
+    "Vendor": [],
+    "Vendor_Class": "Unknown",
+    "Open_ports": [],
+    "Model": "Unknown",
+    "OS_version": "Unknown",
+    "Firmware_version": "Unknown",
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774175181.3928556,
+    "Last_Seen": 1774175181.3928556,
+    "Protocols": {
+      "Modbus": {
+        "Roles": [],
+        "Unit_IDs_Served": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Successful_Responses": 0,
+          "Exceptions_Triggered": {}
+        },
+        "Memory_Fingerprint": {
+          "Registers_Read": [],
+          "Registers_Written": []
+        }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
+      }
+    }
+  },
+  "10.218.104.244": {
+    "IP": "10.218.104.244",
+    "Is_Internal": true,
+    "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
+    "Hostname": "Unknown",
+    "MAC": [],
+    "Vendor": [],
+    "Vendor_Class": "Unknown",
+    "Open_ports": [],
+    "Model": "Unknown",
+    "OS_version": "Unknown",
+    "Firmware_version": "Unknown",
+    "Attempted_Connections": [],
+    "Connected_To": {},
+    "First_Seen": 1774175206.3385882,
+    "Last_Seen": 1774175259.356955,
+    "Protocols": {
+      "Modbus": {
+        "Roles": [],
+        "Unit_IDs_Served": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Successful_Responses": 0,
+          "Exceptions_Triggered": {}
+        },
+        "Memory_Fingerprint": {
+          "Registers_Read": [],
+          "Registers_Written": []
+        }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -2506,9 +3164,11 @@
     "IP": "192.168.2.21",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
@@ -2530,8 +3190,8 @@
         "udp": []
       }
     },
-    "First_Seen": 1774022093.396185,
-    "Last_Seen": 1774022107.2077913,
+    "First_Seen": 1774175216.1690593,
+    "Last_Seen": 1774175230.2326522,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2546,6 +3206,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -2553,30 +3225,32 @@
     "IP": "192.168.2.22",
     "Is_Internal": true,
     "Device_Type": "SCADA / HMI / EWS",
+    "Device_Type_Reason": "Talks to OT port 20000/tcp",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [
-      "192.168.88.2",
-      "192.168.88.130",
-      "192.168.88.25",
-      "192.168.88.61",
-      "192.168.88.60",
       "192.168.88.85",
       "192.168.88.105",
-      "192.168.88.51",
-      "192.168.88.75",
-      "192.168.88.50",
+      "192.168.88.60",
       "192.168.88.115",
+      "192.168.88.25",
+      "192.168.88.2",
       "192.168.88.49",
-      "192.168.88.95",
-      "192.168.88.30",
       "192.168.88.80",
-      "192.168.88.15"
+      "192.168.88.30",
+      "192.168.88.15",
+      "192.168.88.95",
+      "192.168.88.130",
+      "192.168.88.75",
+      "192.168.88.61",
+      "192.168.88.51",
+      "192.168.88.50"
     ],
     "Connected_To": {
       "192.168.88.49": {
@@ -2668,8 +3342,8 @@
         ]
       }
     },
-    "First_Seen": 1774022093.4006205,
-    "Last_Seen": 1774022142.218283,
+    "First_Seen": 1774175216.4391685,
+    "Last_Seen": 1774175265.6791422,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2684,6 +3358,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -2691,17 +3377,19 @@
     "IP": "192.168.1.79",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022123.782868,
-    "Last_Seen": 1774022123.782868,
+    "First_Seen": 1774175246.9065304,
+    "Last_Seen": 1774175246.9065304,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2716,6 +3404,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -2723,33 +3423,35 @@
     "IP": "192.168.2.53",
     "Is_Internal": true,
     "Device_Type": "SCADA / HMI / EWS",
+    "Device_Type_Reason": "Talks to OT port 20000/tcp",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [
+      "192.168.88.105",
+      "192.168.88.60",
       "192.168.88.20",
       "192.168.88.85",
-      "192.168.88.75",
-      "192.168.88.60",
+      "192.168.88.49",
       "192.168.88.80",
-      "192.168.88.15",
-      "192.168.88.130",
-      "192.168.88.105",
-      "192.168.88.51",
-      "192.168.88.115",
-      "192.168.88.254",
+      "192.168.88.52",
       "192.168.88.95",
+      "192.168.88.50",
       "192.168.88.30",
+      "192.168.88.254",
+      "192.168.88.115",
+      "192.168.88.61",
+      "192.168.88.51",
+      "192.168.88.75",
       "192.168.88.2",
       "192.168.88.25",
-      "192.168.88.61",
-      "192.168.88.50",
-      "192.168.88.52",
-      "192.168.88.49"
+      "192.168.88.15",
+      "192.168.88.130"
     ],
     "Connected_To": {
       "192.168.88.30": {
@@ -2856,8 +3558,8 @@
         "udp": []
       }
     },
-    "First_Seen": 1774022131.645805,
-    "Last_Seen": 1774022150.4931912,
+    "First_Seen": 1774175254.7932694,
+    "Last_Seen": 1774175273.7841272,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2872,6 +3574,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -2879,6 +3593,7 @@
     "IP": "192.168.88.254",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [
       "00:0c:be:04:f3:0b"
@@ -2886,6 +3601,7 @@
     "Vendor": [
       "Innominate Security Technologies AG"
     ],
+    "Vendor_Class": "Unknown",
     "Open_ports": [
       "443/tcp"
     ],
@@ -2906,8 +3622,8 @@
         "udp": []
       }
     },
-    "First_Seen": 1774022133.059976,
-    "Last_Seen": 1774022152.080623,
+    "First_Seen": 1774175256.281518,
+    "Last_Seen": 1774175275.4358706,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2922,6 +3638,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -2929,6 +3657,7 @@
     "IP": "192.168.89.1",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [
       "00:0a:dc:64:85:c2"
@@ -2936,6 +3665,7 @@
     "Vendor": [
       "RuggedCom Inc."
     ],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
@@ -2944,8 +3674,8 @@
       "192.168.89.2"
     ],
     "Connected_To": {},
-    "First_Seen": 1774022136.1560678,
-    "Last_Seen": 1774022152.0808218,
+    "First_Seen": 1774175259.3567822,
+    "Last_Seen": 1774175275.4360783,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2960,6 +3690,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -2967,23 +3709,25 @@
     "IP": "192.168.2.64",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [
       "192.168.88.85",
-      "192.168.88.61",
       "192.168.88.105",
-      "192.168.88.50",
-      "192.168.88.60"
+      "192.168.88.60",
+      "192.168.88.61",
+      "192.168.88.50"
     ],
     "Connected_To": {},
-    "First_Seen": 1774022137.0149097,
-    "Last_Seen": 1774022139.6108055,
+    "First_Seen": 1774175260.1845462,
+    "Last_Seen": 1774175263.045044,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -2998,6 +3742,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -3005,9 +3761,11 @@
     "IP": "192.168.2.110",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
@@ -3016,8 +3774,8 @@
       "192.168.88.30"
     ],
     "Connected_To": {},
-    "First_Seen": 1774022142.2182894,
-    "Last_Seen": 1774022142.2183313,
+    "First_Seen": 1774175265.6791492,
+    "Last_Seen": 1774175265.6792188,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3032,6 +3790,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -3039,17 +3809,19 @@
     "IP": "192.195.142.14",
     "Is_Internal": false,
     "Device_Type": "External Host",
+    "Device_Type_Reason": "Public IP",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022144.2652605,
-    "Last_Seen": 1774022152.08011,
+    "First_Seen": 1774175267.7241814,
+    "Last_Seen": 1774175275.4352016,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3064,6 +3836,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -3071,6 +3855,7 @@
     "IP": "192.168.88.54",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [
       "a0:99:9b:1c:d8:65"
@@ -3078,6 +3863,7 @@
     "Vendor": [
       "Apple, Inc."
     ],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
@@ -3093,8 +3879,8 @@
         ]
       }
     },
-    "First_Seen": 1774022144.2675686,
-    "Last_Seen": 1774022144.2676399,
+    "First_Seen": 1774175267.7266266,
+    "Last_Seen": 1774175267.7267234,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3109,6 +3895,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -3116,6 +3914,7 @@
     "IP": "192.168.88.53",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [
       "a0:99:9b:1c:d8:65"
@@ -3123,13 +3922,14 @@
     "Vendor": [
       "Apple, Inc."
     ],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [
-      "17.253.54.251",
       "192.168.88.1",
+      "17.253.54.251",
       "93.158.94.210"
     ],
     "Connected_To": {
@@ -3140,8 +3940,8 @@
         ]
       }
     },
-    "First_Seen": 1774022144.2676811,
-    "Last_Seen": 1774022144.2707744,
+    "First_Seen": 1774175267.7267761,
+    "Last_Seen": 1774175267.7302284,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3156,6 +3956,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -3163,17 +3975,19 @@
     "IP": "93.158.94.210",
     "Is_Internal": false,
     "Device_Type": "External Host",
+    "Device_Type_Reason": "Public IP",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022144.267774,
-    "Last_Seen": 1774022144.2684655,
+    "First_Seen": 1774175267.7268846,
+    "Last_Seen": 1774175267.727659,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3188,6 +4002,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -3195,17 +4021,19 @@
     "IP": "17.253.54.251",
     "Is_Internal": false,
     "Device_Type": "External Host",
+    "Device_Type_Reason": "Public IP",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022144.2682567,
-    "Last_Seen": 1774022144.2682567,
+    "First_Seen": 1774175267.7274137,
+    "Last_Seen": 1774175267.7274137,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3220,6 +4048,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -3227,6 +4067,7 @@
     "IP": "192.168.143.155",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [
       "a0:99:9b:1c:d8:65"
@@ -3234,6 +4075,7 @@
     "Vendor": [
       "Apple, Inc."
     ],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
@@ -3242,8 +4084,8 @@
       "192.168.143.1"
     ],
     "Connected_To": {},
-    "First_Seen": 1774022144.2691765,
-    "Last_Seen": 1774022144.2691765,
+    "First_Seen": 1774175267.7285051,
+    "Last_Seen": 1774175267.7285051,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3258,6 +4100,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -3265,17 +4119,19 @@
     "IP": "192.168.143.1",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022144.2691844,
-    "Last_Seen": 1774022144.2691844,
+    "First_Seen": 1774175267.7285135,
+    "Last_Seen": 1774175267.7285135,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3290,6 +4146,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -3297,6 +4165,7 @@
     "IP": "192.168.88.55",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [
       "a0:99:9b:1c:d8:65"
@@ -3304,6 +4173,7 @@
     "Vendor": [
       "Apple, Inc."
     ],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
@@ -3320,8 +4190,8 @@
         ]
       }
     },
-    "First_Seen": 1774022144.269192,
-    "Last_Seen": 1774022144.2710166,
+    "First_Seen": 1774175267.728522,
+    "Last_Seen": 1774175267.730506,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3336,6 +4206,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -3343,17 +4225,19 @@
     "IP": "192.168.143.254",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022144.2710068,
-    "Last_Seen": 1774022144.2710068,
+    "First_Seen": 1774175267.7304888,
+    "Last_Seen": 1774175267.7304888,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3368,6 +4252,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -3375,9 +4271,11 @@
     "IP": "10.100.159.207",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
@@ -3388,8 +4286,8 @@
       "199.16.156.72"
     ],
     "Connected_To": {},
-    "First_Seen": 1774022150.4932466,
-    "Last_Seen": 1774022152.0803447,
+    "First_Seen": 1774175273.784186,
+    "Last_Seen": 1774175275.435575,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3404,6 +4302,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -3411,17 +4321,19 @@
     "IP": "199.16.156.70",
     "Is_Internal": false,
     "Device_Type": "External Host",
+    "Device_Type_Reason": "Public IP",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022150.4932823,
-    "Last_Seen": 1774022150.493354,
+    "First_Seen": 1774175273.7842264,
+    "Last_Seen": 1774175273.7843256,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3436,6 +4348,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -3443,17 +4367,19 @@
     "IP": "199.16.156.72",
     "Is_Internal": false,
     "Device_Type": "External Host",
+    "Device_Type_Reason": "Public IP",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022150.4933095,
-    "Last_Seen": 1774022150.4933624,
+    "First_Seen": 1774175273.7842855,
+    "Last_Seen": 1774175273.784332,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3468,6 +4394,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -3475,9 +4413,11 @@
     "IP": "10.100.159.253",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
@@ -3486,8 +4426,8 @@
       "173.252.90.4"
     ],
     "Connected_To": {},
-    "First_Seen": 1774022150.4933336,
-    "Last_Seen": 1774022150.4933336,
+    "First_Seen": 1774175273.7843025,
+    "Last_Seen": 1774175273.7843025,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3502,6 +4442,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -3509,17 +4461,19 @@
     "IP": "173.252.90.4",
     "Is_Internal": false,
     "Device_Type": "External Host",
+    "Device_Type_Reason": "Public IP",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022150.4933388,
-    "Last_Seen": 1774022150.4933388,
+    "First_Seen": 1774175273.7843082,
+    "Last_Seen": 1774175273.7843082,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3534,51 +4488,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
-      }
-    }
-  },
-  "10.10.10.20": {
-    "IP": "10.10.10.20",
-    "Is_Internal": true,
-    "Device_Type": "SCADA / HMI / EWS",
-    "Hostname": "Unknown",
-    "MAC": [
-      "00:1c:06:27:64:11"
-    ],
-    "Vendor": [
-      "Siemens Numerical Control Ltd., Nanjing"
-    ],
-    "Open_ports": [],
-    "Model": "Unknown",
-    "OS_version": "Unknown",
-    "Firmware_version": "Unknown",
-    "Attempted_Connections": [
-      "10.10.10.10"
-    ],
-    "Connected_To": {
-      "10.10.10.10": {
-        "tcp": [
-          102
-        ],
-        "udp": []
-      }
-    },
-    "First_Seen": 1774022150.493367,
-    "Last_Seen": 1774022150.493367,
-    "Protocols": {
-      "Modbus": {
+      },
+      "S7comm": {
         "Roles": [],
-        "Unit_IDs_Served": [],
+        "Functions_Seen": [],
         "Activity": {
           "Reads_Sent_To": {},
           "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
           "Successful_Responses": 0,
-          "Exceptions_Triggered": {}
+          "Errors": {}
         },
-        "Memory_Fingerprint": {
-          "Registers_Read": [],
-          "Registers_Written": []
-        }
+        "SZL_Info": {}
       }
     }
   },
@@ -3586,6 +4507,7 @@
     "IP": "fe80::baae:edff:fe75:7041",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [
       "b8:ae:ed:75:70:41"
@@ -3593,6 +4515,7 @@
     "Vendor": [
       "Elitegroup Computer Systems Co.,Ltd."
     ],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
@@ -3601,8 +4524,8 @@
       "fe80::5e51:4fff:fe7b:e6c5"
     ],
     "Connected_To": {},
-    "First_Seen": 1774022150.493435,
-    "Last_Seen": 1774022150.7265618,
+    "First_Seen": 1774175273.7843843,
+    "Last_Seen": 1774175273.7846007,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3617,6 +4540,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -3624,17 +4559,19 @@
     "IP": "fe80::5e51:4fff:fe7b:e6c5",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022150.4934886,
-    "Last_Seen": 1774022150.7265632,
+    "First_Seen": 1774175273.7844255,
+    "Last_Seen": 1774175273.784601,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3649,6 +4586,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -3656,9 +4605,11 @@
     "IP": "10.100.158.185",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
@@ -3674,8 +4625,8 @@
         "udp": []
       }
     },
-    "First_Seen": 1774022150.4935477,
-    "Last_Seen": 1774022150.4935477,
+    "First_Seen": 1774175273.7844799,
+    "Last_Seen": 1774175273.7844799,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3690,6 +4641,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -3697,9 +4660,11 @@
     "IP": "17.110.230.30",
     "Is_Internal": false,
     "Device_Type": "External Host",
+    "Device_Type_Reason": "Public IP",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [
       "5223/tcp"
     ],
@@ -3708,8 +4673,8 @@
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022150.4935558,
-    "Last_Seen": 1774022150.4935558,
+    "First_Seen": 1774175273.7844903,
+    "Last_Seen": 1774175273.7844903,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3724,6 +4689,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -3731,16 +4708,18 @@
     "IP": "10.100.159.228",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [
-      "193.209.237.4",
-      "17.110.224.213"
+      "17.110.224.213",
+      "193.209.237.4"
     ],
     "Connected_To": {
       "17.110.224.213": {
@@ -3750,8 +4729,8 @@
         "udp": []
       }
     },
-    "First_Seen": 1774022150.4935799,
-    "Last_Seen": 1774022152.08063,
+    "First_Seen": 1774175273.784517,
+    "Last_Seen": 1774175275.4358788,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3766,6 +4745,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -3773,17 +4764,19 @@
     "IP": "193.209.237.4",
     "Is_Internal": false,
     "Device_Type": "External Host",
+    "Device_Type_Reason": "Public IP",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022150.493587,
-    "Last_Seen": 1774022150.4935994,
+    "First_Seen": 1774175273.784522,
+    "Last_Seen": 1774175273.784535,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3798,6 +4791,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -3805,9 +4810,11 @@
     "IP": "10.100.159.218",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
@@ -3816,8 +4823,8 @@
       "83.140.27.11"
     ],
     "Connected_To": {},
-    "First_Seen": 1774022150.4936159,
-    "Last_Seen": 1774022150.4936159,
+    "First_Seen": 1774175273.7845514,
+    "Last_Seen": 1774175273.7845514,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3832,6 +4839,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -3839,9 +4858,11 @@
     "IP": "83.140.27.11",
     "Is_Internal": false,
     "Device_Type": "External Host",
+    "Device_Type_Reason": "Public IP",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [
       "53/udp"
     ],
@@ -3850,8 +4871,8 @@
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022150.4936204,
-    "Last_Seen": 1774022150.726607,
+    "First_Seen": 1774175273.7845566,
+    "Last_Seen": 1774175273.7846117,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3866,6 +4887,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -3873,9 +4906,11 @@
     "IP": "10.100.159.125",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
@@ -3884,8 +4919,8 @@
       "199.16.156.198"
     ],
     "Connected_To": {},
-    "First_Seen": 1774022150.4936337,
-    "Last_Seen": 1774022150.4936337,
+    "First_Seen": 1774175273.7845707,
+    "Last_Seen": 1774175273.7845707,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3900,6 +4935,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -3907,17 +4954,19 @@
     "IP": "199.16.156.198",
     "Is_Internal": false,
     "Device_Type": "External Host",
+    "Device_Type_Reason": "Public IP",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022150.4936385,
-    "Last_Seen": 1774022150.4936385,
+    "First_Seen": 1774175273.7845757,
+    "Last_Seen": 1774175273.7845757,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3932,6 +4981,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -3939,6 +5000,7 @@
     "IP": "10.100.152.128",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [
       "00:0c:be:04:f3:0a"
@@ -3946,6 +5008,7 @@
     "Vendor": [
       "Innominate Security Technologies AG"
     ],
+    "Vendor_Class": "Unknown",
     "Open_ports": [
       "4500/udp"
     ],
@@ -3953,8 +5016,8 @@
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [
-      "77.245.33.76",
       "10.100.152.10",
+      "77.245.33.76",
       "83.140.27.11"
     ],
     "Connected_To": {
@@ -3977,8 +5040,8 @@
         ]
       }
     },
-    "First_Seen": 1774022150.7265763,
-    "Last_Seen": 1774022152.0808105,
+    "First_Seen": 1774175273.7846057,
+    "Last_Seen": 1774175275.43607,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -3993,6 +5056,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -4000,9 +5075,11 @@
     "IP": "10.100.159.27",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
@@ -4011,8 +5088,8 @@
       "93.158.110.200"
     ],
     "Connected_To": {},
-    "First_Seen": 1774022150.7266192,
-    "Last_Seen": 1774022150.7266192,
+    "First_Seen": 1774175273.7846296,
+    "Last_Seen": 1774175273.7846296,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -4027,6 +5104,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -4034,17 +5123,19 @@
     "IP": "93.158.110.200",
     "Is_Internal": false,
     "Device_Type": "External Host",
+    "Device_Type_Reason": "Public IP",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022150.7266247,
-    "Last_Seen": 1774022150.7266247,
+    "First_Seen": 1774175273.784637,
+    "Last_Seen": 1774175273.784637,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -4059,6 +5150,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -4066,9 +5169,11 @@
     "IP": "10.100.152.10",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [
       "67/udp"
     ],
@@ -4077,8 +5182,8 @@
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022150.7266622,
-    "Last_Seen": 1774022150.7266622,
+    "First_Seen": 1774175273.7846713,
+    "Last_Seen": 1774175273.7846713,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -4093,6 +5198,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -4100,9 +5217,11 @@
     "IP": "77.245.33.76",
     "Is_Internal": false,
     "Device_Type": "External Host",
+    "Device_Type_Reason": "Public IP",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [
       "500/udp"
     ],
@@ -4120,8 +5239,8 @@
         ]
       }
     },
-    "First_Seen": 1774022150.7266717,
-    "Last_Seen": 1774022152.0808103,
+    "First_Seen": 1774175273.7846823,
+    "Last_Seen": 1774175275.4360697,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -4136,6 +5255,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -4143,9 +5274,11 @@
     "IP": "10.100.158.168",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
@@ -4154,8 +5287,8 @@
       "93.158.110.218"
     ],
     "Connected_To": {},
-    "First_Seen": 1774022152.0797641,
-    "Last_Seen": 1774022152.0797641,
+    "First_Seen": 1774175275.4348397,
+    "Last_Seen": 1774175275.4348397,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -4170,6 +5303,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -4177,17 +5322,19 @@
     "IP": "93.158.110.218",
     "Is_Internal": false,
     "Device_Type": "External Host",
+    "Device_Type_Reason": "Public IP",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022152.0797963,
-    "Last_Seen": 1774022152.0797963,
+    "First_Seen": 1774175275.4348795,
+    "Last_Seen": 1774175275.4348795,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -4202,6 +5349,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -4209,20 +5368,22 @@
     "IP": "10.100.159.151",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [
-      "52.5.95.205",
+      "17.130.137.73",
       "17.130.137.75",
-      "52.4.151.114",
+      "52.5.95.205",
       "199.16.156.48",
       "199.16.156.231",
-      "17.130.137.73"
+      "52.4.151.114"
     ],
     "Connected_To": {
       "199.16.156.231": {
@@ -4238,8 +5399,8 @@
         "udp": []
       }
     },
-    "First_Seen": 1774022152.0800295,
-    "Last_Seen": 1774022152.0805833,
+    "First_Seen": 1774175275.4351168,
+    "Last_Seen": 1774175275.435828,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -4254,6 +5415,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -4261,9 +5434,11 @@
     "IP": "199.16.156.231",
     "Is_Internal": false,
     "Device_Type": "External Host",
+    "Device_Type_Reason": "Public IP",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [
       "443/tcp"
     ],
@@ -4272,8 +5447,8 @@
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022152.0800352,
-    "Last_Seen": 1774022152.0801044,
+    "First_Seen": 1774175275.435124,
+    "Last_Seen": 1774175275.4351954,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -4288,6 +5463,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -4295,17 +5482,19 @@
     "IP": "17.130.137.73",
     "Is_Internal": false,
     "Device_Type": "External Host",
+    "Device_Type_Reason": "Public IP",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022152.0801191,
-    "Last_Seen": 1774022152.0801191,
+    "First_Seen": 1774175275.4352117,
+    "Last_Seen": 1774175275.4352117,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -4320,6 +5509,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -4327,17 +5528,19 @@
     "IP": "17.130.137.75",
     "Is_Internal": false,
     "Device_Type": "External Host",
+    "Device_Type_Reason": "Public IP",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022152.0801358,
-    "Last_Seen": 1774022152.0801358,
+    "First_Seen": 1774175275.4352267,
+    "Last_Seen": 1774175275.4352267,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -4352,6 +5555,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -4359,9 +5574,11 @@
     "IP": "10.100.152.15",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
@@ -4378,8 +5595,8 @@
         "udp": []
       }
     },
-    "First_Seen": 1774022152.0801606,
-    "Last_Seen": 1774022152.0806646,
+    "First_Seen": 1774175275.4352531,
+    "Last_Seen": 1774175275.4359167,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -4394,6 +5611,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -4401,17 +5630,19 @@
     "IP": "193.182.190.178",
     "Is_Internal": false,
     "Device_Type": "External Host",
+    "Device_Type_Reason": "Public IP",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022152.0801744,
-    "Last_Seen": 1774022152.0801952,
+    "First_Seen": 1774175275.4354036,
+    "Last_Seen": 1774175275.4354296,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -4426,6 +5657,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -4433,17 +5676,19 @@
     "IP": "199.16.156.48",
     "Is_Internal": false,
     "Device_Type": "External Host",
+    "Device_Type_Reason": "Public IP",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022152.0802147,
-    "Last_Seen": 1774022152.0802147,
+    "First_Seen": 1774175275.4354472,
+    "Last_Seen": 1774175275.4354472,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -4458,6 +5703,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -4465,17 +5722,19 @@
     "IP": "54.241.179.26",
     "Is_Internal": false,
     "Device_Type": "External Host",
+    "Device_Type_Reason": "Public IP",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022152.0802507,
-    "Last_Seen": 1774022152.080345,
+    "First_Seen": 1774175275.4354794,
+    "Last_Seen": 1774175275.4355752,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -4490,6 +5749,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -4497,17 +5768,19 @@
     "IP": "52.5.95.205",
     "Is_Internal": false,
     "Device_Type": "External Host",
+    "Device_Type_Reason": "Public IP",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022152.0803294,
-    "Last_Seen": 1774022152.0803294,
+    "First_Seen": 1774175275.43556,
+    "Last_Seen": 1774175275.43556,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -4522,6 +5795,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -4529,9 +5814,11 @@
     "IP": "74.125.205.188",
     "Is_Internal": false,
     "Device_Type": "External Host",
+    "Device_Type_Reason": "Public IP",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
@@ -4540,8 +5827,8 @@
       "10.100.159.227"
     ],
     "Connected_To": {},
-    "First_Seen": 1774022152.0804036,
-    "Last_Seen": 1774022152.0804036,
+    "First_Seen": 1774175275.4356382,
+    "Last_Seen": 1774175275.4356382,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -4556,6 +5843,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -4563,6 +5862,7 @@
     "IP": "10.100.159.227",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [
       "38:b1:db:e1:e9:cf"
@@ -4570,14 +5870,15 @@
     "Vendor": [
       "Hon Hai Precision Ind. Co.,Ltd."
     ],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022152.0804105,
-    "Last_Seen": 1774022152.0804105,
+    "First_Seen": 1774175275.4356637,
+    "Last_Seen": 1774175275.4356637,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -4592,6 +5893,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -4599,9 +5912,11 @@
     "IP": "17.110.224.213",
     "Is_Internal": false,
     "Device_Type": "External Host",
+    "Device_Type_Reason": "Public IP",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [
       "443/tcp"
     ],
@@ -4610,8 +5925,8 @@
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022152.0805395,
-    "Last_Seen": 1774022152.08063,
+    "First_Seen": 1774175275.435784,
+    "Last_Seen": 1774175275.435879,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -4626,6 +5941,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -4633,9 +5960,11 @@
     "IP": "52.4.151.114",
     "Is_Internal": false,
     "Device_Type": "External Host",
+    "Device_Type_Reason": "Public IP",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [
       "443/tcp"
     ],
@@ -4644,8 +5973,8 @@
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022152.0805833,
-    "Last_Seen": 1774022152.0805833,
+    "First_Seen": 1774175275.435828,
+    "Last_Seen": 1774175275.435828,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -4660,6 +5989,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -4667,9 +6008,11 @@
     "IP": "10.100.159.247",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
@@ -4685,8 +6028,8 @@
         "udp": []
       }
     },
-    "First_Seen": 1774022152.0806456,
-    "Last_Seen": 1774022152.0806456,
+    "First_Seen": 1774175275.4358943,
+    "Last_Seen": 1774175275.4358943,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -4701,6 +6044,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -4708,9 +6063,11 @@
     "IP": "108.160.163.110",
     "Is_Internal": false,
     "Device_Type": "External Host",
+    "Device_Type_Reason": "Public IP",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [
       "443/tcp"
     ],
@@ -4719,8 +6076,8 @@
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022152.0806503,
-    "Last_Seen": 1774022152.0806503,
+    "First_Seen": 1774175275.4359012,
+    "Last_Seen": 1774175275.4359012,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -4735,6 +6092,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -4742,9 +6111,11 @@
     "IP": "54.210.217.83",
     "Is_Internal": false,
     "Device_Type": "External Host",
+    "Device_Type_Reason": "Public IP",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [
       "443/tcp"
     ],
@@ -4753,8 +6124,8 @@
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022152.0806649,
-    "Last_Seen": 1774022152.0806649,
+    "First_Seen": 1774175275.435917,
+    "Last_Seen": 1774175275.435917,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -4769,6 +6140,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -4776,9 +6159,11 @@
     "IP": "10.100.152.119",
     "Is_Internal": true,
     "Device_Type": "IT",
+    "Device_Type_Reason": "Private IP (RFC 1918)",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [],
     "Model": "Unknown",
     "OS_version": "Unknown",
@@ -4794,8 +6179,8 @@
         "udp": []
       }
     },
-    "First_Seen": 1774022152.0807524,
-    "Last_Seen": 1774022152.0808036,
+    "First_Seen": 1774175275.4360116,
+    "Last_Seen": 1774175275.4360616,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -4810,6 +6195,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   },
@@ -4817,9 +6214,11 @@
     "IP": "141.82.217.52",
     "Is_Internal": false,
     "Device_Type": "External Host",
+    "Device_Type_Reason": "Public IP",
     "Hostname": "Unknown",
     "MAC": [],
     "Vendor": [],
+    "Vendor_Class": "Unknown",
     "Open_ports": [
       "993/tcp"
     ],
@@ -4828,8 +6227,8 @@
     "Firmware_version": "Unknown",
     "Attempted_Connections": [],
     "Connected_To": {},
-    "First_Seen": 1774022152.080757,
-    "Last_Seen": 1774022152.0808039,
+    "First_Seen": 1774175275.4360166,
+    "Last_Seen": 1774175275.4360619,
     "Protocols": {
       "Modbus": {
         "Roles": [],
@@ -4844,6 +6243,18 @@
           "Registers_Read": [],
           "Registers_Written": []
         }
+      },
+      "S7comm": {
+        "Roles": [],
+        "Functions_Seen": [],
+        "Activity": {
+          "Reads_Sent_To": {},
+          "Writes_Sent_To": {},
+          "Uploads_Downloads": [],
+          "Successful_Responses": 0,
+          "Errors": {}
+        },
+        "SZL_Info": {}
       }
     }
   }

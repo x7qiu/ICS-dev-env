@@ -21,10 +21,12 @@ def get_or_create_asset(ip):
         ASSETS_DB[ip] = {
             "IP": ip,
             "Is_Internal": is_internal,
-            "Device_Type": "IT" if is_internal else "External Host", 
+            "Device_Type": "IT" if is_internal else "External Host",
+            "Device_Type_Reason": "Private IP (RFC 1918)" if is_internal else "Public IP",
             "Hostname": "Unknown",
             "MAC": set(),
             "Vendor": set(),
+            "Vendor_Class": "Unknown",
             "Open_ports": set(),
             "Model": "Unknown",
             "OS_version": "Unknown",
@@ -47,6 +49,18 @@ def get_or_create_asset(ip):
                         "Registers_Read": set(),
                         "Registers_Written": set()
                     }
+                },
+                "S7comm": {
+                    "Roles": set(),
+                    "Functions_Seen": set(),
+                    "Activity": {
+                        "Reads_Sent_To": {},
+                        "Writes_Sent_To": {},
+                        "Uploads_Downloads": [],
+                        "Successful_Responses": 0,
+                        "Errors": {}
+                    },
+                    "SZL_Info": {}
                 }
             }
         }
